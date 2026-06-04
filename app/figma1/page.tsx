@@ -104,7 +104,7 @@ export default function Figma1Page() {
                 </div>
                 <div className="space-y-3 text-sm">
                   <div><span className="font-medium text-slate-700">Род занятий:</span><span className="text-slate-600 ml-1">Студент технического вуза</span></div>
-                  <div><span className="font-medium text-slate-700">Циф��овая грамотность:</span><span className="text-slate-600 ml-1">Высокая</span></div>
+                  <div><span className="font-medium text-slate-700">Циф����овая грамотность:</span><span className="text-slate-600 ml-1">Высокая</span></div>
                   <div><span className="font-medium text-slate-700">Мотивация:</span><span className="text-slate-600 ml-1">Дополнить университетское образование практическими навыками</span></div>
                   <div><span className="font-medium text-slate-700">Контекст:</span><span className="text-slate-600 ml-1">В транспорте, между парами, вечером дома</span></div>
                 </div>
@@ -410,13 +410,22 @@ export default function Figma1Page() {
                 </div>
               </div>
             </div>
+
+            {/* Skillbox */}
+            <div className="border border-slate-200 rounded-xl overflow-hidden">
+              <div className="bg-slate-800 text-white px-5 py-3 flex items-center gap-3">
+                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center font-bold">SB</div>
+                <div>
+                  <h4 className="font-semibold">Skillbox</h4>
+                  <p className="text-sm text-white/80">Онлайн-университет профессий</p>
+                </div>
               </div>
               <div className="p-5 grid md:grid-cols-2 gap-6">
                 <div>
                   <h5 className="font-medium text-slate-900 mb-2">Сильные ��тороны</h5>
                   <ul className="space-y-1 text-sm text-slate-600">
                     <li>+ Комплексные профессии с трудоустройством</li>
-                    <li>+ Высокое качество видеопродакшна</li>
+                    <li>+ В��сокое качество видеопродакшна</li>
                     <li>+ Проверка работ кураторами</li>
                     <li>+ Реальные проекты в портфолио</li>
                     <li>+ Современный дизайн</li>
