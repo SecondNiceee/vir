@@ -24,7 +24,7 @@ export function FigmaContent() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
-                <span><strong className="text-foreground">Проблема:</strong> Существующие приложения либо слишком общие (Coursera), либо узкоспециализированные (Duolingo — только языки)</span>
+                <span><strong className="text-foreground">Проблема:</strong> Существующие приложения либо слишком общие (Stepic), либо узкоспециализированные (Duolingo — только языки)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary"></span>
@@ -216,49 +216,20 @@ export function FigmaContent() {
             </div>
           </div>
           
-          {/* Coursera */}
+          {/* Stepic */}
           <div className="rounded-xl border border-border p-6">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0056D2] text-xl font-bold text-white">C</div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#1A1A2E] text-xl font-bold text-white">S</div>
               <div>
-                <h6 className="font-bold text-foreground">Coursera</h6>
-                <p className="text-sm text-muted-foreground">Онлайн-курсы от университетов</p>
+                <h6 className="font-bold text-foreground">Stepic</h6>
+                <p className="text-sm text-muted-foreground">Образовательная платформа</p>
               </div>
             </div>
             <div className="space-y-3">
               <div>
                 <p className="mb-1 text-xs font-medium uppercase text-green-600">Сильные стороны</p>
                 <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>+ Курсы от топовых университетов</li>
-                  <li>+ Сертификаты и дипломы</li>
-                  <li>+ Глубокие профессиональные программы</li>
-                </ul>
-              </div>
-              <div>
-                <p className="mb-1 text-xs font-medium uppercase text-red-600">Слабые стороны</p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>- Длинные курсы (месяцы)</li>
-                  <li>- Дорогая подписка</li>
-                  <li>- Слабая мобильная адаптация</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-          {/* Stepik */}
-          <div className="rounded-xl border border-border p-6">
-            <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#6C63FF] text-xl font-bold text-white">S</div>
-              <div>
-                <h6 className="font-bold text-foreground">Stepik</h6>
-                <p className="text-sm text-muted-foreground">Платформа онлайн-курсов</p>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <div>
-                <p className="mb-1 text-xs font-medium uppercase text-green-600">Сильные стороны</p>
-                <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>+ Много бесплатных курсов</li>
+                  <li>+ Много бесплатных курсов на русском</li>
                   <li>+ Автопроверка кода</li>
                   <li>+ Офлайн-режим</li>
                 </ul>
@@ -267,9 +238,12 @@ export function FigmaContent() {
                 <p className="mb-1 text-xs font-medium uppercase text-red-600">Слабые стороны</p>
                 <ul className="space-y-1 text-sm text-muted-foreground">
                   <li>- Устаревший дизайн</li>
-                  <li>- Нет геймификации</li>
-                  <li>- Разное качество курсов</li>
+                  <li>- Слабая геймификация</li>
+                  <li>- Нет персонализации</li>
                 </ul>
+              </div>
+              <div>
+                <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-32 rounded-lg object-cover" />
               </div>
             </div>
           </div>
@@ -300,6 +274,9 @@ export function FigmaContent() {
                   <li>- Поверхностные уроки</li>
                 </ul>
               </div>
+              <div>
+                <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-32 rounded-lg object-cover" />
+              </div>
             </div>
           </div>
         </div>
@@ -318,8 +295,7 @@ export function FigmaContent() {
               <tr className="border-b border-border">
                 <th className="px-4 py-3 text-left font-semibold text-foreground">Критерий</th>
                 <th className="px-4 py-3 text-center font-semibold text-foreground">Duolingo</th>
-                <th className="px-4 py-3 text-center font-semibold text-foreground">Coursera</th>
-                <th className="px-4 py-3 text-center font-semibold text-foreground">Stepik</th>
+                <th className="px-4 py-3 text-center font-semibold text-foreground">Stepic</th>
                 <th className="px-4 py-3 text-center font-semibold text-foreground">Sololearn</th>
                 <th className="bg-primary/10 px-4 py-3 text-center font-semibold text-primary">LearnUp</th>
               </tr>
@@ -328,7 +304,6 @@ export function FigmaContent() {
               <tr>
                 <td className="px-4 py-3 font-medium text-foreground">Микро-уроки (5-15 мин)</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
-                <td className="px-4 py-3 text-center text-red-600">Нет</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
@@ -337,7 +312,6 @@ export function FigmaContent() {
                 <td className="px-4 py-3 font-medium text-foreground">Геймификация</td>
                 <td className="px-4 py-3 text-center text-green-600">Отличная</td>
                 <td className="px-4 py-3 text-center text-red-600">Нет</td>
-                <td className="px-4 py-3 text-center text-red-600">Нет</td>
                 <td className="px-4 py-3 text-center text-green-600">Хорошая</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Продвинутая</td>
               </tr>
@@ -345,14 +319,12 @@ export function FigmaContent() {
                 <td className="px-4 py-3 font-medium text-foreground">Разнообразие тем</td>
                 <td className="px-4 py-3 text-center text-red-600">Только языки</td>
                 <td className="px-4 py-3 text-center text-green-600">Широкое</td>
-                <td className="px-4 py-3 text-center text-green-600">Широкое</td>
                 <td className="px-4 py-3 text-center text-red-600">Только код</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Широкое</td>
               </tr>
               <tr>
                 <td className="px-4 py-3 font-medium text-foreground">Адаптивное обучение (AI)</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
-                <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="px-4 py-3 text-center text-red-600">Нет</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
@@ -360,7 +332,6 @@ export function FigmaContent() {
               <tr>
                 <td className="px-4 py-3 font-medium text-foreground">Офлайн-режим</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
-                <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
@@ -368,7 +339,6 @@ export function FigmaContent() {
               <tr>
                 <td className="px-4 py-3 font-medium text-foreground">Бесплатная версия</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
-                <td className="px-4 py-3 text-center text-yellow-600">Ограничено</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
@@ -376,7 +346,6 @@ export function FigmaContent() {
               <tr>
                 <td className="px-4 py-3 font-medium text-foreground">Мобильный UX</td>
                 <td className="px-4 py-3 text-center text-green-600">Отличный</td>
-                <td className="px-4 py-3 text-center text-yellow-600">Средний</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Средний</td>
                 <td className="px-4 py-3 text-center text-green-600">Хороший</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Отличный</td>
@@ -403,11 +372,11 @@ export function FigmaContent() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-green-600">+</span>
-                <span><strong>От Coursera:</strong> структурированные образовательные треки, сертификаты</span>
+                <span><strong>От Stepic:</strong> автопроверка заданий, офлайн-режим, курсы на русском</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-green-600">+</span>
-                <span><strong>От Stepik:</strong> автопроверка заданий, офлайн-режим, конструктор курсов</span>
+                <span><strong>От Sololearn:</strong> встроенный редактор кода, активное сообщество</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-green-600">+</span>
@@ -425,7 +394,7 @@ export function FigmaContent() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-blue-600">*</span>
-                <span>Баланс: глубина Coursera + увлекательность Duolingo</span>
+                <span>Баланс: глубина Stepic + увлекательность Duolingo</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-blue-600">*</span>
@@ -442,7 +411,7 @@ export function FigmaContent() {
         <div className="mt-6 rounded-xl border-2 border-primary/20 bg-primary/5 p-6">
           <h5 className="mb-3 font-semibold text-foreground">Главный вывод</h5>
           <p className="text-muted-foreground">
-            LearnUp займет нишу между узкоспециализированным Duolingo и академичным Coursera, 
+            LearnUp займет нишу между узкоспециализированным Duolingo и образовательным Stepic, 
             предлагая <strong className="text-foreground">универсальную платформу микро-обучения</strong> с 
             современной геймификацией, адаптивными AI-треками и отличным мобильным UX — 
             всё, что нужно занятым людям для эффективного саморазвития.

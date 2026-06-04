@@ -246,72 +246,50 @@ export default function Pdf1Page() {
           {/* Слайд 6 */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 3: Анализ аналогов — Coursera и Stepik</h2>
+              <h2 className="text-2xl font-bold">Этап 3: Анализ аналогов — Stepic</h2>
             </div>
             <div className="flex-1 p-8">
-              <div className="grid grid-cols-2 gap-8 h-full">
-                <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-[#0056D2] rounded-xl flex items-center justify-center text-white font-bold">C</div>
+              <div className="flex gap-8 h-full">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-14 h-14 bg-[#1A1A2E] rounded-xl flex items-center justify-center text-white font-bold text-xl">S</div>
                     <div>
-                      <h3 className="font-bold text-slate-900">Coursera</h3>
-                      <p className="text-sm text-slate-500">Курсы от университетов</p>
+                      <h3 className="font-bold text-xl text-slate-900">Stepic</h3>
+                      <p className="text-slate-500">Образовательная платформа</p>
                     </div>
                   </div>
-                  <div className="space-y-3 text-sm">
+                  <div className="grid grid-cols-2 gap-6">
                     <div>
-                      <span className="text-green-700 font-medium">+</span>
-                      <span className="text-slate-600 ml-2">Курсы от топ-университетов, ценные сертификаты</span>
+                      <h4 className="font-semibold text-green-700 mb-2">Сильные стороны</h4>
+                      <ul className="space-y-1 text-sm text-slate-600">
+                        <li>+ Много бесплатных курсов</li>
+                        <li>+ Автопроверка кода</li>
+                        <li>+ Офлайн-режим</li>
+                        <li>+ Курсы на русском языке</li>
+                      </ul>
                     </div>
                     <div>
-                      <span className="text-green-700 font-medium">+</span>
-                      <span className="text-slate-600 ml-2">Глубокая проработка, офлайн-режим</span>
-                    </div>
-                    <div>
-                      <span className="text-red-700 font-medium">-</span>
-                      <span className="text-slate-600 ml-2">Дорого, сложная навигация</span>
-                    </div>
-                    <div>
-                      <span className="text-red-700 font-medium">-</span>
-                      <span className="text-slate-600 ml-2">Длинные уроки не для мобильных</span>
+                      <h4 className="font-semibold text-red-700 mb-2">Слабые стороны</h4>
+                      <ul className="space-y-1 text-sm text-slate-600">
+                        <li>- Устаревший дизайн</li>
+                        <li>- Слабая геймификация</li>
+                        <li>- Нет персонализации</li>
+                        <li>- Ограниченный мобильный UX</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div className="bg-purple-50 rounded-xl p-6 border border-purple-100">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-[#6C5CE7] rounded-xl flex items-center justify-center text-white font-bold">S</div>
-                    <div>
-                      <h3 className="font-bold text-slate-900">Stepik</h3>
-                      <p className="text-sm text-slate-500">Российская платформа</p>
-                    </div>
-                  </div>
-                  <div className="space-y-3 text-sm">
-                    <div>
-                      <span className="text-green-700 font-medium">+</span>
-                      <span className="text-slate-600 ml-2">Много бесплатных курсов на русском</span>
-                    </div>
-                    <div>
-                      <span className="text-green-700 font-medium">+</span>
-                      <span className="text-slate-600 ml-2">Задания с автопроверкой</span>
-                    </div>
-                    <div>
-                      <span className="text-red-700 font-medium">-</span>
-                      <span className="text-slate-600 ml-2">Слабая геймификация</span>
-                    </div>
-                    <div>
-                      <span className="text-red-700 font-medium">-</span>
-                      <span className="text-slate-600 ml-2">Устаревший дизайн, нет персонализации</span>
-                    </div>
-                  </div>
+                <div className="w-48 bg-slate-900 rounded-xl overflow-hidden flex items-center justify-center">
+                  <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-full w-full object-cover" />
                 </div>
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 6 из 10 — Анализ Coursera и Stepik
+              Слайд 6 из 10 — Анализ Stepic
             </div>
           </div>
 
-          {/* Слайд 7 */}
+          {/* Слайд 6.1 — Sololearn */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
               <h2 className="text-2xl font-bold">Этап 3: Анализ аналогов — Sololearn</h2>
@@ -320,7 +298,7 @@ export default function Pdf1Page() {
               <div className="flex gap-8 h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-14 h-14 bg-[#149EF2] rounded-xl flex items-center justify-center text-white font-bold">SL</div>
+                    <div className="w-14 h-14 bg-[#149EF2] rounded-xl flex items-center justify-center text-white font-bold text-xl">SL</div>
                     <div>
                       <h3 className="font-bold text-xl text-slate-900">Sololearn</h3>
                       <p className="text-slate-500">Мобильное обучение программированию</p>
@@ -330,8 +308,8 @@ export default function Pdf1Page() {
                     <div>
                       <h4 className="font-semibold text-green-700 mb-2">Сильные стороны</h4>
                       <ul className="space-y-1 text-sm text-slate-600">
-                        <li>+ Отличная геймификация</li>
-                        <li>+ Микроуроки по 5-10 мин</li>
+                        <li>+ Отличная геймификация с XP</li>
+                        <li>+ Микроуроки по 5-10 минут</li>
                         <li>+ Встроенный редактор кода</li>
                         <li>+ Активное сообщество</li>
                       </ul>
@@ -342,98 +320,70 @@ export default function Pdf1Page() {
                         <li>- Только программирование</li>
                         <li>- Много рекламы</li>
                         <li>- Поверхностные уроки</li>
-                        <li>- Нет сертификатов вузов</li>
+                        <li>- Нет сертификатов от вузов</li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                <div className="w-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 text-sm text-center p-4">
-                  Место для скриншота главного экрана
+                <div className="w-48 bg-slate-900 rounded-xl overflow-hidden flex items-center justify-center">
+                  <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-full object-cover" />
                 </div>
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 7 из 10 — Анализ Sololearn
+              Слайд 6.1 из 10 — Анализ Sololearn
             </div>
           </div>
 
-          {/* Слайд 8 */}
+          {/* Слайд 7 — Сравнительная таблица */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 4: Сравнительная таблица</h2>
+              <h2 className="text-2xl font-bold">Этап 3: Сравнительная таблица аналогов</h2>
             </div>
-            <div className="flex-1 p-6 flex items-center">
+            <div className="flex-1 p-6 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-2 border-slate-200">
                     <th className="text-left py-2 px-3 font-semibold text-slate-900">Критерий</th>
                     <th className="text-center py-2 px-3 font-semibold text-[#58CC02]">Duolingo</th>
-                    <th className="text-center py-2 px-3 font-semibold text-[#0056D2]">Coursera</th>
-                    <th className="text-center py-2 px-3 font-semibold text-[#6C5CE7]">Stepik</th>
+                    <th className="text-center py-2 px-3 font-semibold text-[#1A1A2E]">Stepic</th>
                     <th className="text-center py-2 px-3 font-semibold text-[#149EF2]">Sololearn</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
                   <tr>
-                    <td className="py-2 px-3 text-slate-700">Геймификация</td>
+                    <td className="py-2 px-3 font-medium text-slate-700">Геймификация</td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">2</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">2</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
+                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">4</span></td>
                   </tr>
                   <tr className="bg-slate-50">
-                    <td className="py-2 px-3 text-slate-700">Микрообучение</td>
+                    <td className="py-2 px-3 font-medium text-slate-700">Микрообучение</td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-red-100 text-red-700 rounded-full font-semibold text-xs">1</span></td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-red-100 text-red-700 rounded-full font-semibold text-xs">1</span></td>
+                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
                   </tr>
                   <tr>
-                    <td className="py-2 px-3 text-slate-700">Глубина контента</td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">2</span></td>
+                    <td className="py-2 px-3 font-medium text-slate-700">Мобильный UX</td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">4</span></td>
+                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
                   </tr>
                   <tr className="bg-slate-50">
-                    <td className="py-2 px-3 text-slate-700">Мобильный UX</td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">2</span></td>
-                  </tr>
-                  <tr>
-                    <td className="py-2 px-3 text-slate-700">Персонализация</td>
+                    <td className="py-2 px-3 font-medium text-slate-700">Бесплатный контент</td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">4</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-red-100 text-red-700 rounded-full font-semibold text-xs">1</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">3</span></td>
-                  </tr>
-                  <tr className="bg-slate-50">
-                    <td className="py-2 px-3 text-slate-700">Визуальный дизайн</td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
                     <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">4</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-yellow-100 text-yellow-700 rounded-full font-semibold text-xs">2</span></td>
-                    <td className="py-2 px-3 text-center"><span className="inline-flex items-center justify-center w-7 h-7 bg-green-100 text-green-700 rounded-full font-semibold text-xs">5</span></td>
                   </tr>
                 </tbody>
-                <tfoot>
-                  <tr className="border-t-2 border-slate-300 bg-slate-100">
-                    <td className="py-2 px-3 font-bold text-slate-900">Итого</td>
-                    <td className="py-2 px-3 text-center font-bold text-[#58CC02]">34/40</td>
-                    <td className="py-2 px-3 text-center font-bold text-[#0056D2]">25/40</td>
-                    <td className="py-2 px-3 text-center font-bold text-[#6C5CE7]">22/40</td>
-                    <td className="py-2 px-3 text-center font-bold text-slate-700">23/40</td>
-                  </tr>
-                </tfoot>
               </table>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 8 из 10 — Сравнительная таблица
+              Слайд 7 из 10 — Сравнительная таблица
             </div>
           </div>
 
-          {/* Слайд 9 */}
+          {/* Слайд 8 */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
               <h2 className="text-2xl font-bold">Этап 5: Выводы</h2>
