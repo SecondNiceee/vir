@@ -104,7 +104,7 @@ export default function Figma1Page() {
                 </div>
                 <div className="space-y-3 text-sm">
                   <div><span className="font-medium text-slate-700">Род занятий:</span><span className="text-slate-600 ml-1">Студент технического вуза</span></div>
-                  <div><span className="font-medium text-slate-700">Цифровая грамотность:</span><span className="text-slate-600 ml-1">Высокая</span></div>
+                  <div><span className="font-medium text-slate-700">Циф��овая грамотность:</span><span className="text-slate-600 ml-1">Высокая</span></div>
                   <div><span className="font-medium text-slate-700">Мотивация:</span><span className="text-slate-600 ml-1">Дополнить университетское образование практическими навыками</span></div>
                   <div><span className="font-medium text-slate-700">Контекст:</span><span className="text-slate-600 ml-1">В транспорте, между парами, вечером дома</span></div>
                 </div>
@@ -405,14 +405,47 @@ export default function Figma1Page() {
               </div>
             </div>
 
-            {/* Skillbox */}
+            {/* Sololearn */}
             <div className="border border-slate-200 rounded-xl overflow-hidden">
-              <div className="bg-[#1A1A2E] text-white px-5 py-3 flex items-center gap-3">
-                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center font-bold text-sm">Sk</div>
+              <div className="bg-[#149EF2] text-white px-5 py-3 flex items-center gap-3">
+                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center font-bold text-sm">SL</div>
                 <div>
-                  <h4 className="font-semibold">Skillbox</h4>
-                  <p className="text-sm text-white/80">Онлайн-университет профессий</p>
+                  <h4 className="font-semibold">Sololearn</h4>
+                  <p className="text-sm text-white/80">Мобильное обучение программированию</p>
                 </div>
+              </div>
+              <div className="p-5 grid md:grid-cols-2 gap-6">
+                <div>
+                  <h5 className="font-medium text-slate-900 mb-2">Сильные стороны</h5>
+                  <ul className="space-y-1 text-sm text-slate-600">
+                    <li>+ Отличная геймификация с XP и уровнями</li>
+                    <li>+ Микроуроки по 5-10 минут</li>
+                    <li>+ Встроенный редактор кода</li>
+                    <li>+ Активное сообщество</li>
+                    <li>+ Бесплатный базовый контент</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-medium text-slate-900 mb-2">Слабые стороны</h5>
+                  <ul className="space-y-1 text-sm text-slate-600">
+                    <li>- Только программирование</li>
+                    <li>- Много рекламы в бесплатной версии</li>
+                    <li>- Поверхностные уроки</li>
+                    <li>- Нет сертификатов от вузов</li>
+                  </ul>
+                </div>
+                <div className="md:col-span-2">
+                  <h5 className="font-medium text-slate-900 mb-2">Ключевые экраны</h5>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-[#149EF2]/10 text-[#149EF2] text-sm rounded-full">Каталог курсов</span>
+                    <span className="px-3 py-1 bg-[#149EF2]/10 text-[#149EF2] text-sm rounded-full">Урок с кодом</span>
+                    <span className="px-3 py-1 bg-[#149EF2]/10 text-[#149EF2] text-sm rounded-full">Code Playground</span>
+                    <span className="px-3 py-1 bg-[#149EF2]/10 text-[#149EF2] text-sm rounded-full">Лидерборд</span>
+                    <span className="px-3 py-1 bg-[#149EF2]/10 text-[#149EF2] text-sm rounded-full">Профиль с достижениями</span>
+                  </div>
+                </div>
+              </div>
+            </div>
               </div>
               <div className="p-5 grid md:grid-cols-2 gap-6">
                 <div>
@@ -463,7 +496,7 @@ export default function Figma1Page() {
                   <th className="text-center py-3 px-4 font-semibold text-[#58CC02]">Duolingo</th>
                   <th className="text-center py-3 px-4 font-semibold text-[#0056D2]">Coursera</th>
                   <th className="text-center py-3 px-4 font-semibold text-[#6C5CE7]">Stepik</th>
-                  <th className="text-center py-3 px-4 font-semibold text-slate-700">Skillbox</th>
+                  <th className="text-center py-3 px-4 font-semibold text-[#149EF2]">Sololearn</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">

@@ -274,30 +274,30 @@ export function FigmaContent() {
             </div>
           </div>
           
-          {/* Skillbox */}
+          {/* Sololearn */}
           <div className="rounded-xl border border-border p-6">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#FF5C00] text-xl font-bold text-white">Sk</div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#149EF2] text-xl font-bold text-white">SL</div>
               <div>
-                <h6 className="font-bold text-foreground">Skillbox</h6>
-                <p className="text-sm text-muted-foreground">Онлайн-университет</p>
+                <h6 className="font-bold text-foreground">Sololearn</h6>
+                <p className="text-sm text-muted-foreground">Мобильное обучение программированию</p>
               </div>
             </div>
             <div className="space-y-3">
               <div>
                 <p className="mb-1 text-xs font-medium uppercase text-green-600">Сильные стороны</p>
                 <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>+ Практика с кураторами</li>
-                  <li>+ Карьерный центр</li>
-                  <li>+ Современный контент</li>
+                  <li>+ Отличная геймификация</li>
+                  <li>+ Встроенный редактор кода</li>
+                  <li>+ Активное сообщество</li>
                 </ul>
               </div>
               <div>
                 <p className="mb-1 text-xs font-medium uppercase text-red-600">Слабые стороны</p>
                 <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li>- Очень дорого</li>
-                  <li>- Длинные курсы</li>
-                  <li>- Нет мобильного приложения</li>
+                  <li>- Только программирование</li>
+                  <li>- Много рекламы</li>
+                  <li>- Поверхностные уроки</li>
                 </ul>
               </div>
             </div>
@@ -320,7 +320,7 @@ export function FigmaContent() {
                 <th className="px-4 py-3 text-center font-semibold text-foreground">Duolingo</th>
                 <th className="px-4 py-3 text-center font-semibold text-foreground">Coursera</th>
                 <th className="px-4 py-3 text-center font-semibold text-foreground">Stepik</th>
-                <th className="px-4 py-3 text-center font-semibold text-foreground">Skillbox</th>
+                <th className="px-4 py-3 text-center font-semibold text-foreground">Sololearn</th>
                 <th className="bg-primary/10 px-4 py-3 text-center font-semibold text-primary">LearnUp</th>
               </tr>
             </thead>
@@ -330,7 +330,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="px-4 py-3 text-center text-red-600">Нет</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
-                <td className="px-4 py-3 text-center text-red-600">Нет</td>
+                <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
               </tr>
               <tr>
@@ -338,7 +338,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-green-600">Отличная</td>
                 <td className="px-4 py-3 text-center text-red-600">Нет</td>
                 <td className="px-4 py-3 text-center text-red-600">Нет</td>
-                <td className="px-4 py-3 text-center text-yellow-600">Базовая</td>
+                <td className="px-4 py-3 text-center text-green-600">Хорошая</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Продвинутая</td>
               </tr>
               <tr>
@@ -346,7 +346,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-red-600">Только языки</td>
                 <td className="px-4 py-3 text-center text-green-600">Широкое</td>
                 <td className="px-4 py-3 text-center text-green-600">Широкое</td>
-                <td className="px-4 py-3 text-center text-yellow-600">IT и дизайн</td>
+                <td className="px-4 py-3 text-center text-red-600">Только код</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Широкое</td>
               </tr>
               <tr>
@@ -354,7 +354,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="px-4 py-3 text-center text-red-600">Нет</td>
-                <td className="px-4 py-3 text-center text-green-600">Да</td>
+                <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
               </tr>
               <tr>
@@ -362,7 +362,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Частично</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
-                <td className="px-4 py-3 text-center text-red-600">Нет</td>
+                <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
               </tr>
               <tr>
@@ -370,7 +370,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Ограничено</td>
                 <td className="px-4 py-3 text-center text-green-600">Да</td>
-                <td className="px-4 py-3 text-center text-red-600">Нет</td>
+                <td className="px-4 py-3 text-center text-green-600">Да</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Да</td>
               </tr>
               <tr>
@@ -378,7 +378,7 @@ export function FigmaContent() {
                 <td className="px-4 py-3 text-center text-green-600">Отличный</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Средний</td>
                 <td className="px-4 py-3 text-center text-yellow-600">Средний</td>
-                <td className="px-4 py-3 text-center text-red-600">Нет приложения</td>
+                <td className="px-4 py-3 text-center text-green-600">Хороший</td>
                 <td className="bg-primary/10 px-4 py-3 text-center font-medium text-green-600">Отличный</td>
               </tr>
             </tbody>
@@ -411,7 +411,7 @@ export function FigmaContent() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-0.5 text-green-600">+</span>
-                <span><strong>От Skillbox:</strong> адаптивные треки с AI, карьерная ориентация</span>
+                <span><strong>От Sololearn:</strong> встроенный редактор кода, активное сообщество</span>
               </li>
             </ul>
           </div>
