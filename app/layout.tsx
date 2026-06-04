@@ -1,6 +1,10 @@
 import { Analytics } from '@vercel/analytics/next'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
+
+const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' })
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin', 'cyrillic'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
   title: 'ПЗ №1 — Образовательное приложение LearnUp',
@@ -31,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="font-sans antialiased bg-background">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
