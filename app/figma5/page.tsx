@@ -10,7 +10,8 @@ export default function Figma5Page() {
               <p className="text-sm text-slate-500">Интерактивный прототип LearnUp</p>
             </div>
             <div className="flex gap-3">
-              <a href="/pdf5" className="text-sm text-rose-600 hover:text-rose-800">PDF-слайды &rarr;</a>
+              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-600 hover:text-green-800">Figma-проект</a>
+              <a href="/pdf5" className="text-sm text-rose-600 hover:text-rose-800">PDF-слайды</a>
             </div>
           </div>
         </div>

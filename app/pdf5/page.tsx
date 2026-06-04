@@ -10,7 +10,8 @@ export default function Pdf5Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="/figma5" className="text-sm text-rose-400 hover:text-rose-300">Figma-контент &rarr;</a>
+              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
+              <a href="/figma5" className="text-sm text-rose-400 hover:text-rose-300">Figma-контент</a>
             </div>
           </div>
         </div>
@@ -18,14 +19,6 @@ export default function Pdf5Page() {
 
       <main className="max-w-5xl mx-auto px-6 py-8">
         
-        {/* Инструкция */}
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 print:hidden">
-          <p className="text-amber-800 text-sm">
-            <strong>Как использовать:</strong> Каждый слайд оформлен в формате 16:9. 
-            Используй Ctrl+P для печати в PDF или сделай скриншоты. Не забудь заменить первый слайд на титульный по шаблону СДО.
-          </p>
-        </div>
-
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
@@ -42,6 +35,10 @@ export default function Pdf5Page() {
               <div className="text-sm text-white/60">
                 <p>Практическое задание №5</p>
                 <p>Финальная интерактивность и защита проекта</p>
+              </div>
+              <div className="mt-8 text-sm text-white/80">
+                <p className="font-medium">Подготовил: Титов Николай</p>
+                <p>ТКБО-02-23</p>
               </div>
             </div>
             <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm print:hidden">
@@ -306,7 +303,7 @@ export default function Pdf5Page() {
           {/* Слайд 6 - Интерактивные состояния */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Интерактивные состояния компонентов</h2>
+              <h2 className="text-2xl font-bold">��нтерактивные состояния компонентов</h2>
             </div>
             <div className="flex-1 p-8">
               <div className="grid grid-cols-3 gap-6 h-full">

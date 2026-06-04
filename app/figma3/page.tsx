@@ -10,7 +10,8 @@ export default function Figma3Page() {
               <p className="text-sm text-slate-500">Дизайн-система и UI-кит LearnUp</p>
             </div>
             <div className="flex gap-3">
-              <a href="/pdf3" className="text-sm text-teal-600 hover:text-teal-800">PDF-слайды &rarr;</a>
+              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-600 hover:text-green-800">Figma-проект</a>
+              <a href="/pdf3" className="text-sm text-teal-600 hover:text-teal-800">PDF-слайды</a>
             </div>
           </div>
         </div>
@@ -572,7 +573,7 @@ export default function Figma3Page() {
         {/* БЛОК 7: Карточки */}
         <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
           <div className="bg-slate-800 text-white px-6 py-3 flex items-center justify-between">
-            <span className="font-medium">Блок 7: Компоненты — Карточки</span>
+            <span className="font-medium">Блок 7: Компоне��ты — Карточки</span>
             <span className="text-xs bg-slate-700 px-2 py-1 rounded">Cards</span>
           </div>
           <div className="p-6">

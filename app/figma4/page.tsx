@@ -10,7 +10,8 @@ export default function Figma4Page() {
               <p className="text-sm text-slate-500">Hi-Fi макеты LearnUp</p>
             </div>
             <div className="flex gap-3">
-              <a href="/pdf4" className="text-sm text-emerald-600 hover:text-emerald-800">PDF-слайды &rarr;</a>
+              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-600 hover:text-green-800">Figma-проект</a>
+              <a href="/pdf4" className="text-sm text-emerald-600 hover:text-emerald-800">PDF-слайды</a>
             </div>
           </div>
         </div>
