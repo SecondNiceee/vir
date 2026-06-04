@@ -17,14 +17,6 @@ export default function Figma2Page() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-8 space-y-8">
-        
-        {/* Инструкция */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <p className="text-blue-800 text-sm">
-            <strong>Как использовать:</strong> Каждый блок — отдельный фрейм для Figma. 
-            Сделай скриншот или используй плагин html.to.design для конвертации.
-          </p>
-        </div>
 
         {/* БЛОК 1: Уточнение пользовательского сценария */}
         <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">

@@ -17,14 +17,6 @@ export default function Figma5Page() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-8 space-y-8">
-        
-        {/* Инструкция */}
-        <div className="bg-rose-50 border border-rose-200 rounded-lg p-4">
-          <p className="text-rose-800 text-sm">
-            <strong>Как использовать:</strong> Это руководство по настройке интерактивности в Figma. 
-            Используй эти схемы для создания Prototype-связей между экранами.
-          </p>
-        </div>
 
         {/* БЛОК 1: Карта экранов и сценарии */}
         <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
