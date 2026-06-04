@@ -233,8 +233,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 text-sm text-center p-4">
-                  Место для скриншота главного экрана
+                <div className="w-48 bg-slate-900 rounded-xl overflow-hidden flex items-center justify-center">
+                  <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-full object-cover" />
                 </div>
               </div>
             </div>
@@ -412,7 +412,7 @@ export default function Pdf1Page() {
                   <ul className="space-y-2 text-sm text-red-800">
                     <li>1. Навязчивые push-уведомления</li>
                     <li>2. Сложная навигация по каталогу</li>
-                    <li>3. Длинные видеоуроки</li>
+                    <li>3. Длинн��е видеоуроки</li>
                     <li>4. Отсутствие социального взаимодействия</li>
                     <li>5. Агрессивная монетизация</li>
                   </ul>

@@ -310,13 +310,16 @@ export default function Figma1Page() {
                   </ul>
                 </div>
                 <div className="md:col-span-2">
-                  <h5 className="font-medium text-slate-900 mb-2">Ключевые экраны</h5>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Главная с деревом навыков</span>
-                    <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Экран урока</span>
-                    <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Лиги и рейтинг</span>
-                    <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Магазин</span>
-                    <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Профиль</span>
+                  <h5 className="font-medium text-slate-900 mb-2">Скриншот интерфейса</h5>
+                  <div className="flex gap-4">
+                    <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-48 rounded-lg object-cover border border-slate-200" />
+                    <div className="flex flex-wrap gap-2 content-start">
+                      <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Главная с деревом навыков</span>
+                      <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Экран урока</span>
+                      <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Лиги и рейтинг</span>
+                      <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Магазин</span>
+                      <span className="px-3 py-1 bg-[#58CC02]/10 text-[#58CC02] text-sm rounded-full">Профиль</span>
+                    </div>
                   </div>
                 </div>
               </div>
