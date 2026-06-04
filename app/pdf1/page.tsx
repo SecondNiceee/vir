@@ -314,35 +314,35 @@ export default function Pdf1Page() {
           {/* Слайд 7 */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 3: Анализ аналогов — Skillbox</h2>
+              <h2 className="text-2xl font-bold">Этап 3: Анализ аналогов — Sololearn</h2>
             </div>
             <div className="flex-1 p-8">
               <div className="flex gap-8 h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-6">
-                    <div className="w-14 h-14 bg-[#1A1A2E] rounded-xl flex items-center justify-center text-white font-bold">Sk</div>
+                    <div className="w-14 h-14 bg-[#149EF2] rounded-xl flex items-center justify-center text-white font-bold">SL</div>
                     <div>
-                      <h3 className="font-bold text-xl text-slate-900">Skillbox</h3>
-                      <p className="text-slate-500">Онлайн-университет профессий</p>
+                      <h3 className="font-bold text-xl text-slate-900">Sololearn</h3>
+                      <p className="text-slate-500">Мобильное обучение программированию</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-6">
                     <div>
                       <h4 className="font-semibold text-green-700 mb-2">Сильные стороны</h4>
                       <ul className="space-y-1 text-sm text-slate-600">
-                        <li>+ Комплексные профессии</li>
-                        <li>+ Качественный видеопродакшн</li>
-                        <li>+ Проверка кураторами</li>
-                        <li>+ Проекты в портфолио</li>
+                        <li>+ Отличная геймификация</li>
+                        <li>+ Микроуроки по 5-10 мин</li>
+                        <li>+ Встроенный редактор кода</li>
+                        <li>+ Активное сообщество</li>
                       </ul>
                     </div>
                     <div>
                       <h4 className="font-semibold text-red-700 mb-2">Слабые стороны</h4>
                       <ul className="space-y-1 text-sm text-slate-600">
-                        <li>- Высокая стоимость</li>
-                        <li>- Мобильное приложение вторично</li>
-                        <li>- Долгие курсы 6-12 мес</li>
-                        <li>- Нет микрообучения</li>
+                        <li>- Только программирование</li>
+                        <li>- Много рекламы</li>
+                        <li>- Поверхностные уроки</li>
+                        <li>- Нет сертификатов вузов</li>
                       </ul>
                     </div>
                   </div>
@@ -353,7 +353,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 7 из 10 — Анализ Skillbox
+              Слайд 7 из 10 — Анализ Sololearn
             </div>
           </div>
 
@@ -370,7 +370,7 @@ export default function Pdf1Page() {
                     <th className="text-center py-2 px-3 font-semibold text-[#58CC02]">Duolingo</th>
                     <th className="text-center py-2 px-3 font-semibold text-[#0056D2]">Coursera</th>
                     <th className="text-center py-2 px-3 font-semibold text-[#6C5CE7]">Stepik</th>
-                    <th className="text-center py-2 px-3 font-semibold text-slate-700">Skillbox</th>
+                    <th className="text-center py-2 px-3 font-semibold text-[#149EF2]">Sololearn</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
