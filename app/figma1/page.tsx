@@ -17,14 +17,6 @@ export default function Figma1Page() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-8 space-y-8">
-        
-        {/* Инструкция */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <p className="text-blue-800 text-sm">
-            <strong>Как использовать:</strong> Каждый блок — отдельный фрейм для Figma. 
-            Сделай скриншот или используй плагин html.to" для конвертации.
-          </p>
-        </div>
 
         {/* БЛОК 1: Тема проекта */}
         <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
@@ -423,7 +415,7 @@ export default function Figma1Page() {
               </div>
               <div className="p-5 grid md:grid-cols-2 gap-6">
                 <div>
-                  <h5 className="font-medium text-slate-900 mb-2">Сильные стороны</h5>
+                  <h5 className="font-medium text-slate-900 mb-2">Сильные ��тороны</h5>
                   <ul className="space-y-1 text-sm text-slate-600">
                     <li>+ Комплексные профессии с трудоустройством</li>
                     <li>+ Высокое качество видеопродакшна</li>

@@ -17,14 +17,6 @@ export default function Figma3Page() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-8 space-y-8">
-        
-        {/* Инструкция */}
-        <div className="bg-teal-50 border border-teal-200 rounded-lg p-4">
-          <p className="text-teal-800 text-sm">
-            <strong>Как использовать:</strong> Каждый блок — отдельный фрейм для Figma. 
-            Сделай скриншот или используй плагин html.to.design для конвертации.
-          </p>
-        </div>
 
         {/* БЛОК 1: Визуальные основы */}
         <section className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
@@ -640,7 +632,7 @@ export default function Figma3Page() {
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-medium text-slate-900 truncate">Типы данных</h4>
+                      <h4 className="font-medium text-slate-900 truncate">��ипы данных</h4>
                       <p className="text-sm text-teal-600">В процессе • 3/8 мин</p>
                     </div>
                     <svg className="w-5 h-5 text-teal-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
