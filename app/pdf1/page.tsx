@@ -197,10 +197,10 @@ export default function Pdf1Page() {
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#58CC02] rounded-xl flex items-center justify-center text-white font-bold text-lg sm:text-xl">D</div>
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#58CC02] rounded-xl flex items-center justify-center text-white font-bold text-xl sm:text-2xl">D</div>
                     <div>
-                      <h3 className="font-bold text-lg sm:text-xl text-slate-900">Duolingo</h3>
-                      <p className="text-slate-500 text-sm">Изучение языков</p>
+                      <h3 className="font-bold text-xl sm:text-2xl text-slate-900">Duolingo</h3>
+                      <p className="text-slate-500 text-sm sm:text-base">Изучение языков</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4 sm:gap-6">
@@ -240,10 +240,10 @@ export default function Pdf1Page() {
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#1A1A2E] rounded-xl flex items-center justify-center text-white font-bold text-lg sm:text-xl">S</div>
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#1A1A2E] rounded-xl flex items-center justify-center text-white font-bold text-xl sm:text-2xl">S</div>
                     <div>
-                      <h3 className="font-bold text-lg sm:text-xl text-slate-900">Stepic</h3>
-                      <p className="text-slate-500 text-sm">Образовательная платформа</p>
+                      <h3 className="font-bold text-xl sm:text-2xl text-slate-900">Stepic</h3>
+                      <p className="text-slate-500 text-sm sm:text-base">Образовательная платформа</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4 sm:gap-6">
@@ -283,10 +283,10 @@ export default function Pdf1Page() {
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-[#149EF2] rounded-xl flex items-center justify-center text-white font-bold text-base sm:text-xl">SL</div>
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#149EF2] rounded-xl flex items-center justify-center text-white font-bold text-xl sm:text-2xl">SL</div>
                     <div>
-                      <h3 className="font-bold text-lg sm:text-xl text-slate-900">Sololearn</h3>
-                      <p className="text-slate-500 text-sm">Мобильное обучение программированию</p>
+                      <h3 className="font-bold text-xl sm:text-2xl text-slate-900">Sololearn</h3>
+                      <p className="text-slate-500 text-sm sm:text-base">Мобильное обучение программированию</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4 sm:gap-6">
