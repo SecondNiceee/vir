@@ -121,8 +121,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
-                <div className="transform scale-[0.35] origin-top-left">
+              <div className="w-56 h-[380px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.45] origin-top-left">
                   <HomeScreen />
                 </div>
               </div>
@@ -169,8 +169,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
-                <div className="transform scale-[0.35] origin-top-left">
+              <div className="w-56 h-[380px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.45] origin-top-left">
                   <LessonScreen />
                 </div>
               </div>
@@ -222,8 +222,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
-                <div className="transform scale-[0.35] origin-top-left">
+              <div className="w-56 h-[380px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.45] origin-top-left">
                   <CatalogScreen />
                 </div>
               </div>
@@ -268,8 +268,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
-                <div className="transform scale-[0.35] origin-top-left">
+              <div className="w-56 h-[380px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.45] origin-top-left">
                   <CourseDetailsScreen />
                 </div>
               </div>
@@ -335,8 +335,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
-                <div className="transform scale-[0.35] origin-top-left">
+              <div className="w-56 h-[380px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.45] origin-top-left">
                   <ProfileScreen />
                 </div>
               </div>
