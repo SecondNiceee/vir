@@ -167,7 +167,7 @@ export default function Pdf1Page() {
                     <span className="w-7 h-7 sm:w-8 sm:h-8 bg-amber-100 rounded-full flex items-center justify-center font-bold text-amber-700 text-sm">3</span>
                     <h4 className="font-semibold text-slate-900 text-sm sm:text-base">Поиск курса</h4>
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-600">Каталог → Фил��тры → Отзывы и программа → Добавление в избранное</p>
+                  <p className="text-xs sm:text-sm text-slate-600">Каталог → Фил����тры → Отзывы и программа → Добавление в избранное</p>
                   <div className="mt-2 sm:mt-3 flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs rounded">Каталог</span>
                     <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs rounded">Фильтрация</span>
@@ -224,7 +224,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-auto h-48 md:h-64 lg:h-72 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-auto h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-auto h-48 md:h-64 lg:h-72 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-auto h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
@@ -310,7 +310,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-auto h-48 md:h-64 lg:h-72 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-auto h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
