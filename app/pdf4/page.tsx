@@ -1,3 +1,5 @@
+import { HomeScreen, LessonScreen, CatalogScreen, CourseDetailsScreen, ProfileScreen } from "@/components/mockup-screens"
+
 export default function Pdf4Page() {
   return (
     <div className="min-h-screen bg-white">
@@ -119,22 +121,10 @@ export default function Pdf4Page() {
             </div>
             <div className="flex-1 p-8 flex gap-8">
               {/* Preview */}
-              <div className="w-48 flex-shrink-0">
-                <div className="bg-slate-100 rounded-2xl p-3 shadow-lg">
-                  <div className="bg-white rounded-xl overflow-hidden text-[6px]">
-                    <div className="bg-teal-500 h-1"></div>
-                    <div className="p-2 space-y-1">
-                      <div className="h-1 bg-slate-200 rounded w-1/2"></div>
-                      <div className="h-2 bg-amber-400 rounded"></div>
-                      <div className="h-3 bg-teal-100 rounded"></div>
-                      <div className="grid grid-cols-2 gap-1">
-                        <div className="h-3 bg-violet-100 rounded"></div>
-                        <div className="h-3 bg-blue-100 rounded"></div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="w-56 flex-shrink-0 flex items-center justify-center">
+                <div className="transform scale-[0.42] origin-top">
+                  <HomeScreen />
                 </div>
-                <p className="text-center text-xs text-slate-500 mt-2">Превью экрана</p>
               </div>
 
               {/* Description */}
@@ -179,25 +169,10 @@ export default function Pdf4Page() {
             </div>
             <div className="flex-1 p-8 flex gap-8">
               {/* Preview */}
-              <div className="w-48 flex-shrink-0">
-                <div className="bg-slate-100 rounded-2xl p-3 shadow-lg">
-                  <div className="bg-white rounded-xl overflow-hidden text-[6px]">
-                    <div className="bg-teal-500 p-2">
-                      <div className="h-1 bg-white/30 rounded mb-1"></div>
-                      <div className="h-1 bg-white/80 rounded w-1/2"></div>
-                    </div>
-                    <div className="p-2 space-y-1">
-                      <div className="h-1 bg-violet-200 rounded w-1/3"></div>
-                      <div className="h-2 bg-slate-200 rounded"></div>
-                      <div className="space-y-1">
-                        <div className="h-2 bg-slate-100 rounded border border-slate-200"></div>
-                        <div className="h-2 bg-teal-100 rounded border-2 border-teal-500"></div>
-                        <div className="h-2 bg-slate-100 rounded border border-slate-200"></div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="w-56 flex-shrink-0 flex items-center justify-center">
+                <div className="transform scale-[0.42] origin-top">
+                  <LessonScreen />
                 </div>
-                <p className="text-center text-xs text-slate-500 mt-2">Превью экрана</p>
               </div>
 
               {/* Description */}
@@ -240,49 +215,43 @@ export default function Pdf4Page() {
             </div>
           </div>
 
-          {/* Слайд 5 - Каталог ��урсов */}
+          {/* Слайд 5 - Каталог курсов */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
               <h2 className="text-2xl font-bold">Каталог курсов</h2>
             </div>
-            <div className="flex-1 p-8">
-              <div className="grid grid-cols-2 gap-8 h-full">
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Компоненты экрана</h3>
-                  <div className="space-y-3">
-                    <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-800 mb-1">Поиск</h4>
-                      <p className="text-sm text-slate-600">Input field с иконкой, placeholder</p>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-800 mb-1">Фильтры</h4>
-                      <p className="text-sm text-slate-600">Горизонтальный scroll chips: Все, Программирование, Языки, Дизайн</p>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-800 mb-1">Карточки курсов</h4>
-                      <p className="text-sm text-slate-600">Gradient hero / white cards, badge, emoji, rating, price/status</p>
-                    </div>
+            <div className="flex-1 p-8 flex gap-8">
+              {/* Preview */}
+              <div className="w-56 flex-shrink-0 flex items-center justify-center">
+                <div className="transform scale-[0.42] origin-top">
+                  <CatalogScreen />
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-slate-900 mb-4">Компоненты экрана</h3>
+                <div className="space-y-3">
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-800 mb-1">Поиск</h4>
+                    <p className="text-sm text-slate-600">Input field с иконкой, placeholder</p>
+                  </div>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-800 mb-1">Фильтры</h4>
+                    <p className="text-sm text-slate-600">Горизонтальный scroll chips: Все, Программирование, Языки, Дизайн</p>
+                  </div>
+                  <div className="bg-slate-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-slate-800 mb-1">Карточки курсов</h4>
+                    <p className="text-sm text-slate-600">Gradient hero / white cards, badge, emoji, rating, price/status</p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Типы карточек</h3>
-                  <div className="space-y-3">
-                    <div className="bg-gradient-to-r from-teal-500 to-emerald-600 rounded-lg p-4 text-white">
-                      <div className="flex justify-between items-start mb-2">
-                        <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">Популярное</span>
-                        <span>🐍</span>
-                      </div>
-                      <p className="font-semibold">Featured Card</p>
-                      <p className="text-xs text-white/80">Градиентный фон, акцентная</p>
-                    </div>
-                    <div className="bg-white border border-slate-200 rounded-lg p-4">
-                      <div className="flex justify-between items-start mb-2">
-                        <span className="text-xs bg-violet-100 text-violet-700 px-2 py-0.5 rounded-full">Новинка</span>
-                        <span>🇬🇧</span>
-                      </div>
-                      <p className="font-semibold text-slate-900">Standard Card</p>
-                      <p className="text-xs text-slate-500">Белый фон, обычная</p>
-                    </div>
+                <h3 className="text-lg font-semibold text-slate-900 mt-4 mb-3">Типы карточек</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-gradient-to-r from-teal-500 to-emerald-600 rounded-lg p-3 text-white">
+                    <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full">Популярное</span>
+                    <p className="font-semibold text-sm mt-1">Featured Card</p>
+                  </div>
+                  <div className="bg-white border border-slate-200 rounded-lg p-3">
+                    <span className="text-xs bg-violet-100 text-violet-700 px-2 py-0.5 rounded-full">Новинка</span>
+                    <p className="font-semibold text-slate-900 text-sm mt-1">Standard Card</p>
                   </div>
                 </div>
               </div>
@@ -297,54 +266,60 @@ export default function Pdf4Page() {
             <div className="bg-slate-800 text-white px-8 py-4">
               <h2 className="text-2xl font-bold">Экран деталей курса</h2>
             </div>
-            <div className="flex-1 p-8">
-              <div className="grid grid-cols-3 gap-6 h-full">
-                <div className="space-y-4">
-                  <h3 className="text-sm font-semibold text-slate-500 uppercase">Hero-секция</h3>
-                  <div className="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-xl p-4 text-white text-center">
-                    <span className="text-3xl block mb-2">🐍</span>
-                    <p className="font-bold">Python</p>
-                    <p className="text-xs text-white/70">Gradient header с emoji</p>
-                  </div>
-                  <p className="text-sm text-slate-600">Back / Like кнопки, название курса, подзаголовок</p>
+            <div className="flex-1 p-8 flex gap-8">
+              {/* Preview */}
+              <div className="w-56 flex-shrink-0 flex items-center justify-center">
+                <div className="transform scale-[0.42] origin-top">
+                  <CourseDetailsScreen />
                 </div>
-                <div className="space-y-4">
-                  <h3 className="text-sm font-semibold text-slate-500 uppercase">Статистика</h3>
-                  <div className="grid grid-cols-3 gap-2">
-                    <div className="bg-slate-50 rounded-lg p-3 text-center">
-                      <p className="text-lg font-bold text-slate-900">24</p>
-                      <p className="text-xs text-slate-500">урока</p>
+              </div>
+              <div className="flex-1">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <h3 className="text-sm font-semibold text-slate-500 uppercase">Hero-секция</h3>
+                    <div className="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-xl p-3 text-white text-center">
+                      <span className="text-2xl block mb-1">🐍</span>
+                      <p className="font-bold text-sm">Python</p>
+                      <p className="text-xs text-white/70">Gradient header</p>
                     </div>
-                    <div className="bg-slate-50 rounded-lg p-3 text-center">
-                      <p className="text-lg font-bold text-slate-900">6ч</p>
-                      <p className="text-xs text-slate-500">контента</p>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-3 text-center">
-                      <p className="text-lg font-bold text-amber-500">4.9</p>
-                      <p className="text-xs text-slate-500">рейтинг</p>
+                    <p className="text-xs text-slate-600">Back / Like кнопки, название курса</p>
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-sm font-semibold text-slate-500 uppercase">Статистика</h3>
+                    <div className="grid grid-cols-3 gap-1">
+                      <div className="bg-slate-50 rounded-lg p-2 text-center">
+                        <p className="text-sm font-bold text-slate-900">24</p>
+                        <p className="text-[10px] text-slate-500">урока</p>
+                      </div>
+                      <div className="bg-slate-50 rounded-lg p-2 text-center">
+                        <p className="text-sm font-bold text-slate-900">6ч</p>
+                        <p className="text-[10px] text-slate-500">контента</p>
+                      </div>
+                      <div className="bg-slate-50 rounded-lg p-2 text-center">
+                        <p className="text-sm font-bold text-amber-500">4.9</p>
+                        <p className="text-[10px] text-slate-500">рейтинг</p>
+                      </div>
                     </div>
                   </div>
-                  <p className="text-sm text-slate-600">3-колоночная статистика с иконками/числами</p>
                 </div>
-                <div className="space-y-4">
-                  <h3 className="text-sm font-semibold text-slate-500 uppercase">Программа</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2 bg-emerald-50 rounded-lg p-2">
-                      <div className="w-5 h-5 bg-emerald-500 rounded-full flex items-center justify-center">
-                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7"/></svg>
+                <div className="mt-4 space-y-3">
+                  <h3 className="text-sm font-semibold text-slate-500 uppercase">Программа курса</h3>
+                  <div className="flex gap-2">
+                    <div className="flex items-center gap-1 bg-emerald-50 rounded-lg p-2">
+                      <div className="w-4 h-4 bg-emerald-500 rounded-full flex items-center justify-center">
+                        <svg className="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7"/></svg>
                       </div>
                       <span className="text-xs">Пройдено</span>
                     </div>
-                    <div className="flex items-center gap-2 bg-teal-50 border-2 border-teal-300 rounded-lg p-2">
-                      <div className="w-5 h-5 bg-teal-500 rounded-full text-white text-xs flex items-center justify-center font-bold">2</div>
+                    <div className="flex items-center gap-1 bg-teal-50 border-2 border-teal-300 rounded-lg p-2">
+                      <div className="w-4 h-4 bg-teal-500 rounded-full text-white text-[8px] flex items-center justify-center font-bold">2</div>
                       <span className="text-xs">В процессе</span>
                     </div>
-                    <div className="flex items-center gap-2 bg-slate-50 rounded-lg p-2">
-                      <div className="w-5 h-5 bg-slate-300 rounded-full text-white text-xs flex items-center justify-center font-bold">3</div>
+                    <div className="flex items-center gap-1 bg-slate-50 rounded-lg p-2">
+                      <div className="w-4 h-4 bg-slate-300 rounded-full text-white text-[8px] flex items-center justify-center font-bold">3</div>
                       <span className="text-xs">Заблокировано</span>
                     </div>
                   </div>
-                  <p className="text-sm text-slate-600">Accordion с состояниями модулей</p>
                 </div>
               </div>
             </div>
@@ -358,55 +333,52 @@ export default function Pdf4Page() {
             <div className="bg-slate-800 text-white px-8 py-4">
               <h2 className="text-2xl font-bold">Экран профиля</h2>
             </div>
-            <div className="flex-1 p-8">
-              <div className="grid grid-cols-2 gap-8 h-full">
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Структура профиля</h3>
-                  <div className="space-y-3">
-                    <div className="bg-gradient-to-r from-teal-100 to-emerald-100 rounded-lg p-4">
-                      <h4 className="font-semibold text-teal-800 mb-1">Аватар и имя</h4>
-                      <p className="text-sm text-slate-600">Круглый аватар с gradient, имя, дата регистрации</p>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-800 mb-1">Статистика</h4>
-                      <p className="text-sm text-slate-600">3 карточки: Streak, XP, Курсы — с emoji и цветами</p>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-800 mb-1">Достижения</h4>
-                      <p className="text-sm text-slate-600">Горизонтальный ряд badges с emoji</p>
-                    </div>
-                    <div className="bg-slate-50 rounded-lg p-4">
-                      <h4 className="font-semibold text-slate-800 mb-1">Меню настроек</h4>
-                      <p className="text-sm text-slate-600">List items с иконками и chevron</p>
-                    </div>
+            <div className="flex-1 p-8 flex gap-8">
+              {/* Preview */}
+              <div className="w-56 flex-shrink-0 flex items-center justify-center">
+                <div className="transform scale-[0.42] origin-top">
+                  <ProfileScreen />
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-slate-900 mb-4">Структура профиля</h3>
+                <div className="space-y-3 mb-4">
+                  <div className="bg-gradient-to-r from-teal-100 to-emerald-100 rounded-lg p-3">
+                    <h4 className="font-semibold text-teal-800 mb-1 text-sm">Аватар и имя</h4>
+                    <p className="text-xs text-slate-600">Круглый аватар с gradient, имя, дата регистрации</p>
+                  </div>
+                  <div className="bg-slate-50 rounded-lg p-3">
+                    <h4 className="font-semibold text-slate-800 mb-1 text-sm">Статистика</h4>
+                    <p className="text-xs text-slate-600">3 карточки: Streak, XP, Курсы — с emoji и цветами</p>
+                  </div>
+                  <div className="bg-slate-50 rounded-lg p-3">
+                    <h4 className="font-semibold text-slate-800 mb-1 text-sm">Достижения</h4>
+                    <p className="text-xs text-slate-600">Горизонтальный ряд badges с emoji</p>
                   </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Геймификация</h3>
-                  <div className="grid grid-cols-3 gap-3 mb-6">
-                    <div className="bg-amber-50 rounded-xl p-3 text-center">
-                      <p className="text-2xl mb-1">🔥</p>
-                      <p className="font-bold text-amber-600">12</p>
-                      <p className="text-xs text-slate-500">Серия</p>
-                    </div>
-                    <div className="bg-teal-50 rounded-xl p-3 text-center">
-                      <p className="text-2xl mb-1">⚡</p>
-                      <p className="font-bold text-teal-600">1,847</p>
-                      <p className="text-xs text-slate-500">XP</p>
-                    </div>
-                    <div className="bg-violet-50 rounded-xl p-3 text-center">
-                      <p className="text-2xl mb-1">📚</p>
-                      <p className="font-bold text-violet-600">5</p>
-                      <p className="text-xs text-slate-500">Курсов</p>
-                    </div>
+                <h3 className="text-lg font-semibold text-slate-900 mb-3">Геймификация</h3>
+                <div className="grid grid-cols-3 gap-2 mb-4">
+                  <div className="bg-amber-50 rounded-xl p-2 text-center">
+                    <p className="text-lg mb-0.5">🔥</p>
+                    <p className="font-bold text-amber-600 text-sm">12</p>
+                    <p className="text-[10px] text-slate-500">Серия</p>
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-3">Достижения</h3>
-                  <div className="flex gap-2">
-                    <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-xl">🏆</div>
-                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-xl">⚡</div>
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-xl">🎯</div>
-                    <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center text-xl">🌟</div>
+                  <div className="bg-teal-50 rounded-xl p-2 text-center">
+                    <p className="text-lg mb-0.5">⚡</p>
+                    <p className="font-bold text-teal-600 text-sm">1,847</p>
+                    <p className="text-[10px] text-slate-500">XP</p>
                   </div>
+                  <div className="bg-violet-50 rounded-xl p-2 text-center">
+                    <p className="text-lg mb-0.5">📚</p>
+                    <p className="font-bold text-violet-600 text-sm">5</p>
+                    <p className="text-[10px] text-slate-500">Курсов</p>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <div className="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center text-base">🏆</div>
+                  <div className="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-base">⚡</div>
+                  <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-base">🎯</div>
+                  <div className="w-10 h-10 bg-violet-100 rounded-xl flex items-center justify-center text-base">🌟</div>
                 </div>
               </div>
             </div>

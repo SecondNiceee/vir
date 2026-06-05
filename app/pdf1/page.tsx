@@ -91,7 +91,7 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 2: Целевая аудитория</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
+            <div className="flex-1 p-4 sm:p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full">
                 <div className="bg-violet-50 rounded-xl p-3 sm:p-4 border border-violet-100 flex flex-col h-full">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-violet-200 rounded-full flex items-center justify-center mb-2 sm:mb-3">
@@ -138,8 +138,8 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 2: Пользовательские сценарии</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+            <div className="flex-1 p-4 sm:p-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 w-full">
                 <div className="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200">
                   <div className="flex items-center gap-3 mb-2 sm:mb-3">
                     <span className="w-7 h-7 sm:w-8 sm:h-8 bg-violet-100 rounded-full flex items-center justify-center font-bold text-violet-700 text-sm">1</span>
@@ -193,7 +193,7 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Анализ аналогов — Duolingo</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
+            <div className="flex-1 p-4 sm:p-6">
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
@@ -236,7 +236,7 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Анализ аналогов — Stepic</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
+            <div className="flex-1 p-4 sm:p-6">
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
@@ -279,7 +279,7 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Анализ аналогов — Sololearn</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
+            <div className="flex-1 p-4 sm:p-6">
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
@@ -322,7 +322,7 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Сравнительная таблица аналогов</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6 overflow-x-auto flex items-center">
+            <div className="flex-1 p-4 sm:p-6 overflow-x-auto">
               <table className="w-full text-xs sm:text-sm">
                 <thead>
                   <tr className="border-b-2 border-slate-200">
@@ -367,8 +367,8 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 5: Выводы</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+            <div className="flex-1 p-4 sm:p-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 w-full">
                 <div className="bg-green-50 rounded-xl p-4 sm:p-6 border border-green-200">
                   <h3 className="font-bold text-green-800 mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -405,8 +405,8 @@ export default function Pdf1Page() {
             <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
               <h2 className="text-lg sm:text-2xl font-bold">Этап 5: Проектные ориентиры LearnUp</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex items-center">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 w-full">
+            <div className="flex-1 p-4 sm:p-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 w-full">
                 <div className="bg-violet-50 rounded-xl p-4 sm:p-5 border border-violet-200">
                   <h3 className="font-bold text-violet-800 mb-3 sm:mb-4 text-sm sm:text-base">Основные функции</h3>
                   <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-violet-700">
