@@ -22,8 +22,8 @@ export default function Pdf2Page() {
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
+          <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+            <div className="flex flex-col items-center justify-center text-white p-6">
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
@@ -46,11 +46,11 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 2 - Уточнение сценария */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 1: Уточнение пользовательского сценария</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 1: Уточнение пользовательского сценария</h2>
             </div>
-            <div className="flex-1 p-8 flex flex-col justify-center">
+            <div className="p-5 flex flex-col justify-center">
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Главная цель пользователя</h3>
@@ -97,11 +97,11 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 3 - Список экранов */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 2: Формирование списка экранов</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 2: Формирование списка экранов</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-6 gap-4">
                 <div className="bg-amber-50 rounded-xl p-3 border border-amber-100">
                   <h4 className="font-semibold text-amber-800 text-sm mb-2">Онбординг</h4>
@@ -182,11 +182,11 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 4 - Тип навигации */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 3: Проектирование навигации</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 3: Проектирование навигации</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Выбранный тип: Tab Bar</h3>
@@ -258,11 +258,11 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 5 - User Flow */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 4: User Flow — Основной сценарий</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 4: User Flow — Основной сценарий</h2>
             </div>
-            <div className="flex-1 p-8 flex items-center">
+            <div className="p-5 flex items-center">
               <div className="w-full">
                 <div className="flex items-center justify-between gap-2">
                   <div className="flex-1 bg-violet-100 rounded-xl p-4 text-center">
@@ -318,9 +318,9 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 6 - Lo-Fi Главная и Каталог */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 5: Lo-Fi прототипы — Главная и Каталог</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 5: Lo-Fi прототипы — Главная и Каталог</h2>
             </div>
             <div className="flex-1 p-8 flex items-center justify-center gap-12">
               {/* Главная */}
@@ -394,9 +394,9 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 7 - Lo-Fi Урок и Результат */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 5: Lo-Fi прототипы — Урок и Результат</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 5: Lo-Fi прототипы — Урок и Результат</h2>
             </div>
             <div className="flex-1 p-8 flex items-center justify-center gap-12">
               {/* Урок */}
@@ -469,9 +469,9 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 8 - Lo-Fi Профиль и Прогресс */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 5: Lo-Fi прототипы — Профиль и Прогресс</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 5: Lo-Fi прототипы — Профиль и Прогресс</h2>
             </div>
             <div className="flex-1 p-8 flex items-center justify-center gap-12">
               {/* Профиль */}
@@ -541,11 +541,11 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 9 - Анализ и корректировки */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 7: Анализ и корректировки</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 7: Анализ и корректировки</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div className="bg-green-50 rounded-xl p-6 border border-green-200">
                   <h3 className="font-bold text-green-800 mb-4 flex items-center gap-2">
@@ -581,11 +581,11 @@ export default function Pdf2Page() {
           </div>
 
           {/* Слайд 10 - Итоги и следующий этап */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Итоги и следующий этап</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Итоги и следующий этап</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-3 gap-6 h-full">
                 <div className="bg-violet-50 rounded-xl p-5 border border-violet-200">
                   <h3 className="font-bold text-violet-800 mb-4">Результаты ПЗ №2</h3>

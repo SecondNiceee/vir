@@ -24,8 +24,8 @@ export default function Pdf4Page() {
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
+          <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+            <div className="flex flex-col items-center justify-center text-white p-6">
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
@@ -48,11 +48,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 2 - Цели и задачи */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 1: Цели и задачи Hi-Fi проектирования</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 1: Цели и задачи Hi-Fi проектирования</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Цель работы</h3>
@@ -115,11 +115,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 3 - Главный экран */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Главный экран (Home)</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Главный экран (Home)</h2>
             </div>
-            <div className="flex-1 p-8 flex gap-8">
+            <div className="p-5 flex gap-6">
               {/* Preview */}
               <div className="w-56 flex-shrink-0 flex items-center justify-center">
                 <div className="transform scale-[0.42] origin-top">
@@ -163,11 +163,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 4 - Экран урока */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Экран прохождения урока</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Экран прохождения урока</h2>
             </div>
-            <div className="flex-1 p-8 flex gap-8">
+            <div className="p-5 flex gap-6">
               {/* Preview */}
               <div className="w-56 flex-shrink-0 flex items-center justify-center">
                 <div className="transform scale-[0.42] origin-top">
@@ -216,11 +216,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 5 - Каталог курсов */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Каталог курсов</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Каталог курсов</h2>
             </div>
-            <div className="flex-1 p-8 flex gap-8">
+            <div className="p-5 flex gap-6">
               {/* Preview */}
               <div className="w-56 flex-shrink-0 flex items-center justify-center">
                 <div className="transform scale-[0.42] origin-top">
@@ -262,11 +262,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 6 - Детали курса */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Экран деталей курса</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Экран деталей курса</h2>
             </div>
-            <div className="flex-1 p-8 flex gap-8">
+            <div className="p-5 flex gap-6">
               {/* Preview */}
               <div className="w-56 flex-shrink-0 flex items-center justify-center">
                 <div className="transform scale-[0.42] origin-top">
@@ -329,11 +329,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 7 - Профиль */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Экран профиля</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Экран профиля</h2>
             </div>
-            <div className="flex-1 p-8 flex gap-8">
+            <div className="p-5 flex gap-6">
               {/* Preview */}
               <div className="w-56 flex-shrink-0 flex items-center justify-center">
                 <div className="transform scale-[0.42] origin-top">
@@ -388,11 +388,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 8 - Сервисные состояния */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Сервисные состояния</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Сервисные состояния</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-3 gap-6 h-full">
                 {/* Success */}
                 <div className="bg-emerald-50 rounded-xl p-6 text-center flex flex-col items-center justify-center">
@@ -431,11 +431,11 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 9 - Визуальная иерархия */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Визуальная иерархия и согласованность</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Визуальная иерархия и согласованность</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Принципы иерархии</h3>
@@ -496,7 +496,7 @@ export default function Pdf4Page() {
           </div>
 
           {/* Слайд 10 - Итоги */}
-          <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+          <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
             <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
               <h1 className="text-3xl font-bold mb-6 text-center">Итоги ПЗ №4</h1>
               <div className="grid grid-cols-3 gap-6 mb-8">
