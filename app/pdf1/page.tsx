@@ -167,7 +167,7 @@ export default function Pdf1Page() {
                     <span className="w-7 h-7 sm:w-8 sm:h-8 bg-amber-100 rounded-full flex items-center justify-center font-bold text-amber-700 text-sm">3</span>
                     <h4 className="font-semibold text-slate-900 text-sm sm:text-base">Поиск курса</h4>
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-600">Каталог → Фильтры → Отзывы и программа → Добавление в избранное</p>
+                  <p className="text-xs sm:text-sm text-slate-600">Каталог → Фил��тры → Отзывы и программа → Добавление в избранное</p>
                   <div className="mt-2 sm:mt-3 flex flex-wrap gap-2">
                     <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs rounded">Каталог</span>
                     <span className="px-2 py-1 bg-amber-100 text-amber-700 text-xs rounded">Фильтрация</span>
@@ -224,8 +224,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-44 h-48 md:h-auto bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
-                  <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-full object-cover" />
+                <div className="w-full md:w-72 lg:w-80 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                  <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-full object-contain" />
                 </div>
               </div>
             </div>
@@ -267,8 +267,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-44 h-48 md:h-auto bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
-                  <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-full w-full object-cover" />
+                <div className="w-full md:w-72 lg:w-80 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                  <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-full w-full object-contain" />
                 </div>
               </div>
             </div>
@@ -310,8 +310,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-44 h-48 md:h-auto bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
-                  <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-full object-cover" />
+                <div className="w-full md:w-72 lg:w-80 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                  <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-full object-contain" />
                 </div>
               </div>
             </div>
@@ -372,13 +372,13 @@ export default function Pdf1Page() {
                 <div className="bg-green-50 rounded-xl p-4 sm:p-6 border border-green-200">
                   <h3 className="font-bold text-green-800 mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    Удачные решения для внедрения
+                    ��дачные решения для внедрения
                   </h3>
                   <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-green-800">
                     <li>1. Геймификация: серии, достижения, рейтинги</li>
                     <li>2. Микроуроки 5-15 минут</li>
                     <li>3. Персонализированный онбординг</li>
-                    <li>4. Задания с автопроверкой</li>
+                    <li>4. Задания с авто��роверкой</li>
                     <li>5. Офлайн-режим</li>
                     <li>6. Визуализация прогресса</li>
                   </ul>
