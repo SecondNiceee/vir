@@ -224,7 +224,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-auto h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-auto h-48 md:h-[90%] flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
@@ -377,7 +377,7 @@ export default function Pdf1Page() {
                   <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-green-800">
                     <li>1. Геймификация: серии, достижения, рейтинги</li>
                     <li>2. Микроуроки 5-15 минут</li>
-                    <li>3. Персонализированный онбординг</li>
+                    <li>3. Персонализированный онбор��инг</li>
                     <li>4. Задания с авто��роверкой</li>
                     <li>5. Офлайн-режим</li>
                     <li>6. Визуализация прогресса</li>
