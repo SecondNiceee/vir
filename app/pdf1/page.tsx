@@ -10,7 +10,7 @@ export default function Pdf1Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
+              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
               <a href="/figma1" className="text-sm text-blue-400 hover:text-blue-300">Figma-контент</a>
             </div>
           </div>
@@ -39,9 +39,9 @@ export default function Pdf1Page() {
                 <p className="font-medium">Подготовил: Титов Николай</p>
                 <p>ТКБО-02-23</p>
               </div>
-            </div>
-            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm print:hidden">
-              Слайд 1 из 10 — Титульный (замени на шаблон СДО)
+              <div className="mt-6 text-sm text-white/70">
+                <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
+              </div>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 2 из 10 — Выбор темы
+              Выбор темы
             </div>
           </div>
 
@@ -135,7 +135,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 3 из 10 — Целевая аудитория
+              Целевая аудитория
             </div>
           </div>
 
@@ -193,7 +193,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 4 из 10 — Пользовательские сценарии
+              Пользовательские сценарии
             </div>
           </div>
 
@@ -239,7 +239,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 5 из 10 — Анализ Duolingo
+              Анализ Duolingo
             </div>
           </div>
 
@@ -285,7 +285,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 6 из 10 — Анализ Stepic
+              Анализ Stepic
             </div>
           </div>
 
@@ -379,7 +379,7 @@ export default function Pdf1Page() {
               </table>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 7 из 10 — Сравнительная таблица
+              Сравнительная таблица
             </div>
           </div>
 
@@ -420,7 +420,7 @@ export default function Pdf1Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 9 из 10 — Выводы
+              Выводы
             </div>
           </div>
 
@@ -464,8 +464,8 @@ export default function Pdf1Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 10 из 10 — Проектные ориентиры
+            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm">
+              <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-700">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
             </div>
           </div>
 

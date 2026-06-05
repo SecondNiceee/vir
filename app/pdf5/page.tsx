@@ -10,7 +10,7 @@ export default function Pdf5Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
+              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
               <a href="/figma5" className="text-sm text-rose-400 hover:text-rose-300">Figma-контент</a>
             </div>
           </div>
@@ -40,9 +40,9 @@ export default function Pdf5Page() {
                 <p className="font-medium">Подготовил: Титов Николай</p>
                 <p>ТКБО-02-23</p>
               </div>
-            </div>
-            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm print:hidden">
-              Слайд 1 из 10 — Титульный (замени на шаблон СДО)
+              <div className="mt-6 text-sm text-white/70">
+                <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
+              </div>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 2 из 10 — Цели и задачи
+              Цели и задачи
             </div>
           </div>
 
@@ -154,7 +154,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 3 из 10 — Основной сценарий
+              Основной сценарий
             </div>
           </div>
 
@@ -235,7 +235,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 4 из 10 — Альтернативные сценарии
+              Альтернативные сценарии
             </div>
           </div>
 
@@ -296,7 +296,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 5 из 10 — Типы переходов
+              Типы переходов
             </div>
           </div>
 
@@ -381,7 +381,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 6 из 10 — Интерактивные состояния
+              Интерактивные состояния
             </div>
           </div>
 
@@ -447,7 +447,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 7 из 10 — Карта экранов
+              Карта экранов
             </div>
           </div>
 
@@ -495,7 +495,7 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 8 из 10 — Тестирование
+              Тестирование
             </div>
           </div>
 
@@ -521,7 +521,7 @@ export default function Pdf5Page() {
               </p>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 9 из 10 — Демонстрация
+              Демонстрация
             </div>
           </div>
 
@@ -567,8 +567,8 @@ export default function Pdf5Page() {
               </div>
               <p className="text-xl font-semibold">Спасибо за внимание!</p>
             </div>
-            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm print:hidden">
-              Слайд 10 из 10 — Итоги
+            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm">
+              <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
             </div>
           </div>
 
