@@ -84,9 +84,6 @@ export default function Pdf1Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Выбор темы
-            </div>
           </div>
 
           {/* Слайд 3 */}
@@ -133,9 +130,6 @@ export default function Pdf1Page() {
                   <p className="text-xs text-rose-600 mt-2">Базовая цифр. грамотность</p>
                 </div>
               </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Целевая аудитория
             </div>
           </div>
 
@@ -192,9 +186,6 @@ export default function Pdf1Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Пользовательские сценарии
-            </div>
           </div>
 
           {/* Слайд 5 */}
@@ -237,9 +228,6 @@ export default function Pdf1Page() {
                   <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-full object-cover" />
                 </div>
               </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Анализ Duolingo
             </div>
           </div>
 
@@ -284,9 +272,6 @@ export default function Pdf1Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Анализ Stepic
-            </div>
           </div>
 
           {/* Слайд 6.1 — Sololearn */}
@@ -329,9 +314,6 @@ export default function Pdf1Page() {
                   <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-full object-cover" />
                 </div>
               </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 6.1 из 10 — Анализ Sololearn
             </div>
           </div>
 
@@ -378,9 +360,6 @@ export default function Pdf1Page() {
                 </tbody>
               </table>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Сравнительная таблица
-            </div>
           </div>
 
           {/* Слайд 8 */}
@@ -418,9 +397,6 @@ export default function Pdf1Page() {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Выводы
             </div>
           </div>
 
@@ -463,9 +439,6 @@ export default function Pdf1Page() {
                   </ul>
                 </div>
               </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm">
-              <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-700">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
             </div>
           </div>
 
