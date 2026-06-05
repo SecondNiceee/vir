@@ -224,7 +224,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-72 lg:w-80 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-72 lg:w-80 h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-full object-contain" />
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-72 lg:w-80 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-72 lg:w-80 h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-full w-full object-contain" />
                 </div>
               </div>
@@ -310,7 +310,7 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-72 lg:w-80 flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                <div className="w-full md:w-72 lg:w-80 h-48 md:h-full flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
                   <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-full object-contain" />
                 </div>
               </div>
