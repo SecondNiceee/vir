@@ -22,8 +22,8 @@ export default function Pdf5Page() {
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
+          <div className="bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+            <div className="flex flex-col items-center justify-center text-white p-6">
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
@@ -47,11 +47,11 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 2 - Цели */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Цели и задачи прототипирования</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Цели и задачи прототипирования</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Цель работы</h3>
@@ -105,16 +105,16 @@ export default function Pdf5Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Цели и задачи
+              Цели �� задачи
             </div>
           </div>
 
           {/* Слайд 3 - Основной сценарий */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Основной сценарий: Прохождение урока</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Основной сценарий: Прохождение урока</h2>
             </div>
-            <div className="flex-1 p-8 flex flex-col justify-center">
+            <div className="p-5 flex flex-col justify-center">
               <div className="flex items-center justify-between gap-2">
                 <div className="bg-amber-100 text-amber-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
                   <div className="text-2xl mb-2">🏠</div>
@@ -159,11 +159,11 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 4 - Альтернативные сценарии */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Альтернативные сценарии</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Альтернативные сценарии</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-6 h-full">
                 {/* Поиск курса */}
                 <div className="bg-blue-50 rounded-xl p-5">
@@ -240,11 +240,11 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 5 - Типы переходов */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Типы переходов в Figma</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Типы переходов в Figma</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-4 gap-4 h-full">
                 <div className="bg-teal-50 rounded-xl p-4 flex flex-col">
                   <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-3">
@@ -301,11 +301,11 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 6 - Интерактивные состояния */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">��нтерактивные состояния компонентов</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">��нтерактивные состояния компонентов</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-3 gap-6 h-full">
                 {/* Кнопка */}
                 <div>
@@ -386,9 +386,9 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 7 - Карта экранов */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Карта связей между экранами</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Карта связей между экранами</h2>
             </div>
             <div className="flex-1 p-8 flex items-center justify-center">
               <div className="bg-slate-50 rounded-xl p-6 w-full max-w-3xl">
@@ -452,11 +452,11 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 8 - Тестирование */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Тестирование прототипа</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Тестирование прототипа</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-6 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Чек-лист навигации</h3>
@@ -500,9 +500,9 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 9 - Демонстрация */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Ссылка на прототип</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Ссылка на прототип</h2>
             </div>
             <div className="flex-1 p-8 flex flex-col items-center justify-center">
               <div className="w-20 h-20 bg-rose-100 rounded-2xl flex items-center justify-center mb-6">
@@ -526,7 +526,7 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 10 - Итоги */}
-          <div className="bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+          <div className="bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
             <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
               <h1 className="text-3xl font-bold mb-6 text-center">Итоги проекта LearnUp</h1>
               <div className="grid grid-cols-5 gap-4 mb-8">

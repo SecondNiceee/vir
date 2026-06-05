@@ -22,8 +22,8 @@ export default function Pdf3Page() {
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
+          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+            <div className="flex flex-col items-center justify-center text-white p-6">
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
@@ -46,11 +46,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 2 - Визуальные основы */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 1: Формирование визуальных основ</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 1: Формирование визуальных основ</h2>
             </div>
-            <div className="flex-1 p-8 flex flex-col justify-center">
+            <div className="p-5 flex flex-col justify-center">
               <h3 className="text-lg font-semibold text-slate-900 mb-6 text-center">Характер бренда LearnUp</h3>
               <div className="grid grid-cols-4 gap-6">
                 <div className="bg-gradient-to-br from-teal-50 to-emerald-50 border border-teal-100 rounded-xl p-5 text-center">
@@ -97,11 +97,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 3 - Цветовая палитра */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Цветовая палитра</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Цветовая палитра</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-sm font-semibold text-slate-500 uppercase mb-3">Primary — Teal</h3>
@@ -171,11 +171,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 4 - Типографика */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Типографика</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Типографика</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-sm font-semibold text-slate-500 uppercase mb-4">Шрифтовое семейство</h3>
@@ -230,11 +230,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 5 - Сетка и отступы */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Сетка и система отступов</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Сетка и система отступов</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-sm font-semibold text-slate-500 uppercase mb-4">Модульная сетка 8px</h3>
@@ -297,11 +297,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 6 - Кнопки */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 2-3: Компоненты — Кнопки</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 2-3: Компоненты — Кнопки</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-sm font-semibold text-slate-500 uppercase mb-4">Варианты кнопок</h3>
@@ -376,11 +376,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 7 - Формы */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Компоненты — Формы ввода</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Компоненты — Формы ввода</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <h3 className="text-sm font-semibold text-slate-500 uppercase">Ти��ы полей</h3>
@@ -422,11 +422,11 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 8 - Карточки */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Компоненты — Карточки</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Компоненты — Карточки</h2>
             </div>
-            <div className="flex-1 p-8">
+            <div className="p-5">
               <div className="grid grid-cols-3 gap-6 h-full">
                 {/* Course Card */}
                 <div className="space-y-2">
@@ -500,9 +500,9 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 9 - Пример экрана */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-8 py-4">
-              <h2 className="text-2xl font-bold">Этап 5: Проверка на применимость</h2>
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Этап 5: Проверка на применимость</h2>
             </div>
             <div className="flex-1 p-8 flex gap-8">
               <div className="flex-1 flex items-center justify-center">
@@ -619,7 +619,7 @@ export default function Pdf3Page() {
           </div>
 
           {/* Слайд 10 - Итоги */}
-          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-xl overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+          <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
             <div className="flex-1 p-12 flex flex-col justify-center text-white">
               <h2 className="text-3xl font-bold mb-8 text-center">Итоги и следующий этап</h2>
               
