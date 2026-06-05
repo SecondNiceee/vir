@@ -10,7 +10,7 @@ export default function Pdf4Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.figma.com/design/ifMj7wi9kSg8EiXMrfjmYS/Untitled?node-id=0-1&t=a26HOJN8i9Mb3mqx-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
+              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
               <a href="/figma4" className="text-sm text-emerald-400 hover:text-emerald-300">Figma-контент</a>
             </div>
           </div>
@@ -39,9 +39,9 @@ export default function Pdf4Page() {
                 <p className="font-medium">Подготовил: Титов Николай</p>
                 <p>ТКБО-02-23</p>
               </div>
-            </div>
-            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm print:hidden">
-              Слайд 1 из 10 — Титульный (замени на шаблон СДО)
+              <div className="mt-6 text-sm text-white/70">
+                <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
+              </div>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 2 из 10 — Цели и задачи
+              Цели и задачи
             </div>
           </div>
 
@@ -168,7 +168,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 3 из 10 — Главный экран
+              Главный экран
             </div>
           </div>
 
@@ -236,11 +236,11 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 4 из 10 — Экран урока
+              Экран урока
             </div>
           </div>
 
-          {/* Слайд 5 - Каталог курсов */}
+          {/* Слайд 5 - Каталог ��урсов */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-8 py-4">
               <h2 className="text-2xl font-bold">Каталог курсов</h2>
@@ -288,7 +288,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 5 из 10 — Каталог курсов
+              Каталог курсов
             </div>
           </div>
 
@@ -349,7 +349,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 6 из 10 — Детали курса
+              Детали курса
             </div>
           </div>
 
@@ -411,7 +411,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 7 из 10 — Профиль
+              Профиль
             </div>
           </div>
 
@@ -454,7 +454,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 8 из 10 — Сервисные состояния
+              Сервисные состояния
             </div>
           </div>
 
@@ -519,7 +519,7 @@ export default function Pdf4Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Слайд 9 из 10 — Визуальная иерархия
+              Визуальная иерархия
             </div>
           </div>
 
@@ -546,8 +546,8 @@ export default function Pdf4Page() {
                 <p className="text-xl font-semibold">ПЗ №5 — Интерактивный прототип и презентация</p>
               </div>
             </div>
-            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm print:hidden">
-              Слайд 10 из 10 — Итоги
+            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm">
+              <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
             </div>
           </div>
 
