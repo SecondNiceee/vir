@@ -107,9 +107,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Цели и задачи
-            </div>
+
           </div>
 
           {/* Слайд 3 - Главный экран */}
@@ -167,9 +165,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Главный экран
-            </div>
+
           </div>
 
           {/* Слайд 4 - Экран урока */}
@@ -235,9 +231,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Экран урока
-            </div>
+
           </div>
 
           {/* Слайд 5 - Каталог ��урсов */}
@@ -287,9 +281,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Каталог курсов
-            </div>
+
           </div>
 
           {/* Слайд 6 - Детали курса */}
@@ -348,9 +340,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Детали курса
-            </div>
+
           </div>
 
           {/* Слайд 7 - Профиль */}
@@ -410,9 +400,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Профиль
-            </div>
+
           </div>
 
           {/* Слайд 8 - Сервисные состояния */}
@@ -453,9 +441,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Сервисные состояния
-            </div>
+
           </div>
 
           {/* Слайд 9 - Визуальная иерархия */}
@@ -518,9 +504,7 @@ export default function Pdf4Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Визуальная иерархия
-            </div>
+
           </div>
 
           {/* Слайд 10 - Итоги */}

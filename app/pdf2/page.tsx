@@ -91,9 +91,7 @@ export default function Pdf2Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Уточнение сценария
-            </div>
+
           </div>
 
           {/* Слайд 3 - Список экранов */}
@@ -176,9 +174,7 @@ export default function Pdf2Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Список экранов
-            </div>
+
           </div>
 
           {/* Слайд 4 - Тип навигации */}
@@ -252,9 +248,7 @@ export default function Pdf2Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Тип навигации
-            </div>
+
           </div>
 
           {/* Слайд 5 - User Flow */}
@@ -312,9 +306,7 @@ export default function Pdf2Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              User Flow
-            </div>
+
           </div>
 
           {/* Слайд 6 - Lo-Fi Главная и Каталог */}
@@ -388,9 +380,7 @@ export default function Pdf2Page() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Lo-Fi Главная и Каталог
-            </div>
+
           </div>
 
           {/* Слайд 7 - Lo-Fi Урок и Результат */}
@@ -463,9 +453,7 @@ export default function Pdf2Page() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Lo-Fi Урок и Результат
-            </div>
+
           </div>
 
           {/* Слайд 8 - Lo-Fi Профиль и Прогресс */}
@@ -535,9 +523,7 @@ export default function Pdf2Page() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Lo-Fi Профиль и Прогресс
-            </div>
+
           </div>
 
           {/* Слайд 9 - Анализ и корректировки */}
@@ -575,9 +561,7 @@ export default function Pdf2Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Анализ и корректировки
-            </div>
+
           </div>
 
           {/* Слайд 10 - Итоги и следующий этап */}

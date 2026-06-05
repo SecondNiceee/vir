@@ -91,9 +91,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Визуальные основы
-            </div>
+
           </div>
 
           {/* Слайд 3 - Цветовая палитра */}
@@ -165,9 +163,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Цветовая палитра
-            </div>
+
           </div>
 
           {/* Слайд 4 - Типографика */}
@@ -224,9 +220,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Типографика
-            </div>
+
           </div>
 
           {/* Слайд 5 - Сетка и отступы */}
@@ -291,9 +285,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Сетка и отступы
-            </div>
+
           </div>
 
           {/* Слайд 6 - Кнопки */}
@@ -370,9 +362,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Кнопки
-            </div>
+
           </div>
 
           {/* Слайд 7 - Формы */}
@@ -416,9 +406,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Формы ввода
-            </div>
+
           </div>
 
           {/* Слайд 8 - Карточки */}
@@ -494,9 +482,7 @@ export default function Pdf3Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Карточки
-            </div>
+
           </div>
 
           {/* Слайд 9 - Пример экрана */}
@@ -613,9 +599,7 @@ export default function Pdf3Page() {
                 </ul>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Пример экрана
-            </div>
+
           </div>
 
           {/* Слайд 10 - Итоги */}

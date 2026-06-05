@@ -104,9 +104,7 @@ export default function Pdf5Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Цели и задачи
-            </div>
+
           </div>
 
           {/* Слайд 3 - Основной сценарий */}
@@ -153,9 +151,7 @@ export default function Pdf5Page() {
                 </p>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Основной сценарий
-            </div>
+
           </div>
 
           {/* Слайд 4 - Альтернативные сценарии */}
@@ -234,9 +230,7 @@ export default function Pdf5Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Альтернативные сценарии
-            </div>
+
           </div>
 
           {/* Слайд 5 - Типы переходов */}
@@ -295,9 +289,7 @@ export default function Pdf5Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Типы переходов
-            </div>
+
           </div>
 
           {/* Слайд 6 - Интерактивные состояния */}
@@ -380,9 +372,7 @@ export default function Pdf5Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Интерактивные состояния
-            </div>
+
           </div>
 
           {/* Слайд 7 - Карта экранов */}
@@ -446,9 +436,7 @@ export default function Pdf5Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Карта экранов
-            </div>
+
           </div>
 
           {/* Слайд 8 - Тестирование */}
@@ -494,9 +482,7 @@ export default function Pdf5Page() {
                 </div>
               </div>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Тестирование
-            </div>
+
           </div>
 
           {/* Слайд 9 - Демонстрация */}
@@ -520,9 +506,7 @@ export default function Pdf5Page() {
                 или QR-код для быстрого доступа на мобильном устройстве
               </p>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Демонстрация
-            </div>
+
           </div>
 
           {/* Слайд 10 - Итоги */}
