@@ -121,8 +121,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-56 flex-shrink-0 flex items-center justify-center">
-                <div className="transform scale-[0.42] origin-top">
+              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.35] origin-top-left">
                   <HomeScreen />
                 </div>
               </div>
@@ -169,8 +169,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-56 flex-shrink-0 flex items-center justify-center">
-                <div className="transform scale-[0.42] origin-top">
+              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.35] origin-top-left">
                   <LessonScreen />
                 </div>
               </div>
@@ -222,8 +222,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-56 flex-shrink-0 flex items-center justify-center">
-                <div className="transform scale-[0.42] origin-top">
+              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.35] origin-top-left">
                   <CatalogScreen />
                 </div>
               </div>
@@ -268,8 +268,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-56 flex-shrink-0 flex items-center justify-center">
-                <div className="transform scale-[0.42] origin-top">
+              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.35] origin-top-left">
                   <CourseDetailsScreen />
                 </div>
               </div>
@@ -335,8 +335,8 @@ export default function Pdf4Page() {
             </div>
             <div className="p-5 flex gap-6">
               {/* Preview */}
-              <div className="w-56 flex-shrink-0 flex items-center justify-center">
-                <div className="transform scale-[0.42] origin-top">
+              <div className="w-48 h-[280px] flex-shrink-0 overflow-hidden">
+                <div className="transform scale-[0.35] origin-top-left">
                   <ProfileScreen />
                 </div>
               </div>
@@ -497,25 +497,25 @@ export default function Pdf4Page() {
 
           {/* Слайд 10 - Итоги */}
           <div className="bg-gradient-to-br from-emerald-600 to-teal-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
-              <h1 className="text-3xl font-bold mb-6 text-center">Итоги ПЗ №4</h1>
-              <div className="grid grid-cols-3 gap-6 mb-8">
-                <div className="bg-white/10 rounded-xl p-4 text-center">
-                  <p className="text-3xl font-bold">6</p>
-                  <p className="text-sm text-white/70">Hi-Fi экранов</p>
+            <div className="flex flex-col items-center justify-center text-white p-6">
+              <h1 className="text-2xl font-bold mb-4 text-center">Итоги ПЗ №4</h1>
+              <div className="grid grid-cols-3 gap-4 mb-5">
+                <div className="bg-white/10 rounded-xl p-3 text-center">
+                  <p className="text-2xl font-bold">6</p>
+                  <p className="text-xs text-white/70">Hi-Fi экранов</p>
                 </div>
-                <div className="bg-white/10 rounded-xl p-4 text-center">
-                  <p className="text-3xl font-bold">3</p>
-                  <p className="text-sm text-white/70">Сервисных состояния</p>
+                <div className="bg-white/10 rounded-xl p-3 text-center">
+                  <p className="text-2xl font-bold">3</p>
+                  <p className="text-xs text-white/70">Сервисных состояния</p>
                 </div>
-                <div className="bg-white/10 rounded-xl p-4 text-center">
-                  <p className="text-3xl font-bold">100%</p>
-                  <p className="text-sm text-white/70">UI-кит применён</p>
+                <div className="bg-white/10 rounded-xl p-3 text-center">
+                  <p className="text-2xl font-bold">100%</p>
+                  <p className="text-xs text-white/70">UI-кит применён</p>
                 </div>
               </div>
               <div className="text-center">
-                <p className="text-white/80 mb-2">Следующий этап:</p>
-                <p className="text-xl font-semibold">ПЗ №5 — Интерактивный прототип и презентация</p>
+                <p className="text-white/80 text-sm mb-1">Следующий этап:</p>
+                <p className="text-lg font-semibold">ПЗ №5 — Интерактивный прототип и презентация</p>
               </div>
             </div>
             <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm">
