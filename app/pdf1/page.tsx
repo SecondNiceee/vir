@@ -22,35 +22,35 @@ export default function Pdf1Page() {
         <div className="space-y-6 sm:space-y-8 print:space-y-0">
           
           {/* Слайд 1 — Титульный */}
-          <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-6 sm:p-12">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-4 sm:mb-6">
+          <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+            <div className="flex flex-col items-center justify-center text-white p-4 sm:p-8">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-3 sm:mb-4">
                 <svg className="w-8 h-8 sm:w-10 sm:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center">LearnUp</h1>
-              <p className="text-base sm:text-xl text-white/80 mb-6 sm:mb-8 text-center">Образовательное мобильное приложение</p>
+              <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-center">LearnUp</h1>
+              <p className="text-base sm:text-lg text-white/80 mb-4 sm:mb-5 text-center">Образовательное мобильное приложение</p>
               <div className="text-xs sm:text-sm text-white/60 text-center">
                 <p>Практическое задание №1</p>
                 <p>Выбор и аналитическое исследование темы мобильного интерфейса</p>
               </div>
-              <div className="mt-6 sm:mt-8 text-xs sm:text-sm text-white/80 text-center">
+              <div className="mt-4 sm:mt-5 text-xs sm:text-sm text-white/80 text-center">
                 <p className="font-medium">Подготовил: Титов Николай</p>
                 <p>ТКБО-02-23</p>
               </div>
-              <div className="mt-4 sm:mt-6 text-xs text-white/70 text-center max-w-lg">
+              <div className="mt-3 sm:mt-4 text-xs text-white/70 text-center max-w-lg">
                 <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white break-all">figma.com/design/drgb5K6Uy1RSZPrIkdSa2b</a></p>
               </div>
             </div>
           </div>
 
           {/* Слайд 2 — Выбор темы */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 1: Выбор темы</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 1: Выбор темы</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-8 flex flex-col justify-center">
+            <div className="p-4 sm:p-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-3 sm:mb-4">Тема проекта</h3>
@@ -87,11 +87,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 3 — Целевая аудитория */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 2: Целевая аудитория</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 2: Целевая аудитория</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full">
                 <div className="bg-violet-50 rounded-xl p-3 sm:p-4 border border-violet-100 flex flex-col h-full">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-violet-200 rounded-full flex items-center justify-center mb-2 sm:mb-3">
@@ -134,11 +134,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 4 — Пользовательские сценарии */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 2: Пользовательские сценарии</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 2: Пользовательские сценарии</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 w-full">
                 <div className="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200">
                   <div className="flex items-center gap-3 mb-2 sm:mb-3">
@@ -189,11 +189,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 5 — Анализ Duolingo */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Анализ аналогов — Duolingo</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 3: Анализ аналогов — Duolingo</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
@@ -232,11 +232,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 6 — Анализ Stepic */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Анализ аналогов — Stepic</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 3: Анализ аналогов — Stepic</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
@@ -275,11 +275,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 6.1 — Sololearn */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Анализ аналогов — Sololearn</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 3: Анализ аналогов — Sololearn</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="flex flex-col md:flex-row gap-4 sm:gap-8 w-full h-full">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">
@@ -318,11 +318,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 7 — Сравнительная таблица */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 3: Сравнительная таблица аналогов</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 3: Сравнительная таблица аналогов</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6 overflow-x-auto">
+            <div className="p-4 sm:p-5 overflow-x-auto">
               <table className="w-full text-xs sm:text-sm">
                 <thead>
                   <tr className="border-b-2 border-slate-200">
@@ -363,11 +363,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 8 — Выводы */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 5: Выводы</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 5: Выводы</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 w-full">
                 <div className="bg-green-50 rounded-xl p-4 sm:p-6 border border-green-200">
                   <h3 className="font-bold text-green-800 mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
@@ -401,11 +401,11 @@ export default function Pdf1Page() {
           </div>
 
           {/* Слайд 10 — Проектные ориентиры */}
-          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden aspect-video flex flex-col print:rounded-none print:shadow-none print:border-0">
-            <div className="bg-slate-800 text-white px-4 sm:px-8 py-3 sm:py-4">
-              <h2 className="text-lg sm:text-2xl font-bold">Этап 5: Проектные ориентиры LearnUp</h2>
+          <div className="bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Этап 5: Проектные ориентиры LearnUp</h2>
             </div>
-            <div className="flex-1 p-4 sm:p-6">
+            <div className="p-4 sm:p-5">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 w-full">
                 <div className="bg-violet-50 rounded-xl p-4 sm:p-5 border border-violet-200">
                   <h3 className="font-bold text-violet-800 mb-3 sm:mb-4 text-sm sm:text-base">Основные функции</h3>
