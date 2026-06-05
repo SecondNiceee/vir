@@ -224,8 +224,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-64 lg:w-72 h-48 md:max-h-[280px] flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
-                  <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="max-h-full max-w-full object-contain" />
+                <div className="w-full md:w-auto h-48 md:h-auto md:self-stretch flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                  <img src="/images/duolingo-screenshot.png" alt="Duolingo интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -267,8 +267,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-64 lg:w-72 h-48 md:max-h-[280px] flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
-                  <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="max-h-full max-w-full object-contain" />
+                <div className="w-full md:w-auto h-48 md:h-auto md:self-stretch flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                  <img src="/images/stepic-screenshot.png" alt="Stepic интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -310,8 +310,8 @@ export default function Pdf1Page() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full md:w-64 lg:w-72 h-48 md:max-h-[280px] flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
-                  <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="max-h-full max-w-full object-contain" />
+                <div className="w-full md:w-auto h-48 md:h-auto md:self-stretch flex-shrink-0 bg-slate-100 rounded-xl overflow-hidden flex items-center justify-center border border-slate-200">
+                  <img src="/images/sololearn-screenshot.png" alt="Sololearn интерфейс" className="h-full w-auto object-contain" />
                 </div>
               </div>
             </div>
