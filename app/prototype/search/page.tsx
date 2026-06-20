@@ -1,3 +1,5 @@
+import { Icon, type IconName } from "@/components/prototype/icons"
+
 export default function SearchPage() {
   return (
     <div className="px-5 pt-12 pb-4 bg-white">
@@ -49,13 +51,13 @@ export default function SearchPage() {
         <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Рекомендуем</p>
         <div className="space-y-3">
           {[
-            { emoji: "🐍", title: "Python для начинающих", sub: "24 урока · Бесплатно", color: "bg-teal-500" },
-            { emoji: "🇬🇧", title: "Английский B2", sub: "48 уроков · Premium", color: "bg-blue-500" },
-            { emoji: "🎨", title: "UI/UX дизайн", sub: "32 урока · Premium", color: "bg-violet-500" },
-          ].map(({ emoji, title, sub, color }) => (
+            { icon: "code" as IconName, title: "Python для начинающих", sub: "24 урока · Бесплатно", color: "bg-teal-500" },
+            { icon: "language" as IconName, title: "Английский B2", sub: "48 уроков · Premium", color: "bg-blue-500" },
+            { icon: "palette" as IconName, title: "UI/UX дизайн", sub: "32 урока · Premium", color: "bg-violet-500" },
+          ].map(({ icon, title, sub, color }) => (
             <div key={title} className="flex items-center gap-4 p-4 bg-slate-50 rounded-2xl">
-              <div className={`w-12 h-12 ${color} rounded-xl flex items-center justify-center text-2xl shrink-0`}>
-                {emoji}
+              <div className={`w-12 h-12 ${color} rounded-xl flex items-center justify-center shrink-0`}>
+                <Icon name={icon} className="w-6 h-6 text-white" strokeWidth={2} />
               </div>
               <div>
                 <p className="font-semibold text-slate-900 text-sm">{title}</p>
