@@ -201,7 +201,7 @@ export default function Pdf1Page() {
                   <li>- Только программирование</li>
                   <li>- Много рекламы</li>
                   <li>- Повер��ностные уроки</li>
-                  <li>- Нет сертификатов от вузов</li>
+                  <li>- ��ет сертификатов от вузов</li>
                 </ul>
               </div>
             </div>
@@ -298,7 +298,7 @@ export default function Pdf1Page() {
         <p className="text-sm text-slate-500 mb-6 text-pretty">
           Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
         </p>
-        <LoFiGallery scale={0.46} />
+        <LoFiGallery />
       </Slide>
     </PdfShell>
   )

@@ -41,11 +41,13 @@ export const loFiScreens: PrototypeScreen[] = [
 ]
 
 /** Responsive grid of all lo-fi wireframe screens in phone frames. */
-export function LoFiGallery({ scale = 0.46 }: { scale?: number }) {
+export function LoFiGallery({ scale = 0.36 }: { scale?: number }) {
+  // screenHeight: 390 * (16/9) * scale ≈ phone aspect ratio at this scale
+  const screenHeight = Math.round(390 * (16 / 9) * scale)
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 justify-items-center">
+    <div className="grid grid-cols-3 sm:grid-cols-6 gap-x-3 gap-y-6 justify-items-center">
       {loFiScreens.map(({ label, node }) => (
-        <PhoneFrame key={label} label={label} scale={scale}>
+        <PhoneFrame key={label} label={label} scale={scale} screenHeight={screenHeight}>
           {node}
         </PhoneFrame>
       ))}
@@ -54,11 +56,12 @@ export function LoFiGallery({ scale = 0.46 }: { scale?: number }) {
 }
 
 /** Responsive grid of all prototype screens, each rendered in a phone frame. */
-export function PrototypeGallery({ scale = 0.46 }: { scale?: number }) {
+export function PrototypeGallery({ scale = 0.36 }: { scale?: number }) {
+  const screenHeight = Math.round(390 * (16 / 9) * scale)
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 justify-items-center">
+    <div className="grid grid-cols-3 sm:grid-cols-7 gap-x-3 gap-y-6 justify-items-center">
       {prototypeScreens.map(({ label, node }) => (
-        <PhoneFrame key={label} label={label} scale={scale}>
+        <PhoneFrame key={label} label={label} scale={scale} screenHeight={screenHeight}>
           {node}
         </PhoneFrame>
       ))}
