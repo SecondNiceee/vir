@@ -114,36 +114,128 @@ export default function Pdf2Page() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="bg-[#1a2535] rounded-[2.2rem] p-3 shadow-2xl ring-1 ring-slate-900/20" style={{ width: 240 }}>
-              {/* dynamic island / notch */}
-              <div className="flex justify-center mb-2">
-                <div className="w-16 h-4 bg-slate-900 rounded-full" />
-              </div>
-              <div className="bg-[#1e2d40] rounded-[1.6rem] overflow-hidden" style={{ aspectRatio: "9/16" }}>
-                <div className="h-full flex flex-col">
-                  {/* status bar */}
-                  <div className="flex justify-between items-center px-4 py-2">
-                    <span className="text-[9px] text-slate-400 font-medium">9:41</span>
-                    <div className="flex items-center gap-1">
-                      <svg className="w-3 h-3 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M1.5 8.5a13 13 0 0121 0M5 12a10 10 0 0114 0M8.5 15.5a6 6 0 017 0M12 19h.01" stroke="currentColor" strokeWidth={2} strokeLinecap="round" fill="none"/></svg>
-                      <svg className="w-3 h-3 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="7" width="16" height="10" rx="2" stroke="currentColor" strokeWidth={1.5} fill="none"/><rect x="4" y="9" width="10" height="6" rx="1" fill="currentColor" opacity="0.6"/><path d="M20 10v4" stroke="currentColor" strokeWidth={2} strokeLinecap="round"/></svg>
-                    </div>
-                  </div>
-                  {/* screen body placeholder */}
-                  <div className="flex-1 bg-[#1e2d40]" />
-                  {/* Tab bar */}
-                  <div className="bg-[#1a2535] px-3 py-3 border-t border-slate-700/40">
-                    <div className="flex justify-around items-center">
-                      {TAB_ICONS.map(({ label, d }, i) => (
-                        <div key={label} className="flex flex-col items-center gap-1 min-w-0">
-                          <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${i === 0 ? "bg-teal-500" : "bg-[#243447]"}`}>
-                            <svg className={`w-4.5 h-4.5 ${i === 0 ? "text-white" : "text-slate-400"}`} style={{ width: 18, height: 18 }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" d={d} />
-                            </svg>
-                          </div>
-                          <span className={`text-[8px] leading-tight font-medium ${i === 0 ? "text-teal-400" : "text-slate-500"}`}>{label}</span>
+            {/* Phone shell */}
+            <div className="relative bg-gradient-to-b from-[#1c2a3a] to-[#151e2a] rounded-[2.6rem] shadow-2xl ring-1 ring-white/10" style={{ width: 270 }}>
+              {/* side buttons */}
+              <div className="absolute -left-[3px] top-20 w-[3px] h-8 bg-slate-600 rounded-l-sm" />
+              <div className="absolute -left-[3px] top-32 w-[3px] h-12 bg-slate-600 rounded-l-sm" />
+              <div className="absolute -left-[3px] top-48 w-[3px] h-12 bg-slate-600 rounded-l-sm" />
+              <div className="absolute -right-[3px] top-24 w-[3px] h-16 bg-slate-600 rounded-r-sm" />
+              {/* inner bezel */}
+              <div className="p-[10px]">
+                {/* dynamic island */}
+                <div className="flex justify-center pt-2 pb-2">
+                  <div className="w-20 h-[18px] bg-black rounded-full" />
+                </div>
+                {/* screen */}
+                <div className="bg-[#1e2d40] rounded-[1.9rem] overflow-hidden" style={{ aspectRatio: "9/16" }}>
+                  <div className="h-full flex flex-col">
+                    {/* status bar */}
+                    <div className="flex justify-between items-center px-4 pt-2 pb-1">
+                      <span className="text-[10px] text-slate-300 font-semibold tracking-tight">9:41</span>
+                      <div className="flex items-center gap-[5px]">
+                        {/* signal */}
+                        <div className="flex items-end gap-[2px] h-3">
+                          {[40, 60, 80, 100].map((h, i) => (
+                            <div key={i} className="w-[3px] bg-slate-300 rounded-sm" style={{ height: `${h}%`, opacity: i < 3 ? 1 : 1 }} />
+                          ))}
                         </div>
-                      ))}
+                        {/* wifi */}
+                        <svg className="w-3 h-3 text-slate-300" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+                          <path strokeLinecap="round" d="M5 12.5a9.5 9.5 0 0114 0M8.5 16a5 5 0 017 0M12 19.5h.01" />
+                        </svg>
+                        {/* battery */}
+                        <div className="flex items-center gap-[1px]">
+                          <div className="w-5 h-[10px] rounded-[2px] border border-slate-400 relative overflow-hidden p-[1px]">
+                            <div className="h-full w-4/5 bg-slate-300 rounded-[1px]" />
+                          </div>
+                          <div className="w-[2px] h-[5px] bg-slate-400 rounded-r-sm" />
+                        </div>
+                      </div>
+                    </div>
+                    {/* screen content */}
+                    <div className="flex-1 px-4 py-3 flex flex-col gap-3 overflow-hidden">
+                      {/* greeting */}
+                      <div className="flex justify-between items-center">
+                        <div>
+                          <div className="w-20 h-[6px] bg-slate-600 rounded-full mb-1" />
+                          <div className="w-28 h-[9px] bg-slate-400 rounded-full" />
+                        </div>
+                        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-teal-500 to-teal-700 ring-2 ring-teal-400/30" />
+                      </div>
+                      {/* streak card */}
+                      <div className="bg-[#243447] rounded-xl px-3 py-2 flex items-center gap-2">
+                        <div className="w-7 h-7 rounded-lg bg-amber-500/20 flex items-center justify-center">
+                          <div className="w-3.5 h-3.5 rounded-sm bg-amber-400" />
+                        </div>
+                        <div className="flex-1">
+                          <div className="w-16 h-[5px] bg-slate-500 rounded-full mb-1" />
+                          <div className="w-10 h-[7px] bg-slate-300 rounded-full" />
+                        </div>
+                        <div className="w-8 h-[6px] bg-teal-500/60 rounded-full" />
+                      </div>
+                      {/* continue block */}
+                      <div>
+                        <div className="w-24 h-[6px] bg-slate-500 rounded-full mb-2" />
+                        <div className="bg-[#243447] rounded-xl p-2.5 flex gap-2.5">
+                          <div className="w-10 h-10 rounded-lg bg-teal-500/20 shrink-0" />
+                          <div className="flex-1 flex flex-col justify-center gap-1.5">
+                            <div className="w-full h-[5px] bg-slate-400 rounded-full" />
+                            <div className="w-3/4 h-[4px] bg-slate-600 rounded-full" />
+                            <div className="w-full h-1.5 bg-slate-700 rounded-full overflow-hidden">
+                              <div className="h-full w-2/3 bg-teal-500 rounded-full" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* course cards row */}
+                      <div>
+                        <div className="w-20 h-[6px] bg-slate-500 rounded-full mb-2" />
+                        <div className="flex gap-2">
+                          {[0, 1].map((i) => (
+                            <div key={i} className="flex-1 bg-[#243447] rounded-xl p-2">
+                              <div className="w-full aspect-[4/3] rounded-lg bg-slate-700/60 mb-1.5" />
+                              <div className="w-full h-[4px] bg-slate-500 rounded-full mb-1" />
+                              <div className="w-2/3 h-[4px] bg-slate-600 rounded-full" />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    {/* ── Tab Bar ── */}
+                    <div className="bg-[#131d2a] border-t border-white/5 px-2 pt-2.5 pb-3">
+                      <div className="flex justify-around items-end">
+                        {TAB_ICONS.map(({ label, d }, i) => {
+                          const active = i === 0
+                          return (
+                            <div key={label} className="flex flex-col items-center gap-1">
+                              {active ? (
+                                /* active pill */
+                                <div className="flex items-center gap-1.5 bg-teal-500 rounded-2xl px-3 py-1.5">
+                                  <svg style={{ width: 15, height: 15 }} fill="none" stroke="white" strokeWidth={2.2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+                                  </svg>
+                                  <span className="text-[8px] font-bold text-white leading-none">{label}</span>
+                                </div>
+                              ) : (
+                                /* inactive icon */
+                                <div className="w-8 h-8 rounded-xl flex items-center justify-center">
+                                  <svg style={{ width: 16, height: 16 }} fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24" className="text-slate-500">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+                                  </svg>
+                                </div>
+                              )}
+                              {!active && (
+                                <span className="text-[7px] text-slate-600 font-medium leading-none">{label}</span>
+                              )}
+                            </div>
+                          )
+                        })}
+                      </div>
+                      {/* home indicator */}
+                      <div className="flex justify-center mt-2">
+                        <div className="w-20 h-[3px] bg-slate-600 rounded-full" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -213,7 +305,7 @@ export default function Pdf2Page() {
           <div className="max-w-xs">
             <h4 className="font-semibold text-slate-900 mb-3 text-sm">Ключевые элементы:</h4>
             <ul className="space-y-2 text-sm text-slate-600">
-              {["Прогресс-бар в шапке урока", "Видео/медиа контент", "Блок теории с подсказками", "Иконка успеха + поздравление", "Статистика урока (XP, время)", "Достижение за серию"].map((t) => (
+              {["Прог��есс-бар в шапке урока", "Видео/медиа контент", "Блок теории с подсказками", "Иконка успеха + поздравление", "Статистика урока (XP, время)", "Достижение за серию"].map((t) => (
                 <li key={t} className="flex items-start gap-2"><span className="text-blue-500 mt-0.5">–</span><span>{t}</span></li>
               ))}
             </ul>
