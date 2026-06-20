@@ -80,7 +80,7 @@ export default function Pdf4Page() {
           Реальные экраны интерактивного прототипа LearnUp, отрисованные целиком — без обрезки. Каждый макет показан в
           рамке устройства.
         </p>
-        <PrototypeGallery scale={0.46} />
+        <PrototypeGallery />
       </Slide>
 
       {/* Главная */}
@@ -277,7 +277,7 @@ export default function Pdf4Page() {
               </svg>
             </div>
             <h3 className="font-bold text-slate-700 mb-2">Empty State</h3>
-            <p className="text-sm text-slate-600 mb-4">Нет сохранённых курсов</p>
+            <p className="text-sm text-slate-600 mb-4">Нет со��ранённых курсов</p>
             <div className="bg-teal-500 text-white text-sm font-medium py-2 px-4 rounded-lg">Найти курсы</div>
           </div>
         </div>

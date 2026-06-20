@@ -13,11 +13,14 @@ export function PhoneFrame({
   label,
   scale = 0.62,
   designWidth = 390,
+  screenHeight,
 }: {
   children: ReactNode
   label?: string
   scale?: number
   designWidth?: number
+  /** Optional fixed display height (in px) to clip the screen content. */
+  screenHeight?: number
 }) {
   const displayWidth = designWidth * scale
 
@@ -26,7 +29,7 @@ export function PhoneFrame({
       <div className="rounded-[2.4rem] bg-slate-900 p-2.5 shadow-2xl ring-1 ring-slate-900/10">
         <div
           className="relative overflow-hidden rounded-[1.9rem] bg-white"
-          style={{ width: displayWidth }}
+          style={{ width: displayWidth, ...(screenHeight ? { height: screenHeight } : {}) }}
         >
           {/* notch */}
           <div className="pointer-events-none absolute left-1/2 top-0 z-20 h-5 w-24 -translate-x-1/2 rounded-b-2xl bg-slate-900" />

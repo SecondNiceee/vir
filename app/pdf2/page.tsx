@@ -379,7 +379,7 @@ export default function Pdf2Page() {
         <p className="text-sm text-slate-500 mb-6 text-pretty">
           Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
         </p>
-        <LoFiGallery scale={0.46} />
+        <LoFiGallery />
       </Slide>
     </PdfShell>
   )
