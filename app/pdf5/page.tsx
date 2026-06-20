@@ -10,8 +10,8 @@ export default function Pdf5Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
-              <a href="/figma5" className="text-sm text-rose-400 hover:text-rose-300">Figma-контент</a>
+              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-300 hover:text-teal-200">Figma-проект</a>
+              <a href="/figma5" className="text-sm text-emerald-300 hover:text-emerald-200">Figma-контент</a>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@ export default function Pdf5Page() {
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
             <div className="flex flex-col items-center justify-center text-white p-6">
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +55,7 @@ export default function Pdf5Page() {
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Цель работы</h3>
-                  <div className="bg-rose-50 rounded-xl p-5 mb-6">
+                  <div className="bg-teal-50 rounded-xl p-5 mb-6">
                     <p className="text-slate-700">
                       Создать интерактивный прототип на основе Hi-Fi макетов, демонстрирующий 
                       логику взаимодействия и пользовательские сценарии приложения LearnUp.
@@ -64,15 +64,15 @@ export default function Pdf5Page() {
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Исходные материалы</h3>
                   <ul className="space-y-2 text-sm text-slate-600">
                     <li className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-rose-500"></span>
+                      <span className="mt-1 h-2 w-2 rounded-full bg-teal-500"></span>
                       Hi-Fi макеты из ПЗ №4
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-rose-500"></span>
+                      <span className="mt-1 h-2 w-2 rounded-full bg-teal-500"></span>
                       User Flow и сценарии из ПЗ №1-2
                     </li>
                     <li className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-rose-500"></span>
+                      <span className="mt-1 h-2 w-2 rounded-full bg-teal-500"></span>
                       UI-кит с состояниями из ПЗ №3
                     </li>
                   </ul>
@@ -81,23 +81,23 @@ export default function Pdf5Page() {
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Задачи</h3>
                   <div className="space-y-3">
                     <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-rose-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">1</div>
+                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">1</div>
                       <span className="text-slate-700">Определить основные сценарии</span>
                     </div>
                     <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-rose-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">2</div>
+                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">2</div>
                       <span className="text-slate-700">Настроить переходы между экранами</span>
                     </div>
                     <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-rose-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">3</div>
+                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">3</div>
                       <span className="text-slate-700">Реализовать интерактивные состояния</span>
                     </div>
                     <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-rose-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">4</div>
+                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">4</div>
                       <span className="text-slate-700">Протестировать прототип</span>
                     </div>
                     <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-rose-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">5</div>
+                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">5</div>
                       <span className="text-slate-700">Подготовить презентацию</span>
                     </div>
                   </div>
@@ -464,7 +464,7 @@ export default function Pdf5Page() {
                     {[
                       'Tab Bar переключает все 4 вкладки',
                       'Кнопка «Назад» работает везде',
-                      'Карточки курсов кликабельны',
+                      'Карточки ку��сов кликабельны',
                       'Нет «тупиков» без выхода',
                       'Модалки закрываются',
                     ].map((item, i) => (
@@ -506,7 +506,7 @@ export default function Pdf5Page() {
             </div>
             <div className="flex-1 p-8 flex flex-col items-center justify-center">
               <div className="w-20 h-20 bg-rose-100 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-10 h-10 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-10 h-10 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -526,7 +526,7 @@ export default function Pdf5Page() {
           </div>
 
           {/* Слайд 10 - Итоги */}
-          <div className="bg-gradient-to-br from-rose-600 to-pink-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
             <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
               <h1 className="text-3xl font-bold mb-6 text-center">Итоги проекта LearnUp</h1>
               <div className="grid grid-cols-5 gap-4 mb-8">

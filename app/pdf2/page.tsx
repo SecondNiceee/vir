@@ -10,8 +10,8 @@ export default function Pdf2Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
-              <a href="/figma2" className="text-sm text-blue-400 hover:text-blue-300">Figma-контент</a>
+              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-300 hover:text-teal-200">Figma-проект</a>
+              <a href="/figma2" className="text-sm text-emerald-300 hover:text-emerald-200">Figma-контент</a>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@ export default function Pdf2Page() {
         <div className="space-y-8 print:space-y-0">
           
           {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-violet-600 to-indigo-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
+          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
             <div className="flex flex-col items-center justify-center text-white p-6">
               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ export default function Pdf2Page() {
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Главная цель пользователя</h3>
-                  <div className="bg-violet-50 rounded-xl p-5 border border-violet-100 mb-4">
+                  <div className="bg-teal-50 rounded-xl p-5 border border-teal-100 mb-4">
                     <p className="text-slate-700">Эффективно учиться новым навыкам через короткие уроки с геймификацией и отслеживанием прогресса</p>
                   </div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-3">Основной сценарий</h3>
@@ -163,7 +163,7 @@ export default function Pdf2Page() {
               </div>
               <div className="flex justify-center gap-8 mt-4 pt-4 border-t border-slate-100">
                 <div className="text-center">
-                  <span className="text-2xl font-bold text-violet-600">22</span>
+                  <span className="text-2xl font-bold text-teal-600">22</span>
                   <span className="text-sm text-slate-500 ml-1">экрана</span>
                 </div>
                 <div className="text-center">
@@ -190,7 +190,7 @@ export default function Pdf2Page() {
               <div className="grid grid-cols-2 gap-8 h-full">
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-4">Выбранный тип: Tab Bar</h3>
-                  <div className="bg-violet-50 rounded-xl p-5 border border-violet-100 mb-6">
+                  <div className="bg-teal-50 rounded-xl p-5 border border-teal-100 mb-6">
                     <p className="text-slate-700 mb-3">Нижняя панель навигации с 5 основными разделами</p>
                     <ul className="space-y-2 text-sm text-slate-600">
                       <li className="flex items-center gap-2">
@@ -217,10 +217,10 @@ export default function Pdf2Page() {
                     <div className="bg-slate-800 rounded-2xl aspect-[9/16] flex flex-col justify-end p-3">
                       <div className="bg-slate-700 rounded-xl p-2 flex justify-between items-center gap-1">
                         <div className="text-center flex-1">
-                          <div className="w-9 h-9 bg-violet-500 rounded-lg flex items-center justify-center mx-auto mb-1">
+                          <div className="w-9 h-9 bg-teal-500 rounded-lg flex items-center justify-center mx-auto mb-1">
                             <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                           </div>
-                          <span className="text-[9px] text-violet-400 block">Главная</span>
+                          <span className="text-[9px] text-teal-400 block">Главная</span>
                         </div>
                         <div className="text-center flex-1">
                           <div className="w-9 h-9 bg-slate-600 rounded-lg flex items-center justify-center mx-auto mb-1">
@@ -320,7 +320,7 @@ export default function Pdf2Page() {
           {/* Слайд 6 - Lo-Fi Главная и Каталог */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Этап 5: Lo-Fi прототипы — Главная и Каталог</h2>
+              <h2 className="text-xl font-bold">Этап 5: Lo-Fi про��отипы — Главная и Каталог</h2>
             </div>
             <div className="flex-1 p-8 flex items-center justify-center gap-12">
               {/* Главная */}
@@ -379,7 +379,7 @@ export default function Pdf2Page() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-violet-500 mt-0.5">*</span>
-                    <span>Карт��чки курсов с обложкой</span>
+                    <span>Карт����чки курсов с обложкой</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-violet-500 mt-0.5">*</span>
@@ -471,7 +471,7 @@ export default function Pdf2Page() {
           {/* Слайд 8 - Lo-Fi Профиль и Прогресс */}
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
             <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Этап 5: Lo-Fi прототипы — Профиль и Прогресс</h2>
+              <h2 className="text-xl font-bold">Этап 5: Lo-Fi прототипы — Профиль и Прогрес��</h2>
             </div>
             <div className="flex-1 p-8 flex items-center justify-center gap-12">
               {/* Профиль */}
