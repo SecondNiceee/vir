@@ -10,8 +10,8 @@ export default function Pdf3Page() {
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-green-400 hover:text-green-300">Figma-проект</a>
-              <a href="/figma3" className="text-sm text-teal-400 hover:text-teal-300">Figma-контент</a>
+              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-300 hover:text-teal-200">Figma-проект</a>
+              <a href="/figma3" className="text-sm text-emerald-300 hover:text-emerald-200">Figma-контент</a>
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@ export default function Pdf3Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Типографика
+              Типографик��
             </div>
           </div>
 
