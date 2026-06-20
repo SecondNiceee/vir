@@ -1,6 +1,33 @@
 import { Cover, PdfShell, Slide } from "@/components/pdf/slide"
 import { PrototypeGallery } from "@/components/pdf/prototype-screens"
 
+const TAB_ICONS = [
+  { label: "Главная", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" },
+  { label: "Каталог", d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" },
+  { label: "Курсы", d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
+  { label: "Прогресс", d: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" },
+  { label: "Профиль", d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
+]
+
+function LoFiTabBar({ active }: { active: number }) {
+  return (
+    <div className="mt-auto pt-1 border-t border-slate-200 bg-slate-100 rounded-b-xl">
+      <div className="flex justify-around items-center px-1 py-1">
+        {TAB_ICONS.map(({ label, d }, i) => (
+          <div key={label} className="flex flex-col items-center gap-0.5">
+            <div className={`w-5 h-5 rounded-md flex items-center justify-center ${i === active ? "bg-teal-500" : "bg-slate-200"}`}>
+              <svg className={`w-3 h-3 ${i === active ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+              </svg>
+            </div>
+            <span className={`text-[6px] leading-none ${i === active ? "text-teal-500" : "text-slate-400"}`}>{label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function Pdf2Page() {
   return (
     <PdfShell pz={2} figmaContentHref="/figma2">
@@ -98,23 +125,30 @@ export default function Pdf2Page() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="bg-slate-900 rounded-3xl p-3 w-56">
-              <div className="bg-slate-800 rounded-2xl aspect-[9/16] flex flex-col justify-end p-3">
-                <div className="bg-slate-700 rounded-xl p-2 flex justify-between items-center gap-1">
-                  {[
-                    { label: "Главная", active: true, icon: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" },
-                    { label: "Каталог", active: false, icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" },
-                    { label: "Курсы", active: false, icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
-                    { label: "Прогресс", active: false, icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" },
-                    { label: "Профиль", active: false, icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
-                  ].map(({ label, active, icon }) => (
-                    <div key={label} className="text-center flex-1">
-                      <div className={`w-8 h-8 ${active ? "bg-teal-500" : "bg-slate-600"} rounded-lg flex items-center justify-center mx-auto mb-1`}>
-                        <svg className={`w-4 h-4 ${active ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d={icon} /></svg>
-                      </div>
-                      <span className={`text-[9px] ${active ? "text-teal-400" : "text-slate-500"} block`}>{label}</span>
+            <div className="bg-[#1a2535] rounded-[2rem] p-3 shadow-xl" style={{ width: 200 }}>
+              {/* notch */}
+              <div className="flex justify-center mb-1">
+                <div className="w-10 h-1 bg-slate-700 rounded-full" />
+              </div>
+              <div className="bg-[#1e2d40] rounded-[1.4rem] overflow-hidden" style={{ aspectRatio: "9/16" }}>
+                {/* screen content placeholder */}
+                <div className="flex-1 h-full flex flex-col">
+                  <div className="flex-1 bg-[#1e2d40]" />
+                  {/* Tab bar — matches prototype exactly */}
+                  <div className="bg-[#1a2535] px-2 py-2">
+                    <div className="flex justify-around items-center">
+                      {TAB_ICONS.map(({ label, d }, i) => (
+                        <div key={label} className="flex flex-col items-center gap-0.5">
+                          <div className={`w-7 h-7 rounded-xl flex items-center justify-center ${i === 0 ? "bg-teal-500" : "bg-[#243447]"}`}>
+                            <svg className={`w-3.5 h-3.5 ${i === 0 ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+                            </svg>
+                          </div>
+                          <span className={`text-[7px] leading-none ${i === 0 ? "text-teal-400" : "text-slate-500"}`}>{label}</span>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -177,7 +211,7 @@ export default function Pdf2Page() {
               <div className="bg-slate-200 rounded-lg p-2 mb-2"><div className="flex gap-2"><div className="w-8 h-8 bg-slate-300 rounded" /><div className="flex-1 space-y-1"><div className="w-full h-1 bg-slate-300 rounded" /><div className="w-3/4 h-1 bg-slate-300 rounded" /><div className="w-full h-1 bg-slate-300 rounded-full" /></div></div></div>
               <div className="w-14 h-1 bg-slate-300 rounded mb-1" />
               <div className="flex gap-1 flex-1"><div className="flex-1 bg-slate-200 rounded-lg p-1"><div className="w-full h-5 bg-slate-300 rounded mb-1" /><div className="w-full h-1 bg-slate-300 rounded" /></div><div className="flex-1 bg-slate-200 rounded-lg p-1"><div className="w-full h-5 bg-slate-300 rounded mb-1" /><div className="w-full h-1 bg-slate-300 rounded" /></div></div>
-              <div className="flex justify-around mt-auto pt-2 border-t border-slate-200">{Array(5).fill(null).map((_, i) => <div key={i} className={`w-4 h-4 ${i === 0 ? "bg-slate-400" : "bg-slate-300"} rounded`} />)}</div>
+              <LoFiTabBar active={0} />
             </div>
             <span className="text-sm font-medium text-slate-700">Главная</span>
           </div>
@@ -191,7 +225,7 @@ export default function Pdf2Page() {
               <div className="bg-slate-200 rounded-lg p-2 mb-2 flex items-center gap-1"><div className="w-3 h-3 bg-slate-300 rounded" /><div className="w-full h-1 bg-slate-300 rounded" /></div>
               <div className="flex gap-1 mb-2"><div className="px-2 py-1 bg-slate-400 rounded-full"><div className="w-5 h-1 bg-slate-200 rounded" /></div><div className="px-2 py-1 bg-slate-200 rounded-full"><div className="w-6 h-1 bg-slate-300 rounded" /></div><div className="px-2 py-1 bg-slate-200 rounded-full"><div className="w-5 h-1 bg-slate-300 rounded" /></div></div>
               <div className="space-y-2 flex-1">{[0, 1].map((i) => <div key={i} className="bg-slate-200 rounded-lg p-2"><div className="w-full h-10 bg-slate-300 rounded mb-1" /><div className="w-full h-1 bg-slate-300 rounded" /><div className="w-2/3 h-1 bg-slate-300 rounded mt-0.5" /></div>)}</div>
-              <div className="flex justify-around mt-auto pt-2 border-t border-slate-200">{Array(5).fill(null).map((_, i) => <div key={i} className={`w-4 h-4 ${i === 1 ? "bg-slate-400" : "bg-slate-300"} rounded`} />)}</div>
+              <LoFiTabBar active={1} />
             </div>
             <span className="text-sm font-medium text-slate-700">Каталог</span>
           </div>
@@ -267,7 +301,7 @@ export default function Pdf2Page() {
               <div className="text-center mb-3"><div className="w-12 h-12 bg-slate-300 rounded-full mx-auto mb-1" /><div className="w-14 h-2 bg-slate-400 rounded mx-auto" /><div className="w-10 h-1 bg-slate-300 rounded mx-auto mt-0.5" /></div>
               <div className="flex justify-around mb-3 py-2 border-y border-slate-200">{[0,1,2].map((i) => <div key={i} className="text-center"><div className="w-5 h-2 bg-slate-400 rounded mx-auto" /><div className="w-6 h-1 bg-slate-300 rounded mx-auto mt-0.5" /></div>)}</div>
               <div className="space-y-1 flex-1">{[0,1,2,3].map((i) => <div key={i} className="flex items-center gap-2 bg-slate-200 rounded p-1.5"><div className="w-4 h-4 bg-slate-300 rounded" /><div className="flex-1 h-1 bg-slate-300 rounded" /></div>)}</div>
-              <div className="flex justify-around mt-auto pt-2 border-t border-slate-200">{Array(5).fill(null).map((_, i) => <div key={i} className={`w-4 h-4 ${i === 4 ? "bg-slate-400" : "bg-slate-300"} rounded`} />)}</div>
+              <LoFiTabBar active={4} />
             </div>
             <span className="text-sm font-medium text-slate-700">Профиль</span>
           </div>
@@ -282,7 +316,7 @@ export default function Pdf2Page() {
               <div className="bg-slate-200 rounded-lg p-2 mb-2"><div className="flex justify-between items-end h-10 mb-1">{[40,60,80,50,70,90,30].map((h, i) => <div key={i} className={`w-2 ${i === 5 ? "bg-slate-400" : "bg-slate-300"} rounded-t`} style={{ height: `${h}%` }} />)}</div></div>
               <div className="grid grid-cols-2 gap-1 mb-2">{[0,1].map((i) => <div key={i} className="bg-slate-200 rounded p-1 text-center"><div className="w-5 h-2 bg-slate-400 rounded mx-auto" /><div className="w-8 h-1 bg-slate-300 rounded mx-auto mt-0.5" /></div>)}</div>
               <div className="flex gap-1 flex-1">{[0,1,2,3].map((i) => <div key={i} className="w-8 h-8 bg-slate-200 rounded-lg" />)}</div>
-              <div className="flex justify-around mt-auto pt-2 border-t border-slate-200">{Array(5).fill(null).map((_, i) => <div key={i} className={`w-4 h-4 ${i === 3 ? "bg-slate-400" : "bg-slate-300"} rounded`} />)}</div>
+              <LoFiTabBar active={3} />
             </div>
             <span className="text-sm font-medium text-slate-700">Прогресс</span>
           </div>
