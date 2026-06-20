@@ -1,5 +1,12 @@
 import { Cover, PdfShell, Slide } from "@/components/pdf/slide"
 import { LoFiGallery } from "@/components/pdf/prototype-screens"
+import { PhoneFrame } from "@/components/prototype/phone-frame"
+import LoFi1 from "@/app/prototype/lo-fi/1/page"
+import LoFi2 from "@/app/prototype/lo-fi/2/page"
+import LoFi4 from "@/app/prototype/lo-fi/4/page"
+import LoFi7 from "@/app/prototype/lo-fi/7/page"
+import LoFi8 from "@/app/prototype/lo-fi/8/page"
+import LoFi9 from "@/app/prototype/lo-fi/9/page"
 
 const TAB_ICONS = [
   { label: "Главная", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" },
@@ -9,24 +16,6 @@ const TAB_ICONS = [
   { label: "Профиль", d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" },
 ]
 
-function LoFiTabBar({ active }: { active: number }) {
-  return (
-    <div className="mt-auto pt-1 border-t border-slate-200 bg-slate-100 rounded-b-xl">
-      <div className="flex justify-around items-center px-1 py-1">
-        {TAB_ICONS.map(({ label, d }, i) => (
-          <div key={label} className="flex flex-col items-center gap-0.5">
-            <div className={`w-5 h-5 rounded-md flex items-center justify-center ${i === active ? "bg-teal-500" : "bg-slate-200"}`}>
-              <svg className={`w-3 h-3 ${i === active ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d={d} />
-              </svg>
-            </div>
-            <span className={`text-[6px] leading-none ${i === active ? "text-teal-500" : "text-slate-400"}`}>{label}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
 
 export default function Pdf2Page() {
   return (
@@ -125,26 +114,34 @@ export default function Pdf2Page() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <div className="bg-[#1a2535] rounded-[2rem] p-3 shadow-xl" style={{ width: 200 }}>
-              {/* notch */}
-              <div className="flex justify-center mb-1">
-                <div className="w-10 h-1 bg-slate-700 rounded-full" />
+            <div className="bg-[#1a2535] rounded-[2.2rem] p-3 shadow-2xl ring-1 ring-slate-900/20" style={{ width: 240 }}>
+              {/* dynamic island / notch */}
+              <div className="flex justify-center mb-2">
+                <div className="w-16 h-4 bg-slate-900 rounded-full" />
               </div>
-              <div className="bg-[#1e2d40] rounded-[1.4rem] overflow-hidden" style={{ aspectRatio: "9/16" }}>
-                {/* screen content placeholder */}
-                <div className="flex-1 h-full flex flex-col">
+              <div className="bg-[#1e2d40] rounded-[1.6rem] overflow-hidden" style={{ aspectRatio: "9/16" }}>
+                <div className="h-full flex flex-col">
+                  {/* status bar */}
+                  <div className="flex justify-between items-center px-4 py-2">
+                    <span className="text-[9px] text-slate-400 font-medium">9:41</span>
+                    <div className="flex items-center gap-1">
+                      <svg className="w-3 h-3 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><path d="M1.5 8.5a13 13 0 0121 0M5 12a10 10 0 0114 0M8.5 15.5a6 6 0 017 0M12 19h.01" stroke="currentColor" strokeWidth={2} strokeLinecap="round" fill="none"/></svg>
+                      <svg className="w-3 h-3 text-slate-400" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="7" width="16" height="10" rx="2" stroke="currentColor" strokeWidth={1.5} fill="none"/><rect x="4" y="9" width="10" height="6" rx="1" fill="currentColor" opacity="0.6"/><path d="M20 10v4" stroke="currentColor" strokeWidth={2} strokeLinecap="round"/></svg>
+                    </div>
+                  </div>
+                  {/* screen body placeholder */}
                   <div className="flex-1 bg-[#1e2d40]" />
-                  {/* Tab bar — matches prototype exactly */}
-                  <div className="bg-[#1a2535] px-2 py-2">
+                  {/* Tab bar */}
+                  <div className="bg-[#1a2535] px-3 py-3 border-t border-slate-700/40">
                     <div className="flex justify-around items-center">
                       {TAB_ICONS.map(({ label, d }, i) => (
-                        <div key={label} className="flex flex-col items-center gap-0.5">
-                          <div className={`w-7 h-7 rounded-xl flex items-center justify-center ${i === 0 ? "bg-teal-500" : "bg-[#243447]"}`}>
-                            <svg className={`w-3.5 h-3.5 ${i === 0 ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <div key={label} className="flex flex-col items-center gap-1 min-w-0">
+                          <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${i === 0 ? "bg-teal-500" : "bg-[#243447]"}`}>
+                            <svg className={`w-4.5 h-4.5 ${i === 0 ? "text-white" : "text-slate-400"}`} style={{ width: 18, height: 18 }} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d={d} />
                             </svg>
                           </div>
-                          <span className={`text-[7px] leading-none ${i === 0 ? "text-teal-400" : "text-slate-500"}`}>{label}</span>
+                          <span className={`text-[8px] leading-tight font-medium ${i === 0 ? "text-teal-400" : "text-slate-500"}`}>{label}</span>
                         </div>
                       ))}
                     </div>
@@ -194,42 +191,9 @@ export default function Pdf2Page() {
 
       {/* Слайд 6 — Lo-Fi Главная и Каталог */}
       <Slide title="Этап 5: Lo-Fi прототипы — Главная и Каталог" footer="Lo-Fi Главная и Каталог">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-          {/* Главная */}
-          <div className="text-center">
-            <div className="bg-slate-100 rounded-2xl p-3 w-36 sm:w-40 aspect-[9/16] flex flex-col mb-2">
-              <div className="flex justify-between items-center mb-2">
-                <div className="w-6 h-1 bg-slate-300 rounded" />
-                <div className="flex gap-0.5"><div className="w-2 h-2 bg-slate-300 rounded-full" /><div className="w-2 h-2 bg-slate-300 rounded-full" /></div>
-              </div>
-              <div className="flex justify-between items-center mb-3">
-                <div className="space-y-0.5"><div className="w-10 h-1 bg-slate-300 rounded" /><div className="w-14 h-2 bg-slate-400 rounded" /></div>
-                <div className="w-6 h-6 bg-slate-300 rounded-full" />
-              </div>
-              <div className="bg-slate-200 rounded-lg p-2 mb-2"><div className="flex justify-between"><div className="w-12 h-2 bg-slate-300 rounded" /><div className="w-6 h-6 bg-slate-300 rounded" /></div></div>
-              <div className="w-16 h-1 bg-slate-300 rounded mb-1" />
-              <div className="bg-slate-200 rounded-lg p-2 mb-2"><div className="flex gap-2"><div className="w-8 h-8 bg-slate-300 rounded" /><div className="flex-1 space-y-1"><div className="w-full h-1 bg-slate-300 rounded" /><div className="w-3/4 h-1 bg-slate-300 rounded" /><div className="w-full h-1 bg-slate-300 rounded-full" /></div></div></div>
-              <div className="w-14 h-1 bg-slate-300 rounded mb-1" />
-              <div className="flex gap-1 flex-1"><div className="flex-1 bg-slate-200 rounded-lg p-1"><div className="w-full h-5 bg-slate-300 rounded mb-1" /><div className="w-full h-1 bg-slate-300 rounded" /></div><div className="flex-1 bg-slate-200 rounded-lg p-1"><div className="w-full h-5 bg-slate-300 rounded mb-1" /><div className="w-full h-1 bg-slate-300 rounded" /></div></div>
-              <LoFiTabBar active={0} />
-            </div>
-            <span className="text-sm font-medium text-slate-700">Главная</span>
-          </div>
-          {/* Каталог */}
-          <div className="text-center">
-            <div className="bg-slate-100 rounded-2xl p-3 w-36 sm:w-40 aspect-[9/16] flex flex-col mb-2">
-              <div className="flex justify-between items-center mb-2">
-                <div className="w-6 h-1 bg-slate-300 rounded" />
-                <div className="flex gap-0.5"><div className="w-2 h-2 bg-slate-300 rounded-full" /><div className="w-2 h-2 bg-slate-300 rounded-full" /></div>
-              </div>
-              <div className="bg-slate-200 rounded-lg p-2 mb-2 flex items-center gap-1"><div className="w-3 h-3 bg-slate-300 rounded" /><div className="w-full h-1 bg-slate-300 rounded" /></div>
-              <div className="flex gap-1 mb-2"><div className="px-2 py-1 bg-slate-400 rounded-full"><div className="w-5 h-1 bg-slate-200 rounded" /></div><div className="px-2 py-1 bg-slate-200 rounded-full"><div className="w-6 h-1 bg-slate-300 rounded" /></div><div className="px-2 py-1 bg-slate-200 rounded-full"><div className="w-5 h-1 bg-slate-300 rounded" /></div></div>
-              <div className="space-y-2 flex-1">{[0, 1].map((i) => <div key={i} className="bg-slate-200 rounded-lg p-2"><div className="w-full h-10 bg-slate-300 rounded mb-1" /><div className="w-full h-1 bg-slate-300 rounded" /><div className="w-2/3 h-1 bg-slate-300 rounded mt-0.5" /></div>)}</div>
-              <LoFiTabBar active={1} />
-            </div>
-            <span className="text-sm font-medium text-slate-700">Каталог</span>
-          </div>
-          {/* Описание */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-14">
+          <PhoneFrame label="Главная" scale={0.58}><LoFi1 /></PhoneFrame>
+          <PhoneFrame label="Каталог" scale={0.58}><LoFi2 /></PhoneFrame>
           <div className="max-w-xs">
             <h4 className="font-semibold text-slate-900 mb-3 text-sm">Ключевые элементы:</h4>
             <ul className="space-y-2 text-sm text-slate-600">
@@ -243,40 +207,9 @@ export default function Pdf2Page() {
 
       {/* Слайд 7 — Lo-Fi Урок и Результат */}
       <Slide title="Этап 5: Lo-Fi прототипы — Урок и Результат" footer="Lo-Fi Урок и Результат">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-          {/* Урок */}
-          <div className="text-center">
-            <div className="bg-slate-100 rounded-2xl p-3 w-36 sm:w-40 aspect-[9/16] flex flex-col mb-2">
-              <div className="flex justify-between items-center mb-2">
-                <div className="w-6 h-1 bg-slate-300 rounded" />
-                <div className="flex gap-0.5"><div className="w-2 h-2 bg-slate-300 rounded-full" /><div className="w-2 h-2 bg-slate-300 rounded-full" /></div>
-              </div>
-              <div className="flex items-center gap-2 mb-2"><div className="w-6 h-6 bg-slate-300 rounded" /><div className="flex-1 h-1 bg-slate-300 rounded-full" /><div className="w-4 h-4 bg-slate-300 rounded" /></div>
-              <div className="w-full h-14 bg-slate-200 rounded-lg flex items-center justify-center mb-3"><div className="w-7 h-7 bg-slate-300 rounded-full" /></div>
-              <div className="space-y-1 mb-2"><div className="w-3/4 h-2 bg-slate-300 rounded" /><div className="w-full h-1 bg-slate-200 rounded" /><div className="w-2/3 h-1 bg-slate-200 rounded" /></div>
-              <div className="bg-slate-200 rounded-lg p-2 flex-1"><div className="w-full h-1 bg-slate-300 rounded" /><div className="w-full h-1 bg-slate-300 rounded mt-0.5" /></div>
-              <div className="w-full h-8 bg-slate-400 rounded-lg mt-2" />
-            </div>
-            <span className="text-sm font-medium text-slate-700">Экран урока</span>
-          </div>
-          {/* Результат */}
-          <div className="text-center">
-            <div className="bg-slate-100 rounded-2xl p-3 w-36 sm:w-40 aspect-[9/16] flex flex-col mb-2">
-              <div className="flex justify-between items-center mb-2">
-                <div className="w-6 h-1 bg-slate-300 rounded" />
-                <div className="flex gap-0.5"><div className="w-2 h-2 bg-slate-300 rounded-full" /><div className="w-2 h-2 bg-slate-300 rounded-full" /></div>
-              </div>
-              <div className="flex-1 flex flex-col items-center justify-center">
-                <div className="w-12 h-12 bg-slate-300 rounded-full mb-2" />
-                <div className="w-16 h-2 bg-slate-400 rounded mb-1" />
-                <div className="w-20 h-1 bg-slate-300 rounded mb-3" />
-                <div className="flex gap-2 mb-3">{[0,1,2].map((i) => <div key={i} className="text-center"><div className="w-6 h-6 bg-slate-200 rounded" /><div className="w-5 h-1 bg-slate-300 rounded mt-0.5 mx-auto" /></div>)}</div>
-              </div>
-              <div className="space-y-1"><div className="w-full h-8 bg-slate-400 rounded-lg" /><div className="w-full h-6 bg-slate-200 rounded-lg" /></div>
-            </div>
-            <span className="text-sm font-medium text-slate-700">Результат урока</span>
-          </div>
-          {/* Описание */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-14">
+          <PhoneFrame label="Экран урока" scale={0.58}><LoFi7 /></PhoneFrame>
+          <PhoneFrame label="Результат урока" scale={0.58}><LoFi8 /></PhoneFrame>
           <div className="max-w-xs">
             <h4 className="font-semibold text-slate-900 mb-3 text-sm">Ключевые элементы:</h4>
             <ul className="space-y-2 text-sm text-slate-600">
@@ -290,37 +223,9 @@ export default function Pdf2Page() {
 
       {/* Слайд 8 — Lo-Fi Профиль и Прогресс */}
       <Slide title="Этап 5: Lo-Fi прототипы — Профиль и Прогресс" footer="Lo-Fi Профиль и Прогресс">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
-          {/* Профиль */}
-          <div className="text-center">
-            <div className="bg-slate-100 rounded-2xl p-3 w-36 sm:w-40 aspect-[9/16] flex flex-col mb-2">
-              <div className="flex justify-between items-center mb-2">
-                <div className="w-6 h-1 bg-slate-300 rounded" />
-                <div className="flex gap-0.5"><div className="w-2 h-2 bg-slate-300 rounded-full" /><div className="w-2 h-2 bg-slate-300 rounded-full" /></div>
-              </div>
-              <div className="text-center mb-3"><div className="w-12 h-12 bg-slate-300 rounded-full mx-auto mb-1" /><div className="w-14 h-2 bg-slate-400 rounded mx-auto" /><div className="w-10 h-1 bg-slate-300 rounded mx-auto mt-0.5" /></div>
-              <div className="flex justify-around mb-3 py-2 border-y border-slate-200">{[0,1,2].map((i) => <div key={i} className="text-center"><div className="w-5 h-2 bg-slate-400 rounded mx-auto" /><div className="w-6 h-1 bg-slate-300 rounded mx-auto mt-0.5" /></div>)}</div>
-              <div className="space-y-1 flex-1">{[0,1,2,3].map((i) => <div key={i} className="flex items-center gap-2 bg-slate-200 rounded p-1.5"><div className="w-4 h-4 bg-slate-300 rounded" /><div className="flex-1 h-1 bg-slate-300 rounded" /></div>)}</div>
-              <LoFiTabBar active={4} />
-            </div>
-            <span className="text-sm font-medium text-slate-700">Профиль</span>
-          </div>
-          {/* Прогресс */}
-          <div className="text-center">
-            <div className="bg-slate-100 rounded-2xl p-3 w-36 sm:w-40 aspect-[9/16] flex flex-col mb-2">
-              <div className="flex justify-between items-center mb-2">
-                <div className="w-6 h-1 bg-slate-300 rounded" />
-                <div className="flex gap-0.5"><div className="w-2 h-2 bg-slate-300 rounded-full" /><div className="w-2 h-2 bg-slate-300 rounded-full" /></div>
-              </div>
-              <div className="w-12 h-2 bg-slate-400 rounded mb-2" />
-              <div className="bg-slate-200 rounded-lg p-2 mb-2"><div className="flex justify-between items-end h-10 mb-1">{[40,60,80,50,70,90,30].map((h, i) => <div key={i} className={`w-2 ${i === 5 ? "bg-slate-400" : "bg-slate-300"} rounded-t`} style={{ height: `${h}%` }} />)}</div></div>
-              <div className="grid grid-cols-2 gap-1 mb-2">{[0,1].map((i) => <div key={i} className="bg-slate-200 rounded p-1 text-center"><div className="w-5 h-2 bg-slate-400 rounded mx-auto" /><div className="w-8 h-1 bg-slate-300 rounded mx-auto mt-0.5" /></div>)}</div>
-              <div className="flex gap-1 flex-1">{[0,1,2,3].map((i) => <div key={i} className="w-8 h-8 bg-slate-200 rounded-lg" />)}</div>
-              <LoFiTabBar active={3} />
-            </div>
-            <span className="text-sm font-medium text-slate-700">Прогресс</span>
-          </div>
-          {/* Описание */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-14">
+          <PhoneFrame label="Профиль" scale={0.58}><LoFi4 /></PhoneFrame>
+          <PhoneFrame label="Прогресс" scale={0.58}><LoFi9 /></PhoneFrame>
           <div className="max-w-xs">
             <h4 className="font-semibold text-slate-900 mb-3 text-sm">Ключевые элементы:</h4>
             <ul className="space-y-2 text-sm text-slate-600">

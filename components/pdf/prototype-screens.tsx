@@ -13,6 +13,9 @@ import LoFi3 from "@/app/prototype/lo-fi/3/page"
 import LoFi4 from "@/app/prototype/lo-fi/4/page"
 import LoFi5 from "@/app/prototype/lo-fi/5/page"
 import LoFi6 from "@/app/prototype/lo-fi/6/page"
+import LoFi7 from "@/app/prototype/lo-fi/7/page"
+import LoFi8 from "@/app/prototype/lo-fi/8/page"
+import LoFi9 from "@/app/prototype/lo-fi/9/page"
 
 /* ---------------------------------------------------------------------------
  * Single source of truth for the LearnUp prototype screens. Every PDF page
@@ -38,13 +41,16 @@ export const loFiScreens: PrototypeScreen[] = [
   { label: "Профиль", node: <LoFi4 /> },
   { label: "Уведомления", node: <LoFi5 /> },
   { label: "Настройки", node: <LoFi6 /> },
+  { label: "Урок", node: <LoFi7 /> },
+  { label: "Результат", node: <LoFi8 /> },
+  { label: "Прогресс", node: <LoFi9 /> },
 ]
 
 /** Responsive grid of all lo-fi wireframe screens in phone frames. */
-export function LoFiGallery({ scale = 0.42 }: { scale?: number }) {
+export function LoFiGallery({ scale = 0.52 }: { scale?: number }) {
   const screenHeight = Math.round(390 * (16 / 9) * scale)
   return (
-    <div className="grid grid-cols-3 gap-x-8 gap-y-10 justify-items-center">
+    <div className="grid grid-cols-4 gap-x-6 gap-y-10 justify-items-center">
       {loFiScreens.map(({ label, node }) => (
         <PhoneFrame key={label} label={label} scale={scale} screenHeight={screenHeight}>
           {node}
