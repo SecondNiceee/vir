@@ -1,5 +1,5 @@
 import { Cover, PdfShell, Slide } from "@/components/pdf/slide"
-import { PrototypeGallery } from "@/components/pdf/prototype-screens"
+import { LoFiGallery } from "@/components/pdf/prototype-screens"
 
 export default function Pdf1Page() {
   return (
@@ -200,7 +200,7 @@ export default function Pdf1Page() {
                 <ul className="space-y-1 text-xs sm:text-sm text-slate-600">
                   <li>- Только программирование</li>
                   <li>- Много рекламы</li>
-                  <li>- Поверхностные уроки</li>
+                  <li>- Повер��ностные уроки</li>
                   <li>- Нет сертификатов от вузов</li>
                 </ul>
               </div>
@@ -298,7 +298,7 @@ export default function Pdf1Page() {
         <p className="text-sm text-slate-500 mb-6 text-pretty">
           Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
         </p>
-        <PrototypeGallery scale={0.46} />
+        <LoFiGallery scale={0.46} />
       </Slide>
     </PdfShell>
   )

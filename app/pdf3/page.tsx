@@ -1,5 +1,5 @@
 import { Cover, PdfShell, Slide } from "@/components/pdf/slide"
-import { PrototypeGallery } from "@/components/pdf/prototype-screens"
+import { LoFiGallery } from "@/components/pdf/prototype-screens"
 
 export default function Pdf3Page() {
   return (
@@ -419,7 +419,7 @@ export default function Pdf3Page() {
         <p className="text-sm text-slate-500 mb-6 text-pretty">
           Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
         </p>
-        <PrototypeGallery scale={0.46} />
+        <LoFiGallery scale={0.46} />
       </Slide>
     </PdfShell>
   )
