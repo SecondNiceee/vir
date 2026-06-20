@@ -1,582 +1,333 @@
-import { Icon } from "@/components/prototype/icons"
+import { Cover, PdfShell, Slide } from "@/components/pdf/slide"
 import { PrototypeGallery } from "@/components/pdf/prototype-screens"
+import { Icon } from "@/components/prototype/icons"
 
 export default function Pdf5Page() {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-slate-900 text-white sticky top-0 z-10 print:hidden">
-        <div className="max-w-5xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-xl font-semibold">ПЗ №5 — PDF Презентация</h1>
-              <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
-            </div>
-            <div className="flex gap-3">
-              <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="text-sm text-teal-300 hover:text-teal-200">Figma-проект</a>
-              <a href="/figma5" className="text-sm text-emerald-300 hover:text-emerald-200">Figma-контент</a>
-            </div>
-          </div>
-        </div>
-      </header>
+    <PdfShell pz={5} figmaContentHref="/figma5">
+      <Cover
+        icon={
+          <svg className="w-9 h-9 sm:w-10 sm:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        }
+        subtitle="Интерактивный прототип и презентация"
+        taskLine1="Практическое задание №5"
+        taskLine2="Финальная интерактивность и защита проекта"
+      />
 
-      <main className="max-w-5xl mx-auto px-6 py-8">
-        
-        <div className="space-y-8 print:space-y-0">
-          
-          {/* Слайд 1 - Титульный */}
-          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex flex-col items-center justify-center text-white p-6">
-              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h1 className="text-4xl font-bold mb-2">LearnUp</h1>
-              <p className="text-xl text-white/80 mb-8">Интерактивный прототип и презентация</p>
-              <div className="text-sm text-white/60">
-                <p>Практическое задание №5</p>
-                <p>Финальная интерактивность и защита проекта</p>
-              </div>
-              <div className="mt-8 text-sm text-white/80">
-                <p className="font-medium">Подготовил: Титов Николай</p>
-                <p>ТКБО-02-23</p>
-              </div>
-              <div className="mt-6 text-sm text-white/70">
-                <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
-              </div>
-            </div>
-          </div>
-
-          {/* Слайд 2 - Цели */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Цели и задачи прототипирования</h2>
-            </div>
-            <div className="p-5">
-              <div className="grid grid-cols-2 gap-8 h-full">
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Цель работы</h3>
-                  <div className="bg-teal-50 rounded-xl p-5 mb-6">
-                    <p className="text-slate-700">
-                      Создать интерактивный прототип на основе Hi-Fi макетов, демонстрирующий 
-                      логику взаимодействия и пользовательские сценарии приложения LearnUp.
-                    </p>
-                  </div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Исходные материалы</h3>
-                  <ul className="space-y-2 text-sm text-slate-600">
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-teal-500"></span>
-                      Hi-Fi макеты из ПЗ №4
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-teal-500"></span>
-                      User Flow и сценарии из ПЗ №1-2
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="mt-1 h-2 w-2 rounded-full bg-teal-500"></span>
-                      UI-кит с состояниями из ПЗ №3
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Задачи</h3>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">1</div>
-                      <span className="text-slate-700">Определить основные сценарии</span>
-                    </div>
-                    <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">2</div>
-                      <span className="text-slate-700">Настроить переходы между экранами</span>
-                    </div>
-                    <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">3</div>
-                      <span className="text-slate-700">Реализовать интерактивные состояния</span>
-                    </div>
-                    <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">4</div>
-                      <span className="text-slate-700">Протестировать прототип</span>
-                    </div>
-                    <div className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
-                      <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm">5</div>
-                      <span className="text-slate-700">Подготовить презентацию</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Цели �� задачи
-            </div>
-          </div>
-
-          {/* Слайд 3 - Основной сценарий */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Основной сценарий: Прохождение урока</h2>
-            </div>
-            <div className="p-5 flex flex-col justify-center">
-              <div className="flex items-center justify-between gap-2">
-                <div className="bg-amber-100 text-amber-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <Icon name="home" className="w-7 h-7 mx-auto mb-2 text-amber-600" strokeWidth={2} />
-                  <p className="text-sm font-bold">Home</p>
-                  <p className="text-xs text-amber-600">Start Frame</p>
-                </div>
-                <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                <div className="bg-teal-100 text-teal-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <Icon name="book" className="w-7 h-7 mx-auto mb-2 text-teal-600" strokeWidth={2} />
-                  <p className="text-sm font-bold">Детали курса</p>
-                  <p className="text-xs text-teal-600">Tap: Продолжить</p>
-                </div>
-                <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                <div className="bg-teal-100 text-teal-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <Icon name="doc" className="w-7 h-7 mx-auto mb-2 text-teal-600" strokeWidth={2} />
-                  <p className="text-sm font-bold">Урок</p>
-                  <p className="text-xs text-teal-600">Tap: Начать</p>
-                </div>
-                <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                <div className="bg-emerald-100 text-emerald-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <Icon name="check" className="w-7 h-7 mx-auto mb-2 text-emerald-600" strokeWidth={2.5} />
-                  <p className="text-sm font-bold">Success</p>
-                  <p className="text-xs text-emerald-600">Overlay</p>
-                </div>
-                <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
-                <div className="bg-amber-100 text-amber-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <Icon name="home" className="w-7 h-7 mx-auto mb-2 text-amber-600" strokeWidth={2} />
-                  <p className="text-sm font-bold">Home</p>
-                  <p className="text-xs text-amber-600">Updated</p>
-                </div>
-              </div>
-              <div className="mt-8 bg-slate-50 rounded-xl p-4">
-                <p className="text-sm text-slate-600">
-                  <strong>Описание:</strong> Пользователь открывает приложение, видит карточку «Продолжить обучение», 
-                  переходит к курсу, начинает урок, отвечает на вопросы, получает Success-экран с XP и возвращается на Home.
-                </p>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Основной сценарий
-            </div>
-          </div>
-
-          {/* Слайд 4 - Альтернативные сценарии */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Альтернативные сценарии</h2>
-            </div>
-            <div className="p-5">
-              <div className="grid grid-cols-2 gap-6 h-full">
-                {/* Поиск курса */}
-                <div className="bg-blue-50 rounded-xl p-5">
-                  <h3 className="font-semibold text-blue-800 mb-3 flex items-center gap-2">
-                    <span className="text-xl">🔍</span> Поиск нового курса
-                  </h3>
-                  <div className="flex items-center gap-2 text-sm text-slate-600 flex-wrap">
-                    <span className="bg-white px-2 py-1 rounded">Home</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Tab: Курсы</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Каталог</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Tap: Карточка</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Детали</span>
-                  </div>
-                  <p className="text-xs text-slate-500 mt-3">Переход через Tab Bar в каталог, выбор курса из списка</p>
-                </div>
-
-                {/* Профиль */}
-                <div className="bg-violet-50 rounded-xl p-5">
-                  <h3 className="font-semibold text-violet-800 mb-3 flex items-center gap-2">
-                    <span className="text-xl">👤</span> Просмотр профиля
-                  </h3>
-                  <div className="flex items-center gap-2 text-sm text-slate-600 flex-wrap">
-                    <span className="bg-white px-2 py-1 rounded">Home</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Tab: Профиль</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Профиль</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Настройки</span>
-                  </div>
-                  <p className="text-xs text-slate-500 mt-3">Просмотр статистики, достижений, переход в настройки</p>
-                </div>
-
-                {/* Ошибка */}
-                <div className="bg-red-50 rounded-xl p-5">
-                  <h3 className="font-semibold text-red-800 mb-3 flex items-center gap-2">
-                    <span className="text-xl">❌</span> Сценарий ошибки
-                  </h3>
-                  <div className="flex items-center gap-2 text-sm text-slate-600 flex-wrap">
-                    <span className="bg-white px-2 py-1 rounded">Любой экран</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Network Error</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Error State</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Tap: Повторить</span>
-                  </div>
-                  <p className="text-xs text-slate-500 mt-3">Показ Error Overlay с возможностью повторить</p>
-                </div>
-
-                {/* Возврат */}
-                <div className="bg-slate-100 rounded-xl p-5">
-                  <h3 className="font-semibold text-slate-800 mb-3 flex items-center gap-2">
-                    <span className="text-xl">↩️</span> Возврат назад
-                  </h3>
-                  <div className="flex items-center gap-2 text-sm text-slate-600 flex-wrap">
-                    <span className="bg-white px-2 py-1 rounded">Детали курса</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Tap: Back</span>
-                    <span>→</span>
-                    <span className="bg-white px-2 py-1 rounded">Предыдущий экран</span>
-                  </div>
-                  <p className="text-xs text-slate-500 mt-3">Кнопка «Назад» и закрытие модальных окон</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Альтернативные сценарии
-            </div>
-          </div>
-
-          {/* Слайд 5 - Типы переходов */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Типы переходов в Figma</h2>
-            </div>
-            <div className="p-5">
-              <div className="grid grid-cols-4 gap-4 h-full">
-                <div className="bg-teal-50 rounded-xl p-4 flex flex-col">
-                  <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
-                  </div>
-                  <h3 className="font-semibold text-teal-800 mb-2">Navigate to</h3>
-                  <p className="text-xs text-slate-600 mb-3 flex-1">Стандартный переход между экранами</p>
-                  <div className="text-xs space-y-1 bg-white rounded-lg p-2">
-                    <p><span className="text-slate-500">Animation:</span> Push</p>
-                    <p><span className="text-slate-500">Duration:</span> 300ms</p>
-                  </div>
-                </div>
-
-                <div className="bg-violet-50 rounded-xl p-4 flex flex-col">
-                  <div className="w-12 h-12 bg-violet-100 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                  </div>
-                  <h3 className="font-semibold text-violet-800 mb-2">Open Overlay</h3>
-                  <p className="text-xs text-slate-600 mb-3 flex-1">Модальные окна поверх экрана</p>
-                  <div className="text-xs space-y-1 bg-white rounded-lg p-2">
-                    <p><span className="text-slate-500">Position:</span> Center</p>
-                    <p><span className="text-slate-500">Background:</span> Dim 50%</p>
-                  </div>
-                </div>
-
-                <div className="bg-amber-50 rounded-xl p-4 flex flex-col">
-                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
-                  </div>
-                  <h3 className="font-semibold text-amber-800 mb-2">Swap</h3>
-                  <p className="text-xs text-slate-600 mb-3 flex-1">Переключение состояний компонента</p>
-                  <div className="text-xs space-y-1 bg-white rounded-lg p-2">
-                    <p><span className="text-slate-500">Use:</span> Variants</p>
-                    <p><span className="text-slate-500">Animate:</span> Smart</p>
-                  </div>
-                </div>
-
-                <div className="bg-slate-100 rounded-xl p-4 flex flex-col">
-                  <div className="w-12 h-12 bg-slate-200 rounded-lg flex items-center justify-center mb-3">
-                    <svg className="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>
-                  </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">Back</h3>
-                  <p className="text-xs text-slate-600 mb-3 flex-1">Возврат на предыдущий экран</p>
-                  <div className="text-xs space-y-1 bg-white rounded-lg p-2">
-                    <p><span className="text-slate-500">Animation:</span> Slide</p>
-                    <p><span className="text-slate-500">Trigger:</span> On Tap</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Типы переходов
-            </div>
-          </div>
-
-          {/* Слайд 6 - Интерактивные состояния */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">��нтерактивные состояния компонентов</h2>
-            </div>
-            <div className="p-5">
-              <div className="grid grid-cols-3 gap-6 h-full">
-                {/* Кнопка */}
-                <div>
-                  <h3 className="text-sm font-semibold text-slate-500 uppercase mb-3">Кнопка Primary</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <div className="bg-teal-500 text-white text-xs font-semibold py-2 px-4 rounded-lg w-24 text-center">Default</div>
-                      <span className="text-xs text-slate-500">state=default</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="bg-teal-600 text-white text-xs font-semibold py-2 px-4 rounded-lg w-24 text-center ring-2 ring-teal-300">Hover</div>
-                      <span className="text-xs text-slate-500">state=hover</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="bg-teal-700 text-white text-xs font-semibold py-2 px-4 rounded-lg w-24 text-center scale-95">Pressed</div>
-                      <span className="text-xs text-slate-500">state=pressed</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="bg-slate-300 text-slate-500 text-xs font-semibold py-2 px-4 rounded-lg w-24 text-center">Disabled</div>
-                      <span className="text-xs text-slate-500">state=disabled</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Вариант ответа */}
-                <div>
-                  <h3 className="text-sm font-semibold text-slate-500 uppercase mb-3">Вариант ответа</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-2 p-2 rounded-lg border border-slate-200 text-xs">
-                      <div className="w-4 h-4 rounded-full border-2 border-slate-300"></div>
-                      <span>Default</span>
-                    </div>
-                    <div className="flex items-center gap-2 p-2 rounded-lg border-2 border-teal-500 bg-teal-50 text-xs">
-                      <div className="w-4 h-4 rounded-full bg-teal-500 flex items-center justify-center">
-                        <svg className="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7"/></svg>
-                      </div>
-                      <span className="text-teal-700">Selected</span>
-                    </div>
-                    <div className="flex items-center gap-2 p-2 rounded-lg border-2 border-emerald-500 bg-emerald-50 text-xs">
-                      <div className="w-4 h-4 rounded-full bg-emerald-500"></div>
-                      <span className="text-emerald-700">Correct</span>
-                    </div>
-                    <div className="flex items-center gap-2 p-2 rounded-lg border-2 border-red-500 bg-red-50 text-xs">
-                      <div className="w-4 h-4 rounded-full bg-red-500"></div>
-                      <span className="text-red-700">Wrong</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Tab Bar */}
-                <div>
-                  <h3 className="text-sm font-semibold text-slate-500 uppercase mb-3">Tab Bar</h3>
-                  <div className="bg-white border border-slate-200 rounded-xl p-3 flex justify-around">
-                    <div className="flex flex-col items-center">
-                      <svg className="w-5 h-5 text-teal-500" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-                      <span className="text-[10px] text-teal-600 font-medium">Active</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-                      <span className="text-[10px] text-slate-400">Inactive</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-                      <span className="text-[10px] text-slate-400">Inactive</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                      <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                      <span className="text-[10px] text-slate-400">Inactive</span>
-                    </div>
-                  </div>
-                  <p className="text-xs text-slate-500 mt-3">Interactive Components с переключением состояний при клике</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Интерактивные состояния
-            </div>
-          </div>
-
-          {/* Слайд 7 - Карта экранов */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Карта связей между экранами</h2>
-            </div>
-            <div className="flex-1 p-8 flex items-center justify-center">
-              <div className="bg-slate-50 rounded-xl p-6 w-full max-w-3xl">
-                <div className="grid grid-cols-5 gap-3 text-center text-xs">
-                  <div></div>
-                  <div></div>
-                  <div className="bg-amber-100 border-2 border-amber-300 rounded-lg p-2">
-                    <span className="text-lg">🏠</span>
-                    <p className="font-bold text-amber-800">Home</p>
-                  </div>
-                  <div></div>
-                  <div></div>
-
-                  <div className="bg-blue-100 rounded-lg p-2">
-                    <span className="text-lg">🔍</span>
-                    <p className="font-bold text-blue-800">Поиск</p>
-                  </div>
-                  <div className="bg-violet-100 rounded-lg p-2">
-                    <span className="text-lg">📚</span>
-                    <p className="font-bold text-violet-800">Каталог</p>
-                  </div>
-                  <div className="bg-teal-100 border-2 border-teal-300 rounded-lg p-2">
-                    <span className="text-lg">📖</span>
-                    <p className="font-bold text-teal-800">Детали</p>
-                  </div>
-                  <div className="bg-slate-200 rounded-lg p-2">
-                    <span className="text-lg">👤</span>
-                    <p className="font-bold text-slate-700">Профиль</p>
-                  </div>
-                  <div className="bg-slate-200 rounded-lg p-2">
-                    <span className="text-lg">⚙️</span>
-                    <p className="font-bold text-slate-700">Настройки</p>
-                  </div>
-
-                  <div></div>
-                  <div></div>
-                  <div className="bg-teal-500 text-white rounded-lg p-2">
-                    <span className="text-lg">📝</span>
-                    <p className="font-bold">Урок</p>
-                  </div>
-                  <div></div>
-                  <div></div>
-
-                  <div></div>
-                  <div className="bg-red-100 rounded-lg p-2">
-                    <span className="text-lg">❌</span>
-                    <p className="font-bold text-red-800">Error</p>
-                  </div>
-                  <div></div>
-                  <div className="bg-emerald-100 rounded-lg p-2">
-                    <span className="text-lg">✅</span>
-                    <p className="font-bold text-emerald-800">Success</p>
-                  </div>
-                  <div></div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Карта экранов
-            </div>
-          </div>
-
-          {/* Слайд 8 - Тестирование */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Тестирование прототипа</h2>
-            </div>
-            <div className="p-5">
-              <div className="grid grid-cols-2 gap-6 h-full">
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Чек-лист навигации</h3>
-                  <div className="space-y-2">
-                    {[
-                      'Tab Bar переключает все 4 вкладки',
-                      'Кнопка «Назад» работает везде',
-                      'Карточк�� ку��сов кликабельны',
-                      'Нет «тупиков» без выхода',
-                      'Модалки закрываются',
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-emerald-50 rounded-lg p-2">
-                        <svg className="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                        <span className="text-sm text-slate-700">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">Чек-лист интерактивности</h3>
-                  <div className="space-y-2">
-                    {[
-                      'Выбор ответа меняет состояние',
-                      'Кнопка «Проверить» показывает результат',
-                      'Success возвращает на Home',
-                      'Error предлагает повторить',
-                      'Фильтры переключаются визуально',
-                    ].map((item, i) => (
-                      <div key={i} className="flex items-center gap-2 bg-emerald-50 rounded-lg p-2">
-                        <svg className="w-4 h-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                        <span className="text-sm text-slate-700">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Тестирование
-            </div>
-          </div>
-
-          {/* Слайд 9 - Демонстрация */}
-          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
-            <div className="bg-slate-800 text-white px-6 py-3">
-              <h2 className="text-xl font-bold">Ссылка на прототип</h2>
-            </div>
-            <div className="flex-1 p-8 flex flex-col items-center justify-center">
-              <div className="w-20 h-20 bg-rose-100 rounded-2xl flex items-center justify-center mb-6">
-                  <svg className="w-10 h-10 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Интерактивный прототип LearnUp</h3>
-              <div className="bg-slate-100 rounded-xl px-6 py-4 mb-6">
-                <p className="text-slate-600 font-mono text-sm">figma.com/proto/[ваша-ссылка]</p>
-              </div>
-              <p className="text-slate-500 text-center max-w-md">
-                Вставьте ссылку на прототип из Figma (Share → Copy Link → Prototype) 
-                или QR-код для быстрого доступа на мобильном устройстве
+      {/* Слайд 2 — Цели */}
+      <Slide title="Цели и задачи прототипирования" footer="Цели и задачи">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <div>
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Цель работы</h3>
+            <div className="bg-teal-50 rounded-xl p-4 sm:p-5 border border-teal-100 mb-5">
+              <p className="text-slate-700 text-sm sm:text-base">
+                Создать интерактивный прототип на основе Hi-Fi макетов, демонстрирующий
+                логику взаимодействия и пользовательские сценарии приложения LearnUp.
               </p>
             </div>
-            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Демонстрация
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Исходные материалы</h3>
+            <ul className="space-y-2 text-sm text-slate-600">
+              {["Hi-Fi макеты из ПЗ №4", "User Flow и сценарии из ПЗ №1–2", "UI-кит с состояниями из ПЗ №3"].map((t) => (
+                <li key={t} className="flex items-start gap-2">
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-teal-500 shrink-0" />
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-3">Задачи</h3>
+            <div className="space-y-3">
+              {["Определить основные сценарии", "Настроить переходы между экранами", "Реализовать интерактивные состояния", "Протестировать прототип", "Подготовить презентацию"].map((t, i) => (
+                <div key={t} className="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
+                  <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0">{i + 1}</div>
+                  <span className="text-slate-700 text-sm">{t}</span>
+                </div>
+              ))}
             </div>
           </div>
-
-          {/* Слайд 10 - Итоги */}
-          <div className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden flex flex-col print:rounded-none print:shadow-none print:break-after-page">
-            <div className="flex-1 flex flex-col items-center justify-center text-white p-12">
-              <h1 className="text-3xl font-bold mb-6 text-center">Итоги проекта LearnUp</h1>
-              <div className="grid grid-cols-5 gap-4 mb-8">
-                <div className="bg-white/10 rounded-xl p-3 text-center">
-                  <p className="text-2xl font-bold">ПЗ1</p>
-                  <p className="text-xs text-white/70">Анализ</p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-3 text-center">
-                  <p className="text-2xl font-bold">ПЗ2</p>
-                  <p className="text-xs text-white/70">Lo-Fi</p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-3 text-center">
-                  <p className="text-2xl font-bold">ПЗ3</p>
-                  <p className="text-xs text-white/70">UI-кит</p>
-                </div>
-                <div className="bg-white/10 rounded-xl p-3 text-center">
-                  <p className="text-2xl font-bold">ПЗ4</p>
-                  <p className="text-xs text-white/70">Hi-Fi</p>
-                </div>
-                <div className="bg-white/20 rounded-xl p-3 text-center ring-2 ring-white/50">
-                  <p className="text-2xl font-bold">ПЗ5</p>
-                  <p className="text-xs text-white/70">Прототип</p>
-                </div>
-              </div>
-              <div className="grid grid-cols-3 gap-6 mb-8">
-                <div className="text-center">
-                  <p className="text-4xl font-bold">6</p>
-                  <p className="text-sm text-white/70">Экранов</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-4xl font-bold">4</p>
-                  <p className="text-sm text-white/70">Сценария</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-4xl font-bold">12+</p>
-                  <p className="text-sm text-white/70">Связей</p>
-                </div>
-              </div>
-              <p className="text-xl font-semibold">Спасибо за внимание!</p>
-            </div>
-            <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm">
-              <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
-            </div>
-          </div>
-
         </div>
-      </main>
-    </div>
+      </Slide>
+
+      {/* Слайд 3 — Основной сценарий */}
+      <Slide title="Основной сценарий: Прохождение урока" footer="Основной сценарий">
+        <div className="flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
+          {[
+            { color: "amber", label: "Home", sub: "Start Frame", iconName: "home" as const },
+            { color: "teal", label: "Детали курса", sub: "Tap: Продолжить", iconName: "book" as const },
+            { color: "teal", label: "Урок", sub: "Tap: Начать", iconName: "doc" as const },
+            { color: "emerald", label: "Success", sub: "Overlay", iconName: "check" as const },
+            { color: "amber", label: "Home", sub: "Updated", iconName: "home" as const },
+          ].flatMap(({ color, label, sub, iconName }, i, arr) => {
+            const el = (
+              <div key={`${label}-${i}`} className={`bg-${color}-100 text-${color}-800 px-3 py-3 sm:px-4 sm:py-4 rounded-xl font-medium text-center flex-1 max-w-[120px] sm:max-w-[140px]`}>
+                <Icon name={iconName} className={`w-7 h-7 mx-auto mb-2 text-${color}-600`} strokeWidth={2} />
+                <p className="text-xs sm:text-sm font-bold">{label}</p>
+                <p className={`text-[10px] text-${color}-600`}>{sub}</p>
+              </div>
+            )
+            return i < arr.length - 1
+              ? [el, <svg key={`arr-${i}`} className="w-6 h-6 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>]
+              : [el]
+          })}
+        </div>
+        <div className="mt-6 bg-slate-50 rounded-xl p-4">
+          <p className="text-sm text-slate-600">
+            <strong>Описание:</strong> Пользователь открывает приложение, видит карточку «Продолжить обучение»,
+            переходит к курсу, начинает урок, отвечает на вопросы, получает Success-экран с XP и возвращается на Home.
+          </p>
+        </div>
+      </Slide>
+
+      {/* Слайд 4 — Альтернативные сценарии */}
+      <Slide title="Альтернативные сценарии" footer="Альтернативные сценарии">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {[
+            {
+              color: "blue", label: "Поиск нового курса",
+              steps: ["Home", "Tab: Курсы", "Каталог", "Tap: Карточка", "Детали"],
+              note: "Переход через Tab Bar в каталог, выбор курса из списка",
+            },
+            {
+              color: "violet", label: "Просмотр профиля",
+              steps: ["Home", "Tab: Профиль", "Профиль", "Настройки"],
+              note: "Просмотр статистики, достижений, переход в настройки",
+            },
+            {
+              color: "red", label: "Сценарий ошибки",
+              steps: ["Любой экран", "Network Error", "Error State", "Tap: Повторить"],
+              note: "Показ Error Overlay с возможностью повторить",
+            },
+            {
+              color: "slate", label: "Возврат назад",
+              steps: ["Детали курса", "Tap: Back", "Предыдущий экран"],
+              note: "Кнопка «Назад» и закрытие модальных окон",
+            },
+          ].map(({ color, label, steps, note }) => (
+            <div key={label} className={`bg-${color}-50 rounded-xl p-4 sm:p-5`}>
+              <h3 className={`font-semibold text-${color}-800 mb-3 text-sm sm:text-base`}>{label}</h3>
+              <div className="flex items-center gap-2 text-xs text-slate-600 flex-wrap mb-3">
+                {steps.flatMap((s, i) => i < steps.length - 1
+                  ? [<span key={s} className="bg-white px-2 py-1 rounded">{s}</span>, <span key={`a-${i}`}>→</span>]
+                  : [<span key={s} className="bg-white px-2 py-1 rounded">{s}</span>]
+                )}
+              </div>
+              <p className="text-xs text-slate-500">{note}</p>
+            </div>
+          ))}
+        </div>
+      </Slide>
+
+      {/* Слайд 5 — Типы переходов */}
+      <Slide title="Типы переходов в Figma" footer="Типы переходов">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {[
+            { color: "teal", label: "Navigate to", desc: "Стандартный переход между экранами", meta: [["Animation:", "Push"], ["Duration:", "300ms"]],
+              icon: "M13 7l5 5m0 0l-5 5m5-5H6" },
+            { color: "violet", label: "Open Overlay", desc: "Модальные окна поверх экрана", meta: [["Position:", "Center"], ["Background:", "Dim 50%"]],
+              icon: "M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" },
+            { color: "amber", label: "Swap", desc: "Переключение состояний компонента", meta: [["Use:", "Variants"], ["Animate:", "Smart"]],
+              icon: "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" },
+            { color: "slate", label: "Back", desc: "Возврат на предыдущий экран", meta: [["Animation:", "Slide"], ["Trigger:", "On Tap"]],
+              icon: "M11 17l-5-5m0 0l5-5m-5 5h12" },
+          ].map(({ color, label, desc, meta, icon }) => (
+            <div key={label} className={`bg-${color}-50 rounded-xl p-4 flex flex-col`}>
+              <div className={`w-11 h-11 bg-${color}-100 rounded-lg flex items-center justify-center mb-3`}>
+                <svg className={`w-5 h-5 text-${color}-600`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={icon} /></svg>
+              </div>
+              <h3 className={`font-semibold text-${color}-800 mb-2 text-sm`}>{label}</h3>
+              <p className="text-xs text-slate-600 mb-3 flex-1">{desc}</p>
+              <div className="text-xs space-y-1 bg-white rounded-lg p-2">
+                {meta.map(([k, v]) => <p key={k}><span className="text-slate-500">{k}</span> {v}</p>)}
+              </div>
+            </div>
+          ))}
+        </div>
+      </Slide>
+
+      {/* Слайд 6 — Интерактивные состояния */}
+      <Slide title="Интерактивные состояния компонентов" footer="Интерактивные состояния">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          {/* Кнопка */}
+          <div>
+            <h3 className="text-xs font-semibold text-slate-500 uppercase mb-3">Кнопка Primary</h3>
+            <div className="space-y-2">
+              {[
+                { cls: "bg-teal-500 text-white", label: "Default", note: "state=default" },
+                { cls: "bg-teal-600 text-white ring-2 ring-teal-300", label: "Hover", note: "state=hover" },
+                { cls: "bg-teal-700 text-white scale-95", label: "Pressed", note: "state=pressed" },
+                { cls: "bg-slate-300 text-slate-500", label: "Disabled", note: "state=disabled" },
+              ].map(({ cls, label, note }) => (
+                <div key={label} className="flex items-center gap-3">
+                  <div className={`text-xs font-semibold py-2 px-4 rounded-lg w-24 text-center ${cls}`}>{label}</div>
+                  <span className="text-xs text-slate-500">{note}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Вариант ответа */}
+          <div>
+            <h3 className="text-xs font-semibold text-slate-500 uppercase mb-3">Вариант ответа</h3>
+            <div className="space-y-2">
+              <div className="flex items-center gap-2 p-2 rounded-lg border border-slate-200 text-xs"><div className="w-4 h-4 rounded-full border-2 border-slate-300" /><span>Default</span></div>
+              <div className="flex items-center gap-2 p-2 rounded-lg border-2 border-teal-500 bg-teal-50 text-xs">
+                <div className="w-4 h-4 rounded-full bg-teal-500 flex items-center justify-center"><svg className="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 13l4 4L19 7" /></svg></div>
+                <span className="text-teal-700">Selected</span>
+              </div>
+              <div className="flex items-center gap-2 p-2 rounded-lg border-2 border-emerald-500 bg-emerald-50 text-xs"><div className="w-4 h-4 rounded-full bg-emerald-500" /><span className="text-emerald-700">Correct</span></div>
+              <div className="flex items-center gap-2 p-2 rounded-lg border-2 border-red-500 bg-red-50 text-xs"><div className="w-4 h-4 rounded-full bg-red-500" /><span className="text-red-700">Wrong</span></div>
+            </div>
+          </div>
+
+          {/* Tab Bar */}
+          <div>
+            <h3 className="text-xs font-semibold text-slate-500 uppercase mb-3">Tab Bar</h3>
+            <div className="bg-white border border-slate-200 rounded-xl p-3 flex justify-around mb-3">
+              <div className="flex flex-col items-center">
+                <svg className="w-5 h-5 text-teal-500" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" /></svg>
+                <span className="text-[10px] text-teal-600 font-medium">Active</span>
+              </div>
+              {["M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253", "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"].map((d, i) => (
+                <div key={i} className="flex flex-col items-center">
+                  <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={d} /></svg>
+                  <span className="text-[10px] text-slate-400">Inactive</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-xs text-slate-500">Interactive Components с переключением при клике</p>
+          </div>
+        </div>
+      </Slide>
+
+      {/* Слайд 7 — Карта экранов */}
+      <Slide title="Карта связей между экранами" footer="Карта экранов">
+        <div className="bg-slate-50 rounded-xl p-5 sm:p-6">
+          <div className="grid grid-cols-5 gap-3 text-center text-xs">
+            <div /><div />
+            <div className="bg-amber-100 border-2 border-amber-300 rounded-lg p-2">
+              <div className="w-6 h-6 bg-amber-400 rounded mx-auto mb-1" />
+              <p className="font-bold text-amber-800">Home</p>
+            </div>
+            <div /><div />
+
+            {[
+              { color: "blue", label: "Поиск" },
+              { color: "violet", label: "Каталог" },
+              { color: "teal", label: "Детали", border: true },
+              { color: "slate", label: "Профиль" },
+              { color: "slate", label: "Настройки" },
+            ].map(({ color, label, border }) => (
+              <div key={label} className={`bg-${color}-100 ${border ? "border-2 border-teal-300" : ""} rounded-lg p-2`}>
+                <div className={`w-5 h-5 bg-${color}-400 rounded mx-auto mb-1`} />
+                <p className={`font-bold text-${color}-800 text-[10px] sm:text-xs`}>{label}</p>
+              </div>
+            ))}
+
+            <div /><div />
+            <div className="bg-teal-500 text-white rounded-lg p-2">
+              <div className="w-5 h-5 bg-teal-300 rounded mx-auto mb-1" />
+              <p className="font-bold text-[10px] sm:text-xs">Урок</p>
+            </div>
+            <div /><div />
+
+            <div />
+            <div className="bg-red-100 rounded-lg p-2">
+              <div className="w-5 h-5 bg-red-400 rounded mx-auto mb-1" />
+              <p className="font-bold text-red-800 text-[10px] sm:text-xs">Error</p>
+            </div>
+            <div />
+            <div className="bg-emerald-100 rounded-lg p-2">
+              <div className="w-5 h-5 bg-emerald-400 rounded mx-auto mb-1" />
+              <p className="font-bold text-emerald-800 text-[10px] sm:text-xs">Success</p>
+            </div>
+            <div />
+          </div>
+        </div>
+      </Slide>
+
+      {/* Слайд 8 — Тестирование */}
+      <Slide title="Тестирование прототипа" footer="Тестирование">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+          <div>
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-4">Чек-лист навигации</h3>
+            <div className="space-y-2">
+              {["Tab Bar переключает все 4 вкладки", "Кнопка «Назад» работает везде", "Карточки курсов кликабельны", "Нет «тупиков» без выхода", "Модалки закрываются"].map((t) => (
+                <div key={t} className="flex items-center gap-2 bg-emerald-50 rounded-lg p-2">
+                  <svg className="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span className="text-sm text-slate-700">{t}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-base sm:text-lg font-semibold text-slate-900 mb-4">Чек-лист интерактивности</h3>
+            <div className="space-y-2">
+              {["Выбор ответа меняет состояние", "Кнопка «Проверить» показывает результат", "Success возвращает на Home", "Error предлагает повторить", "Фильтры переключаются визуально"].map((t) => (
+                <div key={t} className="flex items-center gap-2 bg-emerald-50 rounded-lg p-2">
+                  <svg className="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span className="text-sm text-slate-700">{t}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Slide>
+
+      {/* Слайд 9 — Ссылка на прототип */}
+      <Slide title="Ссылка на прототип" footer="Демонстрация">
+        <div className="flex flex-col items-center justify-center py-6 text-center">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 bg-teal-100 rounded-2xl flex items-center justify-center mb-5">
+            <svg className="w-8 h-8 sm:w-10 sm:h-10 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Интерактивный прототип LearnUp</h3>
+          <div className="bg-slate-100 rounded-xl px-6 py-4 mb-5">
+            <p className="text-slate-600 font-mono text-sm">figma.com/proto/[ваша-ссылка]</p>
+          </div>
+          <p className="text-slate-500 text-sm max-w-md text-pretty">
+            Вставьте ссылку на прототип из Figma (Share → Copy Link → Prototype)
+            или QR-код для быстрого доступа на мобильном устройстве
+          </p>
+        </div>
+      </Slide>
+
+      {/* Слайд 10 — Итоги */}
+      <section className="bg-gradient-to-br from-teal-600 to-emerald-700 rounded-2xl shadow-xl overflow-hidden print:rounded-none print:shadow-none">
+        <div className="flex flex-col items-center justify-center text-white px-6 py-10 sm:py-14 text-center">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-8 text-balance">Итоги проекта LearnUp</h1>
+          <div className="grid grid-cols-5 gap-3 sm:gap-4 mb-8 w-full max-w-lg">
+            {[["ПЗ1", "Анализ"], ["ПЗ2", "Lo-Fi"], ["ПЗ3", "UI-кит"], ["ПЗ4", "Hi-Fi"], ["ПЗ5", "Прототип"]].map(([n, l], i) => (
+              <div key={n} className={`rounded-xl p-3 text-center ${i === 4 ? "bg-white/20 ring-2 ring-white/50" : "bg-white/10"}`}>
+                <p className="text-xl sm:text-2xl font-bold">{n}</p>
+                <p className="text-[10px] sm:text-xs text-white/70">{l}</p>
+              </div>
+            ))}
+          </div>
+          <div className="grid grid-cols-3 gap-6 mb-8">
+            {[["6", "Экранов"], ["4", "Сценария"], ["12+", "Связей"]].map(([n, l]) => (
+              <div key={l} className="text-center">
+                <p className="text-3xl sm:text-4xl font-bold">{n}</p>
+                <p className="text-sm text-white/70">{l}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-lg sm:text-xl font-semibold">Спасибо за внимание!</p>
+        </div>
+      </section>
+
+      {/* Прототип */}
+      <Slide title="Интерактивный прототип LearnUp" footer="Все экраны приложения">
+        <p className="text-sm text-slate-500 mb-6 text-pretty">
+          Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
+        </p>
+        <PrototypeGallery scale={0.46} />
+      </Slide>
+    </PdfShell>
   )
 }
