@@ -1,4 +1,6 @@
 import type { ReactNode } from "react"
+import { Suspense } from "react"
+import { PrintTrigger } from "./print-trigger"
 
 /* ---------------------------------------------------------------------------
  * Unified presentation primitives for all ПЗ PDF pages (/pdf1 … /pdf5).
@@ -19,6 +21,11 @@ export function PdfShell({
 }) {
   return (
     <div className="min-h-screen bg-slate-100">
+      {/* Auto-trigger print when ?print=1 */}
+      <Suspense>
+        <PrintTrigger />
+      </Suspense>
+
       <header className="bg-slate-900 text-white sticky top-0 z-20 print:hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
@@ -26,7 +33,7 @@ export function PdfShell({
               <h1 className="text-lg sm:text-xl font-semibold">{`ПЗ №${pz} — PDF Презентация`}</h1>
               <p className="text-sm text-slate-400">10 слайдов для сдачи</p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
               <a
                 href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1"
                 target="_blank"
@@ -37,6 +44,17 @@ export function PdfShell({
               </a>
               <a href={figmaContentHref} className="text-sm text-emerald-300 hover:text-emerald-200 transition-colors">
                 Figma-контент
+              </a>
+              <a
+                href={`/pdf${pz}?print=1`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-teal-600 hover:bg-teal-500 px-3 py-1.5 text-sm font-semibold text-white transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                Экспорт PDF
               </a>
             </div>
           </div>

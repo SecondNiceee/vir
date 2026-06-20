@@ -1,5 +1,48 @@
 import Link from "next/link"
 
+const PZ_ITEMS = [
+  {
+    num: 1,
+    badge: "Практическая работа №1",
+    badgeColor: "bg-violet-100 text-violet-700",
+    figmaColor: "bg-violet-600 hover:bg-violet-700",
+    title: "Выбор темы и анализ аналогов",
+    desc: "Обоснование выбора, целевая аудитория, сценарии, сравнительный анализ",
+  },
+  {
+    num: 2,
+    badge: "Практическая работа №2",
+    badgeColor: "bg-indigo-100 text-indigo-700",
+    figmaColor: "bg-indigo-600 hover:bg-indigo-700",
+    title: "Lo-Fi прототипирование и навигация",
+    desc: "Список экранов, тип навигации, User Flow, Lo-Fi прототипы",
+  },
+  {
+    num: 3,
+    badge: "Практическая работа №3",
+    badgeColor: "bg-teal-100 text-teal-700",
+    figmaColor: "bg-teal-600 hover:bg-teal-700",
+    title: "Дизайн-система и UI-кит",
+    desc: "Визуальные основы, цвета, типографика, компоненты, UI-кит",
+  },
+  {
+    num: 4,
+    badge: "Практическая работа №4",
+    badgeColor: "bg-emerald-100 text-emerald-700",
+    figmaColor: "bg-emerald-600 hover:bg-emerald-700",
+    title: "Визуальный дизайн и Hi-Fi макеты",
+    desc: "Hi-Fi экраны, визуальная иерархия, применение дизайн-системы",
+  },
+  {
+    num: 5,
+    badge: "Практическая работа №5",
+    badgeColor: "bg-rose-100 text-rose-700",
+    figmaColor: "bg-rose-600 hover:bg-rose-700",
+    title: "Интерактивный прототип и презентация",
+    desc: "Prototype-связи, сценарии, интерактивные состояния, защита проекта",
+  },
+]
+
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-background px-6 py-12">
@@ -10,114 +53,43 @@ export default function Page() {
         <p className="mb-8 text-muted-foreground">
           Мобильное образовательное приложение — практические работы
         </p>
-        
-        {/* ПЗ №1 */}
-        <div className="mb-8 p-6 rounded-2xl border border-border bg-card">
-          <span className="mb-3 inline-block rounded-full bg-violet-100 px-4 py-1.5 text-sm font-medium text-violet-700">
-            Практическая работа №1
-          </span>
-          <h2 className="mb-2 text-xl font-semibold text-foreground">Выбор темы и анализ аналогов</h2>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Обоснование выбора, целевая аудитория, сценарии, сравнительный анализ
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/figma1"
-              className="inline-flex items-center justify-center rounded-xl bg-violet-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-violet-700"
-            >
-              /figma1
-              <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
-            </Link>
-            <Link
-              href="/pdf1"
-              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
-              /pdf1
-              <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
-            </Link>
-          </div>
-        </div>
 
-        {/* ПЗ №2 */}
-        <div className="mb-8 p-6 rounded-2xl border border-border bg-card">
-          <span className="mb-3 inline-block rounded-full bg-indigo-100 px-4 py-1.5 text-sm font-medium text-indigo-700">
-            Практическая работа №2
-          </span>
-          <h2 className="mb-2 text-xl font-semibold text-foreground">Lo-Fi прототипирование и навигация</h2>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Список экранов, тип навигации, User Flow, Lo-Fi прототипы
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/figma2"
-              className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-indigo-700"
-            >
-              /figma2
-              <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
-            </Link>
-            <Link
-              href="/pdf2"
-              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
-              /pdf2
-              <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
-            </Link>
+        {PZ_ITEMS.slice(0, 4).map((pz) => (
+          <div key={pz.num} className="mb-8 p-6 rounded-2xl border border-border bg-card">
+            <span className={`mb-3 inline-block rounded-full px-4 py-1.5 text-sm font-medium ${pz.badgeColor}`}>
+              {pz.badge}
+            </span>
+            <h2 className="mb-2 text-xl font-semibold text-foreground">{pz.title}</h2>
+            <p className="mb-4 text-sm text-muted-foreground">{pz.desc}</p>
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+              <Link
+                href={`/figma${pz.num}`}
+                className={`inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold text-white transition-colors ${pz.figmaColor}`}
+              >
+                /figma{pz.num}
+                <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
+              </Link>
+              <Link
+                href={`/pdf${pz.num}`}
+                className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
+              >
+                /pdf{pz.num}
+                <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
+              </Link>
+              <a
+                href={`/pdf${pz.num}?print=1`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-teal-200 bg-teal-50 px-5 py-3 text-sm font-semibold text-teal-700 transition-colors hover:bg-teal-100"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                Экспорт PDF
+              </a>
+            </div>
           </div>
-        </div>
-
-        {/* ПЗ №3 */}
-        <div className="mb-8 p-6 rounded-2xl border border-border bg-card">
-          <span className="mb-3 inline-block rounded-full bg-teal-100 px-4 py-1.5 text-sm font-medium text-teal-700">
-            Практическая работа №3
-          </span>
-          <h2 className="mb-2 text-xl font-semibold text-foreground">Дизайн-система и UI-кит</h2>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Визуальные основы, цвета, типографика, компоненты, UI-кит
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/figma3"
-              className="inline-flex items-center justify-center rounded-xl bg-teal-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-700"
-            >
-              /figma3
-              <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
-            </Link>
-            <Link
-              href="/pdf3"
-              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
-              /pdf3
-              <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
-            </Link>
-          </div>
-        </div>
-
-        {/* ПЗ №4 */}
-        <div className="mb-8 p-6 rounded-2xl border border-border bg-card">
-          <span className="mb-3 inline-block rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-medium text-emerald-700">
-            Практическая работа №4
-          </span>
-          <h2 className="mb-2 text-xl font-semibold text-foreground">Визуальный дизайн и Hi-Fi макеты</h2>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Hi-Fi экраны, визуальная иерархия, применение дизайн-системы
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/figma4"
-              className="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
-            >
-              /figma4
-              <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
-            </Link>
-            <Link
-              href="/pdf4"
-              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
-              /pdf4
-              <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
-            </Link>
-          </div>
-        </div>
+        ))}
 
         {/* Интерактивный прототип */}
         <div className="mb-8 p-6 rounded-2xl border-2 border-teal-400 bg-teal-50">
@@ -137,31 +109,42 @@ export default function Page() {
         </div>
 
         {/* ПЗ №5 */}
-        <div className="mb-8 p-6 rounded-2xl border border-border bg-card">
-          <span className="mb-3 inline-block rounded-full bg-rose-100 px-4 py-1.5 text-sm font-medium text-rose-700">
-            Практическая работа №5
-          </span>
-          <h2 className="mb-2 text-xl font-semibold text-foreground">Интерактивный прототип и презентация</h2>
-          <p className="mb-4 text-sm text-muted-foreground">
-            Prototype-связи, сценарии, интерактивные состояния, защита проекта
-          </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Link
-              href="/figma5"
-              className="inline-flex items-center justify-center rounded-xl bg-rose-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-rose-700"
-            >
-              /figma5
-              <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
-            </Link>
-            <Link
-              href="/pdf5"
-              className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
-              /pdf5
-              <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
-            </Link>
+        {PZ_ITEMS.slice(4).map((pz) => (
+          <div key={pz.num} className="mb-8 p-6 rounded-2xl border border-border bg-card">
+            <span className={`mb-3 inline-block rounded-full px-4 py-1.5 text-sm font-medium ${pz.badgeColor}`}>
+              {pz.badge}
+            </span>
+            <h2 className="mb-2 text-xl font-semibold text-foreground">{pz.title}</h2>
+            <p className="mb-4 text-sm text-muted-foreground">{pz.desc}</p>
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+              <Link
+                href={`/figma${pz.num}`}
+                className={`inline-flex items-center justify-center rounded-xl px-6 py-3 text-sm font-semibold text-white transition-colors ${pz.figmaColor}`}
+              >
+                /figma{pz.num}
+                <span className="ml-2 text-xs font-normal opacity-80">Figma-контент</span>
+              </Link>
+              <Link
+                href={`/pdf${pz.num}`}
+                className="inline-flex items-center justify-center rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
+              >
+                /pdf{pz.num}
+                <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
+              </Link>
+              <a
+                href={`/pdf${pz.num}?print=1`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-teal-200 bg-teal-50 px-5 py-3 text-sm font-semibold text-teal-700 transition-colors hover:bg-teal-100"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                Экспорт PDF
+              </a>
+            </div>
           </div>
-        </div>
+        ))}
 
         {/* Task 2 — QuickDrop */}
         <div className="mt-12 pt-8 border-t border-border">

@@ -167,3 +167,21 @@
     @apply font-sans;
   }
 }
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+
+  /* Force colour backgrounds to print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Remove browser-added headers / footers */
+  html, body {
+    background: white !important;
+  }
+}
