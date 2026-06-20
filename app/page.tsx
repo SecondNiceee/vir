@@ -119,8 +119,25 @@ export default function Page() {
           </div>
         </div>
 
+        {/* Интерактивный прототип */}
+        <div className="mb-8 p-6 rounded-2xl border-2 border-teal-400 bg-teal-50">
+          <span className="mb-3 inline-block rounded-full bg-teal-500 px-4 py-1.5 text-sm font-medium text-white">
+            Интерактивный прототип
+          </span>
+          <h2 className="mb-2 text-xl font-semibold text-foreground">LearnUp — 4 экрана с навигацией</h2>
+          <p className="mb-4 text-sm text-muted-foreground">
+            Главная, Курсы, Поиск, Профиль — переключение через нижний таббар
+          </p>
+          <Link
+            href="/prototype"
+            className="inline-flex items-center justify-center rounded-xl bg-teal-500 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-teal-600"
+          >
+            Открыть прототип →
+          </Link>
+        </div>
+
         {/* ПЗ №5 */}
-        <div className="p-6 rounded-2xl border border-border bg-card">
+        <div className="mb-8 p-6 rounded-2xl border border-border bg-card">
           <span className="mb-3 inline-block rounded-full bg-rose-100 px-4 py-1.5 text-sm font-medium text-rose-700">
             Практическая работа №5
           </span>
@@ -144,6 +161,26 @@ export default function Page() {
               <span className="ml-2 text-xs font-normal text-muted-foreground">PDF-слайды</span>
             </Link>
           </div>
+        </div>
+
+        {/* Task 2 — QuickDrop */}
+        <div className="mt-12 pt-8 border-t border-border">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Другая тема</p>
+          <Link
+            href="/task2"
+            className="block p-6 rounded-2xl border border-orange-200 bg-orange-50 hover:bg-orange-100 transition-colors text-left"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-9 h-9 bg-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                </svg>
+              </div>
+              <span className="text-lg font-bold text-slate-900">QuickDrop</span>
+            </div>
+            <p className="text-sm text-slate-600">Мобильный сервис доставки — ПЗ №1–3</p>
+            <span className="mt-3 inline-block text-sm font-semibold text-orange-600">Открыть /task2 →</span>
+          </Link>
         </div>
       </div>
     </main>
