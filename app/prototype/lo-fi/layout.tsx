@@ -10,7 +10,7 @@ const tabs = [
 export default function LoFiLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-slate-200 flex items-start justify-center py-8">
-      <div className="relative w-full max-w-[390px] bg-white flex flex-col shadow-md border border-slate-300 rounded-none" style={{ minHeight: 700 }}>
+      <div className="relative w-full max-w-[430px] min-h-screen bg-white flex flex-col">
         {/* status bar */}
         <div className="flex items-center justify-between px-5 py-2 border-b border-slate-200">
           <div className="h-2 w-8 bg-slate-300 rounded" />
