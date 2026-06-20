@@ -1,5 +1,6 @@
 import { Cover, PdfShell, Slide } from "@/components/pdf/slide"
 import { PhoneFrame } from "@/components/prototype/phone-frame"
+import { PrototypeGallery } from "@/components/pdf/prototype-screens"
 import MainScreen from "@/app/prototype/main/page"
 import CoursesScreen from "@/app/prototype/courses/page"
 import SearchScreen from "@/app/prototype/search/page"
@@ -7,16 +8,6 @@ import ProfileScreen from "@/app/prototype/profile/page"
 import NotificationsScreen from "@/app/prototype/notifications/page"
 import SettingsScreen from "@/app/prototype/settings/page"
 import HelpScreen from "@/app/prototype/help/page"
-
-const screens = [
-  { label: "Главная", node: <MainScreen /> },
-  { label: "Курсы", node: <CoursesScreen /> },
-  { label: "Поиск", node: <SearchScreen /> },
-  { label: "Профиль", node: <ProfileScreen /> },
-  { label: "Уведомления", node: <NotificationsScreen /> },
-  { label: "Настройки", node: <SettingsScreen /> },
-  { label: "Помощь", node: <HelpScreen /> },
-]
 
 export default function Pdf4Page() {
   return (
@@ -89,13 +80,7 @@ export default function Pdf4Page() {
           Реальные экраны интерактивного прототипа LearnUp, отрисованные целиком — без обрезки. Каждый макет показан в
           рамке устройства.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 justify-items-center">
-          {screens.map(({ label, node }) => (
-            <PhoneFrame key={label} label={label} scale={0.46}>
-              {node}
-            </PhoneFrame>
-          ))}
-        </div>
+        <PrototypeGallery scale={0.46} />
       </Slide>
 
       {/* Главная */}

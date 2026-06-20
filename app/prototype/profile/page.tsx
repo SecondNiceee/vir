@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Icon, type IconName } from "@/components/prototype/icons"
 
 const menuItems = [
   { href: "/prototype/settings", label: "Настройки" },
@@ -37,21 +38,18 @@ export default function ProfilePage() {
           <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Достижения</p>
           <div className="flex gap-3">
             {[
-              { bg: "bg-amber-100", icon: "🏆" },
-              { bg: "bg-emerald-100", icon: "⚡" },
-              { bg: "bg-blue-100", icon: "🎯" },
-              { bg: "bg-violet-100", icon: "🌟" },
-              { bg: "bg-slate-100", icon: "+3" },
+              { bg: "bg-amber-100 text-amber-500", icon: "trophy" as IconName },
+              { bg: "bg-emerald-100 text-emerald-500", icon: "bolt" as IconName },
+              { bg: "bg-blue-100 text-blue-500", icon: "target" as IconName },
+              { bg: "bg-violet-100 text-violet-500", icon: "star" as IconName },
             ].map(({ bg, icon }, i) => (
-              <div
-                key={i}
-                className={`w-14 h-14 ${bg} rounded-xl flex items-center justify-center ${
-                  i === 4 ? "text-slate-400 text-sm font-bold" : "text-2xl"
-                }`}
-              >
-                {icon}
+              <div key={i} className={`w-14 h-14 ${bg} rounded-xl flex items-center justify-center`}>
+                <Icon name={icon} className="w-6 h-6" strokeWidth={1.8} />
               </div>
             ))}
+            <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 text-sm font-bold">
+              +3
+            </div>
           </div>
         </div>
 
@@ -59,11 +57,13 @@ export default function ProfilePage() {
           <p className="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-3">Мои курсы</p>
           <div className="space-y-3">
             {[
-              { icon: "🐍", title: "Python для начинающих", progress: 65 },
-              { icon: "🇬🇧", title: "Английский B2", progress: 30 },
-            ].map(({ icon, title, progress }) => (
+              { icon: "code" as IconName, iconColor: "bg-teal-50 text-teal-500", title: "Python для начинающих", progress: 65 },
+              { icon: "language" as IconName, iconColor: "bg-blue-50 text-blue-500", title: "Английский B2", progress: 30 },
+            ].map(({ icon, iconColor, title, progress }) => (
               <div key={title} className="flex items-center gap-3 p-4 bg-slate-50 rounded-2xl">
-                <span className="text-2xl">{icon}</span>
+                <span className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${iconColor}`}>
+                  <Icon name={icon} className="w-5 h-5" strokeWidth={2} />
+                </span>
                 <div className="flex-1 min-w-0">
                   <p className="text-sm font-semibold text-slate-900">{title}</p>
                   <div className="mt-1.5 h-1.5 bg-slate-200 rounded-full overflow-hidden">

@@ -1,3 +1,5 @@
+import { Icon } from "@/components/prototype/icons"
+
 export default function MainPage() {
   return (
     <div className="px-5 pt-12 pb-4 bg-white">
@@ -18,7 +20,9 @@ export default function MainPage() {
             <p className="text-white/80 text-sm">Серия дней</p>
             <p className="text-3xl font-bold">12</p>
           </div>
-          <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center text-3xl">🔥</div>
+          <div className="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center">
+            <Icon name="flame" className="w-7 h-7 text-white" strokeWidth={2} />
+          </div>
         </div>
         <div className="flex gap-1">
           {["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"].map((day, i) => (

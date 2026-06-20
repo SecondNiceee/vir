@@ -1,3 +1,5 @@
+import { PrototypeGallery } from "@/components/pdf/prototype-screens"
+
 export default function Pdf3Page() {
   return (
     <div className="min-h-screen bg-white">
@@ -225,7 +227,7 @@ export default function Pdf3Page() {
               </div>
             </div>
             <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
-              Типографик��
+              Типограф��к��
             </div>
           </div>
 
@@ -684,6 +686,22 @@ export default function Pdf3Page() {
             </div>
             <div className="bg-black/20 px-6 py-3 text-center text-white/60 text-sm">
               <p>Figma: <a href="https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">https://www.figma.com/design/drgb5K6Uy1RSZPrIkdSa2b/Untitled?node-id=0-1&t=DqGdWAbo1FMVYyst-1</a></p>
+            </div>
+          </div>
+
+          {/* Прототип — все экраны */}
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-6 py-3">
+              <h2 className="text-xl font-bold">Интерактивный прототип LearnUp</h2>
+            </div>
+            <div className="p-6">
+              <p className="text-sm text-slate-500 mb-6 text-pretty">
+                Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
+              </p>
+              <PrototypeGallery scale={0.46} />
+            </div>
+            <div className="bg-slate-50 px-6 py-3 text-center text-slate-500 text-sm print:hidden">
+              Прототип
             </div>
           </div>
 

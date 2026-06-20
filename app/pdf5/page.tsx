@@ -1,3 +1,6 @@
+import { Icon } from "@/components/prototype/icons"
+import { PrototypeGallery } from "@/components/pdf/prototype-screens"
+
 export default function Pdf5Page() {
   return (
     <div className="min-h-screen bg-white">
@@ -117,31 +120,31 @@ export default function Pdf5Page() {
             <div className="p-5 flex flex-col justify-center">
               <div className="flex items-center justify-between gap-2">
                 <div className="bg-amber-100 text-amber-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <div className="text-2xl mb-2">🏠</div>
+                  <Icon name="home" className="w-7 h-7 mx-auto mb-2 text-amber-600" strokeWidth={2} />
                   <p className="text-sm font-bold">Home</p>
                   <p className="text-xs text-amber-600">Start Frame</p>
                 </div>
                 <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                 <div className="bg-teal-100 text-teal-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <div className="text-2xl mb-2">📖</div>
+                  <Icon name="book" className="w-7 h-7 mx-auto mb-2 text-teal-600" strokeWidth={2} />
                   <p className="text-sm font-bold">Детали курса</p>
                   <p className="text-xs text-teal-600">Tap: Продолжить</p>
                 </div>
                 <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                 <div className="bg-teal-100 text-teal-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <div className="text-2xl mb-2">📝</div>
+                  <Icon name="doc" className="w-7 h-7 mx-auto mb-2 text-teal-600" strokeWidth={2} />
                   <p className="text-sm font-bold">Урок</p>
                   <p className="text-xs text-teal-600">Tap: Начать</p>
                 </div>
                 <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                 <div className="bg-emerald-100 text-emerald-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <div className="text-2xl mb-2">✅</div>
+                  <Icon name="check" className="w-7 h-7 mx-auto mb-2 text-emerald-600" strokeWidth={2.5} />
                   <p className="text-sm font-bold">Success</p>
                   <p className="text-xs text-emerald-600">Overlay</p>
                 </div>
                 <svg className="w-8 h-8 text-slate-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                 <div className="bg-amber-100 text-amber-800 px-4 py-4 rounded-xl font-medium text-center flex-1 max-w-[140px]">
-                  <div className="text-2xl mb-2">🏠</div>
+                  <Icon name="home" className="w-7 h-7 mx-auto mb-2 text-amber-600" strokeWidth={2} />
                   <p className="text-sm font-bold">Home</p>
                   <p className="text-xs text-amber-600">Updated</p>
                 </div>
@@ -464,7 +467,7 @@ export default function Pdf5Page() {
                     {[
                       'Tab Bar переключает все 4 вкладки',
                       'Кнопка «Назад» работает везде',
-                      'Карточки ку��сов кликабельны',
+                      'Карточк�� ку��сов кликабельны',
                       'Нет «тупиков» без выхода',
                       'Модалки закрываются',
                     ].map((item, i) => (

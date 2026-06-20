@@ -1,3 +1,5 @@
+import { PrototypeGallery } from "@/components/pdf/prototype-screens"
+
 export default function Pdf1Page() {
   return (
     <div className="min-h-screen bg-slate-100">
@@ -209,7 +211,7 @@ export default function Pdf1Page() {
                       <ul className="space-y-1 text-xs sm:text-sm text-slate-600">
                         <li>+ Геймификация: серии, очки, лиги</li>
                         <li>+ Микроуроки по 5-15 минут</li>
-                        <li>+ Яркий дизайн и маскот</li>
+                        <li>+ Яркий ди��айн и маскот</li>
                         <li>+ Бесплатная базовая версия</li>
                       </ul>
                     </div>
@@ -439,6 +441,19 @@ export default function Pdf1Page() {
                   </ul>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Прототип — все экраны */}
+          <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col print:rounded-none print:shadow-none print:border-0 print:break-after-page">
+            <div className="bg-slate-800 text-white px-4 sm:px-6 py-2 sm:py-3">
+              <h2 className="text-lg sm:text-xl font-bold">Интерактивный прототип LearnUp</h2>
+            </div>
+            <div className="p-4 sm:p-6">
+              <p className="text-sm text-slate-500 mb-6 text-pretty">
+                Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
+              </p>
+              <PrototypeGallery scale={0.46} />
             </div>
           </div>
 

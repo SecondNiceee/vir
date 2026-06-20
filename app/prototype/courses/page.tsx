@@ -1,3 +1,5 @@
+import { Icon, type IconName } from "@/components/prototype/icons"
+
 export default function CoursesPage() {
   return (
     <div className="px-5 pt-12 pb-4 bg-white">
@@ -32,7 +34,9 @@ export default function CoursesPage() {
         <div className="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-2xl p-5 text-white">
           <div className="flex justify-between items-start mb-3">
             <span className="text-xs bg-white/20 px-2.5 py-1 rounded-full font-medium">Популярное</span>
-            <span className="text-2xl">🐍</span>
+            <span className="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center">
+              <Icon name="code" className="w-5 h-5 text-white" strokeWidth={2} />
+            </span>
           </div>
           <h3 className="font-bold text-lg mb-1">Python для начинающих</h3>
           <p className="text-white/80 text-sm mb-4">24 урока · 6 часов</p>
@@ -48,14 +52,16 @@ export default function CoursesPage() {
         </div>
 
         {[
-          { badge: "Новинка", badgeBg: "bg-violet-100 text-violet-700", emoji: "🇬🇧", title: "Английский B2", meta: "48 уроков · 12 часов", price: "Premium", rating: "4.8" },
-          { badge: "Хит", badgeBg: "bg-amber-100 text-amber-700", emoji: "🎨", title: "UI/UX дизайн", meta: "32 урока · 8 часов", price: "Premium", rating: "4.7" },
-          { badge: "Новинка", badgeBg: "bg-blue-100 text-blue-700", emoji: "📊", title: "Excel & Аналитика", meta: "20 уроков · 5 часов", price: "Бесплатно", rating: "4.6" },
-        ].map(({ badge, badgeBg, emoji, title, meta, price, rating }) => (
+          { badge: "Новинка", badgeBg: "bg-violet-100 text-violet-700", icon: "language" as IconName, iconColor: "bg-blue-50 text-blue-500", title: "Английский B2", meta: "48 уроков · 12 часов", price: "Premium", rating: "4.8" },
+          { badge: "Хит", badgeBg: "bg-amber-100 text-amber-700", icon: "palette" as IconName, iconColor: "bg-rose-50 text-rose-500", title: "UI/UX дизайн", meta: "32 урока · 8 часов", price: "Premium", rating: "4.7" },
+          { badge: "Новинка", badgeBg: "bg-blue-100 text-blue-700", icon: "chart" as IconName, iconColor: "bg-emerald-50 text-emerald-500", title: "Excel & Аналитика", meta: "20 уроков · 5 часов", price: "Бесплатно", rating: "4.6" },
+        ].map(({ badge, badgeBg, icon, iconColor, title, meta, price, rating }) => (
           <div key={title} className="bg-white border border-slate-100 rounded-2xl p-4 shadow-sm">
             <div className="flex justify-between items-start mb-2">
               <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${badgeBg}`}>{badge}</span>
-              <span className="text-2xl">{emoji}</span>
+              <span className={`w-9 h-9 rounded-xl flex items-center justify-center ${iconColor}`}>
+                <Icon name={icon} className="w-5 h-5" strokeWidth={2} />
+              </span>
             </div>
             <h3 className="font-bold text-slate-900 mb-1">{title}</h3>
             <p className="text-slate-500 text-sm mb-3">{meta}</p>
