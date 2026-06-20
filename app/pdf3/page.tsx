@@ -359,21 +359,33 @@ export default function Pdf3Page() {
           </div>
 
           {/* Tab Bar */}
-          <div>
-            <h3 className="text-xs font-semibold text-slate-500 uppercase mb-3">Tab Bar</h3>
-            <div className="bg-white border border-slate-200 rounded-xl p-3 flex justify-around mb-3">
-              <div className="flex flex-col items-center">
-                <svg className="w-5 h-5 text-teal-500" fill="currentColor" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" /></svg>
-                <span className="text-[10px] text-teal-600 font-medium">Active</span>
+          <div className="flex flex-col gap-3">
+            <h3 className="text-xs font-semibold text-slate-500 uppercase">Tab Bar</h3>
+            {/* Phone frame with tab bar */}
+            <div className="bg-[#1a2535] rounded-2xl p-3 mx-auto w-full max-w-[220px]">
+              {/* fake screen content */}
+              <div className="bg-[#1e2d40] rounded-xl h-24 mb-3" />
+              {/* tab bar */}
+              <div className="flex justify-around items-center gap-1">
+                {[
+                  { d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6", label: "Главная", active: true },
+                  { d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", label: "Каталог", active: false },
+                  { d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253", label: "Курсы", active: false },
+                  { d: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z", label: "Прогресс", active: false },
+                  { d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z", label: "Профиль", active: false },
+                ].map(({ d, label, active }) => (
+                  <div key={label} className="flex flex-col items-center gap-1">
+                    <div className={`w-8 h-8 rounded-xl flex items-center justify-center ${active ? "bg-teal-500" : "bg-[#243447]"}`}>
+                      <svg className={`w-4 h-4 ${active ? "text-white" : "text-slate-400"}`} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d={d} />
+                      </svg>
+                    </div>
+                    <span className={`text-[9px] leading-none ${active ? "text-teal-400" : "text-slate-500"}`}>{label}</span>
+                  </div>
+                ))}
               </div>
-              {["M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253", "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"].map((d, i) => (
-                <div key={i} className="flex flex-col items-center">
-                  <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={d} /></svg>
-                  <span className="text-[10px] text-slate-400">Inactive</span>
-                </div>
-              ))}
             </div>
-            <p className="text-xs text-slate-500">Interactive Components с переключением состояний при клике</p>
+            <p className="text-xs text-slate-500 text-center">5 вкладок, активное состояние выделено teal</p>
           </div>
         </div>
       </Slide>
@@ -414,12 +426,12 @@ export default function Pdf3Page() {
         </div>
       </section>
 
-      {/* Прототип */}
-      <Slide title="Интерактивный прототип LearnUp" footer="Все экраны приложения">
+      {/* Lo-fi вайрфреймы */}
+      <Slide title="Lo-Fi вайрфреймы приложения" footer="Lo-Fi макеты">
         <p className="text-sm text-slate-500 mb-6 text-pretty">
-          Все экраны рабочего прототипа приложения — отрисованы целиком в рамке устройства.
+          Схематичные макеты всех ключевых экранов — основа для создания UI-кита и hi-fi прототипа.
         </p>
-        <LoFiGallery />
+        <LoFiGallery scale={0.42} />
       </Slide>
     </PdfShell>
   )
